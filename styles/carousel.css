@@ -1,0 +1,18 @@
+:root {
+  --primary-color: "#C03247";
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #0b84ba !important;
+  /* background-color: #c03247 !important; */
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  padding: 0;
+  bottom: 0 !important;
+}

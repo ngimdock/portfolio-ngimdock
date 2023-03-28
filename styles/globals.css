@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+@layer base {
+  body {
+    @apply p-0 m-0 bg-dark;
+  }
+}
+
+@layer components {
+  @font-face {
+    /* font-family: "Inter"; */
+    src: url("../public//assets//font//Inter-Black.ttf") format("ttf");
+  }
+
+  .container {
+    @apply max-w-6xl px-4 mx-auto;
+  }
+
+  .container-lg {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  .separed-sections {
+    @apply mt-20 mt-24;
+  }
+
+  .translateDiv {
+    @apply translate-y-16;
+  }
+
+  .noTranslateDiv {
+    @apply translate-y-0;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: "#0b84ba";
+  --primary-dark: "#08638b";
+
+  --dark: "#121212";
+  --dark-2: "#151515";
+
+  --light: "#D1D5DB";
+  --light-dark: "#A5A6A6";
+}
+
+html,
+body {
+  /* font-family: "Inter", sans-serif; */
+
+  /*Anti aliasing font style*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-h1 {
+  font-weight: bolder;
+}
+
+.header-name {
+  font-size: 21px;
+  letter-spacing: -2.3px;
+}
+
+.header-job {
+  font-size: 37px;
+  line-height: 3rem;
+  letter-spacing: -2.5px;
+  font-weight: 900;
+}
+
+.header-p {
+  letter-spacing: -1px;
+}
+
+.letter-shrink-md {
+  letter-spacing: -1.3px;
+}
+
+.title-h2 {
+  letter-spacing: -2px;
+}
+
+.letter-shrink {
+  letter-spacing: -0.5px;
+}
+
+/* .hero-barre {
+  font-size: 18px;
+  padding: 0 5px;
+  padding-top: 10px;
+  font-weight: 200;
+  opacity: 90%;
+} */
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: #151515;
+  }
+}
+
+.animate,
+a,
+a:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.lineClam3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.lineClam2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.lineClam1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.footer-ref {
+  letter-spacing: -0.2px;
+}
+
+/*ANIMATE*/
+.animate {
+  @apply transition;
+  @apply duration-200;
+  @apply ease-in-out;
+}
+a.animate:hover {
+  @apply transition;
+  @apply duration-700;
+  @apply ease-in-out;
+}
+
+/* ANIMATE IN VIEWPORT */
+.hiddenDiv,
+.visibleDiv {
+  transition: opacity 500ms ease-out;
+  will-change: opacity;
+  opacity: 0;
+}
+.visibleDiv {
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .header-name {
+    font-size: 30px;
+    letter-spacing: -2.3px;
+  }
+
+  .header-job {
+    font-size: 45px;
+    line-height: 3rem;
+    letter-spacing: -2.5px;
+  }
+}
+
+@media (max-width: 354px) {
+  .header-job {
+    font-size: 35px;
+    line-height: 2.5rem;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}

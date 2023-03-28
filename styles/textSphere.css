@@ -1,0 +1,78 @@
+/* Importing google font  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap");
+
+:root {
+  --primary: "#0b84ba";
+  --primary-dark: "#08638b";
+
+  --dark: "#121212";
+  --dark-2: "#151515";
+
+  --light: "#D1D5DB";
+  --light-dark: "#A5A6A6";
+}
+
+.text-shpere {
+}
+
+.tagcloud,
+.tagcloudskill {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  font-size: 0.72em;
+}
+
+.tagcloudMobile,
+.tagcloudMobileSkill {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.0625em;
+  font-size: 0.6em;
+}
+
+/* Change color of each text in sphere on hover   */
+span .tagcloud--item,
+span .tagcloudskill--item {
+  color: #0b84ba;
+  /* color: #c03247; */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tagcloud--item:hover,
+.tagcloudskill--item:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 615px) {
+  .tagcloud,
+  .tagcloudskill {
+    width: 400px !important;
+    height: 400px !important;
+    margin-top: 110px !important;
+  }
+}
+
+@media (max-width: 515px) {
+  .tagcloud,
+  .tagcloudskill {
+    width: 300px !important;
+    height: 300px !important;
+    font-weight: 300;
+    letter-spacing: 0.0625em;
+    font-size: 0.7em;
+    margin-top: 70px !important;
+  }
+}
+
+/* @media (max-width: 499px) {
+  .tagcloud .tagcloudskill {
+    margin-top: 0px !important;
+  }
+
+  .tagcloudMobile,
+  .tagcloudMobileSkill {
+    margin-top: 0px !important;
+    background: red !important;
+  }
+} */

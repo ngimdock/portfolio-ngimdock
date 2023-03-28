@@ -1,0 +1,17 @@
+@keyframes logoOpacity {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.spashScreenOpacity {
+  animation: logoOpacity 1.4s infinite;
+}
