@@ -5,6 +5,7 @@ import { Projects } from "./sections/Projects";
 import { About } from "./sections/About";
 import { CallToAction } from "../../pagesCommonSections";
 import { ROUTE_CONTACT } from "../../lib";
+import { Coaching } from "./sections/Coaching";
 
 export const DEFAULT_CALL_TO_ACTION_DATA = {
   // image: "contact-call-to-action.jpg",
@@ -24,9 +25,11 @@ export const HomeBody = () => {
       <Services />
       <Projects />
       <About />
+
+      <Coaching />
       <CallToAction
         actionData={DEFAULT_CALL_TO_ACTION_DATA}
-        classe="mt-20 xs:mt-32 sm:mt-12"
+        classe="mt-20 xs:mt-28"
       />
     </>
   );

@@ -52,10 +52,14 @@ export const About = () => {
         <div className="mt-8 sm:py-20 sm:mt-0">
           <H2>Histoire et hobbies.</H2>
           <Para>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos natus necessitatibus sequi eveniet saepe fugit? Eius
-            reprehenderit eveniet ea neque saepe delectus quaerat, optio ex in
-            cumque quasi ut iste!
+            Si j'était un animal sauvage, je serait sûrement un ours, l'ours de
+            winterfel. Quand j'était encore gamin, mon rêve était de dévenir
+            acteur de ciné car j'était très fan de will smitch et me voyais
+            tourner dans un films avec lui (oui j'avais le même rêve que khabby
+            lamé). Je pratique aussi beaucoup la muscu pour maintenir la forme
+            et regarde le foot. Aujourd'hui l'un de mes plus grand plaîsir des
+            voir mes clients satisfaient après ma prestation. Et si on demarait
+            avec votre projet ?
           </Para>
         </div>
 
