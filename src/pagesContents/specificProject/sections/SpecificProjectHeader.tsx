@@ -35,7 +35,7 @@ export const SpecificProjectHeader = ({
 
   return (
     <section className="mt-20 md:mt-36">
-      <header className="container items-center grid-cols-2 md:space-x-5 md:grid ">
+      <header className="items-center grid-cols-2 md:space-x-5 md:grid ">
         <div>
           <div>
             <div className="flex flex-wrap items-center justify-center space-x-3 space-y-1.5 md:justify-start">
@@ -52,7 +52,7 @@ export const SpecificProjectHeader = ({
                 alt="project image"
                 width={400}
                 height={400}
-                className="w-full h-auto my-10 md:hidden"
+                className="w-full h-auto my-5 md:hidden"
               />
               <Para classe="max-w-xl">{project.description}</Para>
             </div>

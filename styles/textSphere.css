@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap");
 
 :root {
-  --primary: "#0b84ba";
-  --primary-dark: "#08638b";
+  --primary: "#0098cc";
 
   --dark: "#121212";
   --dark-2: "#151515";
@@ -33,7 +32,7 @@
 /* Change color of each text in sphere on hover   */
 span .tagcloud--item,
 span .tagcloudskill--item {
-  color: #0b84ba;
+  color: #0098cc;
   /* color: #c03247; */
   text-transform: uppercase;
   cursor: pointer;

@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { RiLinksLine } from "react-icons/ri";
 import { toast } from "react-toastify";
 import useIsInViewport from "use-is-in-viewport";
@@ -15,7 +16,19 @@ const initState = { isLoading: false, error: "", values: initValues };
 export const Contact = () => {
   const [isInViewport, targetRef] = useIsInViewport();
 
-  // const toast = useToast();
+  const {
+    // handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const handleSubmit = (e) => {
+    
+    e.
+    toast.success(" Message reçu, je vous reponds dans la journée.");
+
+    toast.error("Une erreur est survenue !");
+  };
+
   const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
 
@@ -27,23 +40,6 @@ export const Contact = () => {
         [target.name]: target.value,
       },
     }));
-
-  const onSubmit = () => {
-    console.log("hello world !");
-
-    toast.success(" Wow so easy!", {
-      // position: "top-right",
-      // autoClose: 5000,
-      // hideProgressBar: false,
-      // closeOnClick: true,
-      // pauseOnHover: true,
-      // draggable: true,
-      // progress: undefined,
-      // theme: "dark",
-    });
-
-    toast.error("Une erreur est survenue !");
-  };
 
   const socialsMedias: SocialMedia[] = [
     {
@@ -79,19 +75,38 @@ export const Contact = () => {
         </ul>
       </div>
 
-      <div className="flex flex-col-reverse grid-cols-2 col-span-7 gap-y-5 sm:gap-y-0 sm:grid cla gap-x-5">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col-reverse grid-cols-2 col-span-7 gap-y-5 sm:gap-y-0 sm:grid cla gap-x-5"
+      >
         <div>
           <TextArea />
-          <Button color="primary" fullWidth classe="sm:hidden mt-5">
+          <Button
+            type="submit"
+            color="primary"
+            fullWidth
+            classe="sm:hidden mt-5"
+          >
             Envoyer
           </Button>
+
+          <input type="submit" value="send" />
         </div>
         <div className="space-y-5">
-          <InputText placeholder="Object" />
-          <InputText placeholder="Votre nom" />
-          <InputText placeholder="Votre numéro" />
+          <InputText
+            isRequired={true}
+            registerName="object"
+            placeholder="Object"
+            value="hello"
+          />
+          <InputText value="guy" registerName="name" placeholder="Votre nom" />
+          <InputText
+            value="how are you"
+            registerName="phone"
+            placeholder="Votre numéro"
+          />
           <Button
-            action={onSubmit}
+            type="submit"
             color="primary"
             fullWidth
             classe="hidden sm:block"
@@ -99,7 +114,7 @@ export const Contact = () => {
             Envoyer
           </Button>
         </div>
-      </div>
+      </form>
     </section>
   );
 };

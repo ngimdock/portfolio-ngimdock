@@ -4,7 +4,7 @@ type ButtonType = {
   children?: any;
   size?: "sm" | "md" | "lg";
   color?: "primary" | "dark" | "dark-2";
-  type?: "button" | "link";
+  type?: "button" | "submit";
   fullWidth?: boolean;
   isLoading?: boolean;
   classe?: string;
@@ -27,8 +27,9 @@ export const Button = ({
   return (
     <button
       onClick={action && action}
+      type={type}
       className={clsx(
-        " flex justify-center space-x-2 items-center text-light animate font-meduim letter-shrink rounded-full hover:-translate-y-1.5 hover:shadow",
+        " flex justify-center space-x-2 items-center  text-white animate font-meduim letter-shrink rounded-full hover:-translate-y-1.5 hover:shadow",
         color === "primary" && "bg-primary hover:bg-dark hover:shadow-light",
         color === "dark" && "bg-dark hover:shadow-primary",
         color === "dark-2" && "bg-dark-3 hover:shadow-light hover:bg-dark",

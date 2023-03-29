@@ -29,7 +29,7 @@ export const ButtonLink = ({
     <Link
       href={`${href}`}
       className={clsx(
-        " flex justify-center space-x-2 items-center text-center text-light  font-Inter font-meduim letter-shrink rounded-full hover:-translate-y-1.5 hover:shadow",
+        " flex justify-center space-x-2 items-center text-center text-white text-xs uppercase  font-Inter font-meduim letter-shrink rounded-full hover:-translate-y-1.5 hover:shadow",
         color === "primary" && "bg-primary hover:bg-dark hover:shadow-light",
         color === "dark" && "bg-dark hover:shadow-primary",
         color === "dark-2" && "bg-dark-3 hover:shadow-light hover:bg-dark",

@@ -25,6 +25,13 @@ export enum ProjectType {
   TECHNICAL_TEST = "Tests Techniques",
 }
 
+interface Challenge {
+  challengeTitle: string;
+  challengeDescription: string;
+  solutionTitle: string;
+  solutionDescription: string;
+}
+
 export type Project = {
   id: number;
   featured?: 1 | 2 | 3 | 4;
@@ -46,8 +53,9 @@ export type Project = {
     solution: string;
     myTasks: string;
     techStack: TechStackType[];
-    images?: string[];
   };
+  challenges?: Challenge[];
+  images?: string[];
 };
 
 export const ALL_PROJECTS: Project[] = [
@@ -71,8 +79,27 @@ export const ALL_PROJECTS: Project[] = [
       solution: "The sution here",
       myTasks: "My task here",
       techStack: [reactjs, tailwind, firebase],
-      images: ["dan.png", "contact-call-to-action.jpg", "nest.png", "dan.png"],
     },
+    challenges: [
+      {
+        challengeTitle: "Premier challenge",
+        challengeDescription:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste",
+        solutionTitle: "Résolution du challenge",
+        solutionDescription:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste, illo animi repellendus odit veniam atque. Error recusandae",
+      },
+
+      {
+        challengeTitle: "Deuxième challenge",
+        challengeDescription:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste",
+        solutionTitle: "Résolution du challenge",
+        solutionDescription:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste, illo animi repellendus odit veniam atque. Error recusandae",
+      },
+    ],
+    images: ["dan.png", "contact-call-to-action.jpg", "nest.png", "dan.png"],
   },
 
   {
@@ -95,8 +122,8 @@ export const ALL_PROJECTS: Project[] = [
       solution: "The sution here",
       myTasks: "My task here",
       techStack: [reactjs, tailwind, firebase],
-      images: [],
     },
+    images: [],
   },
 
   {
@@ -119,8 +146,8 @@ export const ALL_PROJECTS: Project[] = [
       solution: "The sution here",
       myTasks: "My task here",
       techStack: [nestjs, reactjs, postgres, prisma],
-      images: ["image1", "image2"],
     },
+    images: ["image1", "image2"],
   },
 
   {
@@ -143,8 +170,8 @@ export const ALL_PROJECTS: Project[] = [
       solution: "The sution here",
       myTasks: "My task here",
       techStack: [reactjs, tailwind, firebase],
-      images: ["image1", "image2"],
     },
+    images: ["image1", "image2"],
   },
 
   {
@@ -166,7 +193,7 @@ export const ALL_PROJECTS: Project[] = [
       solution: "The sution here",
       myTasks: "My task here",
       techStack: [reactjs, tailwind, firebase],
-      images: ["image1", "image2"],
     },
+    images: ["image1", "image2"],
   },
 ];

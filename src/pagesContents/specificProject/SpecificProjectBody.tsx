@@ -10,18 +10,20 @@ type SpecificProjectBodyProps = {
 };
 
 export const SpecificProjectBody = ({ project }: SpecificProjectBodyProps) => {
-  const images = project.details.images as string[];
+  const images = project.images as string[];
 
   return (
-    <section className="container">
-      <Navbar />
-      <SpecificProjectHeader project={project} />
-      <ProjectContent project={project} />
-      {images.length ? <ProjectImages images={images} /> : null}
+    <>
+      <section className="container">
+        <Navbar />
+        <SpecificProjectHeader project={project} />
+        <ProjectContent project={project} />
+        {images.length ? <ProjectImages images={images} /> : null}
+      </section>
       <CallToAction
         actionData={DEFAULT_CALL_TO_ACTION_DATA}
         classe="separed-sections"
       />
-    </section>
+    </>
   );
 };
