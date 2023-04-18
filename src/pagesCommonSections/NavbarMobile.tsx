@@ -20,6 +20,7 @@ import {
   RiCloseFill,
   RiHeadphoneFill,
 } from "react-icons/ri";
+import { NAV_DATAS } from "./Navbar";
 
 type NavRouteType = {
   id: number;
@@ -77,7 +78,7 @@ export const NavbarMobile = () => {
       )}
     >
       <ul className="flex flex-col items-center space-y-8 text-sm font-bold text-center uppercase item-center">
-        {MOBILE_NAV_DATAS.map(({ id, route, link }: NavRouteType) => (
+        {NAV_DATAS.map(({ id, route, link }: NavRouteType) => (
           <div key={id} onClick={() => closeMobileNav()}>
             <Link
               href={link}
@@ -87,10 +88,6 @@ export const NavbarMobile = () => {
             </Link>
           </div>
         ))}
-
-        <li className="px-10 py-2 rounded-full shadow-sm cursor-pointer animate shadow-primary hover:-translate-y-2 hover:shadow-light">
-          <RiHeadphoneFill className="text-xl text-primary  -translate-y-0.5 cursor-pointer hover:opacity-60 animate" />
-        </li>
       </ul>
 
       <div

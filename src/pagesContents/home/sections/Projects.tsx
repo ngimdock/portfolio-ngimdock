@@ -14,7 +14,7 @@ import img from "../../../../public/assets/images/images.jpeg";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { ROUTE_PROJECTS, SCREEN_SM } from "../../../lib";
 import { useResizeWindow } from "../../../hooks";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Projects = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -64,11 +64,11 @@ export const Projects = () => {
       <div className="hidden sm:block">
         <H3>Portfolio</H3>
       </div>
-      <H3 classe="sm:hidden">Technos</H3>
-      <H2 classe="mt-3">Lorem ipsum dolor sit amet consectetur</H2>
+      <H3 classe="sm:hidden">Portfolio</H3>
+      <H2 classe="mt-3">Consulter mes réalisation les plus récents.</H2>
       <Para>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam corporis
-        quasi nulla
+        Une liste non exaustive des projets donc j'ai réalisé ou fait partir de
+        l'équipe de dévelopement.
       </Para>
 
       <div className="w-full grid-cols-8 grid-rows-2 mt-10 md:grid gap-x-2 lg:gap-x-4">
@@ -92,7 +92,7 @@ export const Projects = () => {
         </div>
         <div className="w-full h-full col-span-5 row-span-2 mt-2 md:mt-0">
           <div className="grid  h-full sm:grid-cols-2 sm:grid-rows-2 gap-y-1.5 self-center items-center sm:gap-2 lg:gap-3">
-            {projects.map((project) => (
+            {projects.slice(0, 4).map((project) => (
               <ProjectCard projectData={project} key={project.id} />
             ))}
           </div>

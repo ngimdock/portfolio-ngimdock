@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useForm } from "react-hook-form";
 
 type InputTextProps = {
@@ -5,24 +6,33 @@ type InputTextProps = {
   registerName: string;
   isRequired?: boolean;
   value: string;
+  disabled: boolean;
+  onChange: (e: any) => void;
+  type?: "email" | "text";
 };
 
 export const InputText = ({
+  type,
   placeholder,
-  registerName,
   isRequired,
+  disabled,
   value,
+  onChange,
 }: InputTextProps) => {
   const { register, watch } = useForm();
 
   return (
     <input
-      type="text"
+      type={type ? type : "text"}
       placeholder={placeholder}
       required={!!isRequired}
+      disabled={disabled}
       value={value}
-      // {...register(registerName, { required: !!isRequired })}
-      className="w-full px-4 py-5 text-xs text-light bg-dark-3 focus:bg-dark animate focus:outline-none focus:border-spacing-0"
+      onChange={onChange}
+      className={clsx(
+        disabled && " cursor-not-allowed",
+        "w-full px-4 py-5 text-xs text-light bg-dark-3 focus:bg-dark animate focus:outline-none focus:border-spacing-0"
+      )}
     />
   );
 };

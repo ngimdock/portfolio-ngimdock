@@ -1,45 +1,70 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { useForm } from "react-hook-form";
 import { RiLinksLine } from "react-icons/ri";
 import { toast } from "react-toastify";
 import useIsInViewport from "use-is-in-viewport";
+import { sendContactForm } from "../../../api/api";
 import { Button } from "../../../components";
 import { InputText } from "../../../components/inputs/inputText";
 import { TextArea } from "../../../components/inputs/TextArea";
 import { SocialMedia, SOCIALS_MEDIAS } from "../../../enums";
 
-const initValues = { name: "", email: "", subject: "", message: "" };
+export interface FormValues {
+  name: string;
+  email: string;
+  subject: string;
+  phone: string;
+  message: string;
+}
 
-const initState = { isLoading: false, error: "", values: initValues };
+const initValues: FormValues = {
+  name: "",
+  email: "",
+  subject: "",
+  phone: "",
+  message: "",
+};
+
+const initFormData = { isLoading: false, error: "", values: initValues };
 
 export const Contact = () => {
   const [isInViewport, targetRef] = useIsInViewport();
 
-  const {
-    // handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const [formData, setFormData] = useState(initFormData);
 
-  const handleSubmit = (e) => {
-    
-    e.
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    setFormData((prevState) => ({
+      ...prevState,
+      isLoading: true,
+    }));
+
+    const { email, phone } = formData.values;
+
+    // check valid email
+
+    // check valid phone
+
+    // send email
+
+    await sendContactForm(formData.values);
+
+    // console.log({ result });
+
+    setFormData(initFormData);
     toast.success(" Message reçu, je vous reponds dans la journée.");
-
-    toast.error("Une erreur est survenue !");
   };
 
-  const [state, setState] = useState(initState);
-  const [touched, setTouched] = useState({});
-
-  const handleChange = ({ target }: { target: any }) =>
-    setState((prev) => ({
+  const handleChange = (e: any, inputName: string) => {
+    setFormData((prev) => ({
       ...prev,
       values: {
         ...prev.values,
-        [target.name]: target.value,
+        [inputName]: e.target.value,
       },
     }));
+  };
 
   const socialsMedias: SocialMedia[] = [
     {
@@ -80,7 +105,10 @@ export const Contact = () => {
         className="flex flex-col-reverse grid-cols-2 col-span-7 gap-y-5 sm:gap-y-0 sm:grid cla gap-x-5"
       >
         <div>
-          <TextArea />
+          <TextArea
+            value={formData.values.message}
+            onChange={(e) => handleChange(e, "message")}
+          />
           <Button
             type="submit"
             color="primary"
@@ -95,21 +123,43 @@ export const Contact = () => {
         <div className="space-y-5">
           <InputText
             isRequired={true}
+            disabled={formData.isLoading}
             registerName="object"
             placeholder="Object"
-            value="hello"
+            value={formData.values.subject}
+            onChange={(e) => handleChange(e, "subject")}
           />
-          <InputText value="guy" registerName="name" placeholder="Votre nom" />
           <InputText
-            value="how are you"
+            isRequired={true}
+            disabled={formData.isLoading}
+            registerName="name"
+            placeholder="Votre nom"
+            value={formData.values.name}
+            onChange={(e) => handleChange(e, "name")}
+          />
+          <InputText
+            isRequired={true}
+            disabled={formData.isLoading}
+            registerName="email"
+            placeholder="Email"
+            type="email"
+            value={formData.values.email}
+            onChange={(e) => handleChange(e, "email")}
+          />
+          <InputText
+            isRequired={true}
+            disabled={formData.isLoading}
             registerName="phone"
-            placeholder="Votre numéro"
+            placeholder="Téléphone"
+            value={formData.values.phone}
+            onChange={(e) => handleChange(e, "phone")}
           />
           <Button
             type="submit"
             color="primary"
             fullWidth
             classe="hidden sm:block"
+            isLoading={formData.isLoading}
           >
             Envoyer
           </Button>

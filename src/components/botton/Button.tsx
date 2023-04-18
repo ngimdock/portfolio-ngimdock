@@ -40,8 +40,14 @@ export const Button = ({
       )}
       {...restProps}
     >
-      <p className="text-lg "> {icon}</p>
-      <span>{children}</span>
+      {isLoading ? (
+        "chargement.."
+      ) : (
+        <>
+          <p className="text-lg "> {icon}</p>
+          <span>{children}</span>
+        </>
+      )}
     </button>
   );
 };

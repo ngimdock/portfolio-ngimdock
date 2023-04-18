@@ -2,10 +2,12 @@ import Link from "next/link";
 import {
   ABOUT,
   CONTACT,
+  FORMATIONS,
   PROJECTS,
   RESUME,
   ROUTE_ABOUT,
   ROUTE_CONTACT,
+  ROUTE_FORMATIONS,
   ROUTE_HOME,
   ROUTE_PROJECTS,
   ROUTE_SERVICES,
@@ -17,47 +19,54 @@ import { RiHeadphoneFill, RiMenuFill } from "react-icons/ri";
 import { GiBearFace } from "react-icons/gi";
 import { useContext } from "react";
 import { mobileNavContext } from "../dataManager/context";
+
+type NavRouteType = {
+  id: number;
+  route: string;
+  link: string;
+};
+
+export const NAV_DATAS: NavRouteType[] = [
+  {
+    id: 2,
+    route: SERVICES,
+    link: ROUTE_SERVICES,
+  },
+  {
+    id: 3,
+    route: PROJECTS,
+    link: ROUTE_PROJECTS,
+  },
+  {
+    id: 4,
+    route: SKILLS,
+    link: ROUTE_SKILLS,
+  },
+  {
+    id: 5,
+    route: ABOUT,
+    link: ROUTE_ABOUT,
+  },
+  {
+    id: 6,
+    route: FORMATIONS,
+    link: ROUTE_FORMATIONS,
+  },
+  {
+    id: 7,
+    route: CONTACT,
+    link: ROUTE_CONTACT,
+  },
+
+  {
+    id: 8,
+    route: RESUME,
+    link: ROUTE_HOME,
+  },
+];
+
 export const Navbar = () => {
   const { openMobileNav } = useContext(mobileNavContext);
-
-  type NavRouteType = {
-    id: number;
-    route: string;
-    link: string;
-  };
-
-  const NAV_DATAS: NavRouteType[] = [
-    {
-      id: 2,
-      route: SERVICES,
-      link: ROUTE_SERVICES,
-    },
-    {
-      id: 3,
-      route: PROJECTS,
-      link: ROUTE_PROJECTS,
-    },
-    {
-      id: 4,
-      route: SKILLS,
-      link: ROUTE_SKILLS,
-    },
-    {
-      id: 5,
-      route: ABOUT,
-      link: ROUTE_ABOUT,
-    },
-    {
-      id: 6,
-      route: RESUME,
-      link: ROUTE_HOME,
-    },
-    {
-      id: 7,
-      route: CONTACT,
-      link: ROUTE_CONTACT,
-    },
-  ];
 
   return (
     <nav className="flex items-center justify-between w-full pt-10">
@@ -69,7 +78,7 @@ export const Navbar = () => {
         <GiBearFace size={46} className="sm:hidden" />
         <span className="hidden font-bold sm:block">Bear</span>
       </Link>
-      <ul className="items-center hidden space-x-4 text-xs font-medium md:flex lg:space-x-6 text-light">
+      <ul className="items-center hidden space-x-4 text-xs font-medium md:flex lg:space-x-5 text-light">
         {NAV_DATAS.map(({ id, link, route }: NavRouteType) => (
           <Link
             key={id}
@@ -79,10 +88,6 @@ export const Navbar = () => {
             {route}
           </Link>
         ))}
-
-        <li>
-          <RiHeadphoneFill className="text-2xl text-primary -translate-y-0.5 cursor-pointer hover:opacity-60 animate" />
-        </li>
       </ul>
 
       <div

@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { H2, H4, Para, ScrollDown, Tag } from "../../../components";
-import img from "../../../../public/assets/images/dan-md.png";
-import { SimpleScrollDown } from "../../../components/scrollDown/SimpleScrollDown";
-import Link from "next/link";
 import { TagBg } from "../../../components/tag-bg/tabBg";
 import { RiGithubFill, RiLinksLine } from "react-icons/ri";
 import useIsInViewport from "use-is-in-viewport";
@@ -39,7 +36,7 @@ export const SpecificProjectHeader = ({
         <div>
           <div>
             <div className="flex flex-wrap items-center justify-center space-x-3 space-y-1.5 md:justify-start">
-              {project.tags.map((tagName) => (
+              {project.tags.slice(0, 3).map((tagName) => (
                 <TagBg color="dark" size="md" key={tagName}>
                   {tagName}
                 </TagBg>

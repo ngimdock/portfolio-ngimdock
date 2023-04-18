@@ -1,15 +1,10 @@
-import {
-  RiBearSmileLine,
-  RiHomeHeartLine,
-  RiInformationLine,
-} from "react-icons/ri";
-import { Button, RoutePathType, ScrollDown } from "../../components";
-import { ROUTE_ABOUT, ROUTE_HOME } from "../../lib";
+import { RiBearSmileLine, RiHomeHeartLine } from "react-icons/ri";
+import { RoutePathType, ScrollDown } from "../../components";
+import { ROUTE_FORMATIONS, ROUTE_HOME } from "../../lib";
 import { CallToAction, Header } from "../../pagesCommonSections";
 import { DEFAULT_CALL_TO_ACTION_DATA } from "../home/HomeBody";
-import { About } from "./sections/about";
 
-export const AboutBody = () => {
+export const FormationsBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
     {
       id: 1,
@@ -20,19 +15,16 @@ export const AboutBody = () => {
 
     {
       id: 2,
-      text: ROUTE_ABOUT,
-      link: ROUTE_ABOUT,
+      text: ROUTE_FORMATIONS,
+      link: ROUTE_FORMATIONS,
       icon: <RiBearSmileLine />,
     },
   ];
-
-  const userName = process.env.NEXT_PUBLIC_USER_NAME?.toLocaleLowerCase();
-
   return (
     <>
       <Header
-        title={`Hello c'est ${userName}, l'ours de winterfell.`}
-        description={`Je m'apelle ${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} mais je suis beaucoup plus connue sur le nom de ${userName}.`}
+        title="Formation en développement web"
+        description="Je forme les futurs talents de ton entreprise "
         buttonCTA={
           <div className="flex justify-center ">
             <ScrollDown />
@@ -41,7 +33,11 @@ export const AboutBody = () => {
         routesPath={ROUTES_PATH}
       />
 
-      <About />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+        asperiores, in cumque perspiciatis odio optio adipisci, dicta libero,
+        enim velit natus? Totam numquam a cum, et amet at? Amet, illum.
+      </p>
 
       <CallToAction
         actionData={DEFAULT_CALL_TO_ACTION_DATA}

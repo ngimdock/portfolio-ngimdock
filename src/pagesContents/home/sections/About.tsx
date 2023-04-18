@@ -25,14 +25,12 @@ export const About = () => {
           <H2 classe="mt-3">Développeur fullstack typescript</H2>
         </div>
         <Para>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-          consequatur tempora qui accusamus unde! Quaerat aperiam inventore,
-          fuga ab expedita voluptate beatae laboriosam. Repudiandae at, soluta
-          corrupti eaque alias ullam.
+          Je suis un développeur fullstack avec une grande sensibilité pour un
+          code qui se veux clean, lisible, refactorisé et bien architechturé.
         </Para>
         <Para>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-          consequatur tempora qui accusamus unde! Quaerat aperiam
+          Avec les technologies qui avances à grand pas, je fait de mon mieux
+          pour rester à jour afin de toujours délivrer un travail de qualité.
         </Para>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
           <ButtonLink href={ROUTE_ABOUT} color="primary" classe="inline">

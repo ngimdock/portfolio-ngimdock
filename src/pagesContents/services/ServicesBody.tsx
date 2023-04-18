@@ -27,7 +27,7 @@ export const ServicesBody = () => {
     <>
       <Header
         title="Prestation des services"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, lacinia conse"
+        description="Du développement web sur-mesure pour faire décoller ton produit sur le web."
         buttonCTA={
           <ButtonLink href={ROUTE_CONTACT} color="primary">
             me contacter

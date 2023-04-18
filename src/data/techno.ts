@@ -12,6 +12,7 @@ import logo_java from "../../public/assets/svg/logo_java.svg";
 import logo_nextjs from "../../public/assets/svg/logos_nextjs2.svg";
 import logo_render from "../../public/assets/svg/simple-icons_render.svg";
 import logo_socketio from "../../public/assets/svg/logos_socket-io.svg";
+import logo_flutter from "../../public/assets/svg/logo_flutter.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -37,7 +38,8 @@ export type TechStackNames =
   | "render"
   | "nextjs"
   | "java"
-  | "socketio";
+  | "socketio"
+  | "flutter";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -89,7 +91,6 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     alt: "MongoDb",
     // src: "logo_mongodb.svg",
     src: logo_mongodb,
-    sizeIcon: 11,
     setOpacity: false,
     link: "https://www.mongodb.com/",
     selected: false,
@@ -186,6 +187,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     setOpacity: false,
     selected: false,
   },
+
+  flutter: {
+    tecnoName: "Fullter",
+    alt: "https://flutter.dev/",
+    src: logo_flutter,
+    sizeIcon: 32,
+    link: "https://flutter.dev/",
+    setOpacity: false,
+    selected: false,
+  },
 } as const;
 
 const {
@@ -236,7 +247,11 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   prisma,
   mongoDb,
   socketio,
-].map((tech) => ({ ...tech, selected: false, sizeIcon: tech.sizeIcon + 5 }));
+].map((tech) => ({
+  ...tech,
+  selected: false,
+  sizeIcon: tech.sizeIcon && tech.sizeIcon + 5,
+}));
 
 export const TECHNOS_OTHERS: TechStackType[] = [aws, neo4j, java, render];
 
