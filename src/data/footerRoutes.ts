@@ -2,10 +2,12 @@ import { ReactNode } from "react";
 import {
   ABOUT,
   CONTACT,
+  FORMATIONS,
   HOME,
   PROJECTS,
   ROUTE_ABOUT,
   ROUTE_CONTACT,
+  ROUTE_FORMATIONS,
   ROUTE_HOME,
   ROUTE_PROJECTS,
   ROUTE_SERVICES,
@@ -34,6 +36,12 @@ export const FOOTER_ROUTES: FooterRoute[] = [
     text: PROJECTS,
     link: ROUTE_PROJECTS,
   },
+
+  {
+    text: FORMATIONS,
+    link: ROUTE_FORMATIONS,
+  },
+
   {
     text: SKILLS,
     link: ROUTE_SKILLS,

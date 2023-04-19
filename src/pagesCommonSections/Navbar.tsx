@@ -15,10 +15,12 @@ import {
   SERVICES,
   SKILLS,
 } from "../lib";
-import { RiHeadphoneFill, RiMenuFill } from "react-icons/ri";
+import { RiMenuFill } from "react-icons/ri";
 import { GiBearFace } from "react-icons/gi";
 import { useContext } from "react";
 import { mobileNavContext } from "../dataManager/context";
+import clsx from "clsx";
+import { useScrollWindow } from "../hooks";
 
 type NavRouteType = {
   id: number;
@@ -68,8 +70,15 @@ export const NAV_DATAS: NavRouteType[] = [
 export const Navbar = () => {
   const { openMobileNav } = useContext(mobileNavContext);
 
+  const [positionY] = useScrollWindow();
+
   return (
-    <nav className="flex items-center justify-between w-full pt-10">
+    <nav
+      className={clsx(
+        "relative z-50 flex items-center justify-between w-full pt-8",
+        positionY > 120 && " pt-6"
+      )}
+    >
       <Link
         href={ROUTE_HOME}
         className="flex items-center space-x-1.5 text-primary"

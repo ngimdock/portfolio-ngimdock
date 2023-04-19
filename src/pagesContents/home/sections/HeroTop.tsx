@@ -18,10 +18,11 @@ export const HeroTop = () => {
       ref={targetRef}
       className={clsx(
         isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container text-light h-screen max-h-[730px]  md:max-h-[830px]"
+        "container text-light h-screen md:h-auto pt-20"
+        // "container text-light h-screen max-h-[730px]  md:max-h-[830px]"
       )}
     >
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="relative mt-24 sm:mt-32 md:mt-36 ">
         <section className="relative z-10 text-center sm:text-left">

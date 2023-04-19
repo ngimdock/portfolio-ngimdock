@@ -24,10 +24,10 @@ export const Header = ({
       ref={targetRef}
       className={clsx(
         isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container text-light"
+        "container text-light pt-24"
       )}
     >
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className="items-end grid-cols-8 mt-24 text-center sm:mt-28 sm:grid sm:text-left">
         <div className="col-span-6">

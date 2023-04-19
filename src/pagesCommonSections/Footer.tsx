@@ -6,7 +6,7 @@ import { SOCIALS_MEDIAS } from "../enums";
 import { ROUTE_HOME } from "../lib";
 
 export const Footer = () => {
-  const [, , , ...secondColumn] = FOOTER_ROUTES;
+  const [, , , , ...secondColumn] = FOOTER_ROUTES;
 
   const { linkedin, twitter, github, freecodecamp } = SOCIALS_MEDIAS;
 
@@ -40,24 +40,24 @@ export const Footer = () => {
         </div>
 
         <ul className="flex-col hidden space-y-2 text-xs font-Inter sm:flex">
-          {FOOTER_ROUTES.slice(0, 3).map((route: FooterRoute, index) => (
+          {FOOTER_ROUTES.slice(0, 4).map((route: FooterRoute, index) => (
             <LinkFooter linkData={route} key={index} />
           ))}
         </ul>
 
-        <ul className="flex-col hidden space-y-2 text-xs font-Inter sm:flex">
+        <ul className="flex-col hidden space-y-5 text-xs md:space-y-2 font-Inter sm:flex">
           {secondColumn.map((route: any, index) => (
             <LinkFooter linkData={route} key={index} />
           ))}
         </ul>
 
-        <ul className="flex flex-col space-y-2 text-xs font-Inter sm:hidden">
+        <ul className="flex flex-col space-y-5 text-xs font-Inter sm:hidden">
           {FOOTER_ROUTES.map((route: any, index) => (
             <LinkFooter linkData={route} key={index} />
           ))}
         </ul>
 
-        <ul className="flex flex-col space-y-2 text-xs font-Inter">
+        <ul className="flex flex-col space-y-5 text-xs sm:space-y-2 font-Inter">
           {socialMediasFooter.map(({ link, name }, index) => (
             <a
               href={link}
