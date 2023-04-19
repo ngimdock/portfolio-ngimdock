@@ -2,8 +2,21 @@ import { reasonGithub, reasonLink } from "../enums";
 import { Tags } from "./tags";
 import { TECH_STACK, TechStackType } from "./techno";
 
-const { nestjs, firebase, reactjs, tailwind, postgres, prisma, flutter } =
-  TECH_STACK;
+const {
+  nestjs,
+  firebase,
+  reactjs,
+  tailwind,
+  postgres,
+  prisma,
+  flutter,
+  mongoDb,
+  mongoose,
+  render,
+  vercel,
+  stripe,
+  jest,
+} = TECH_STACK;
 
 const {
   applicationWeb,
@@ -55,7 +68,7 @@ export type Project = {
     solution: string;
     myTasks: string;
     techStack: TechStackType[];
-    team: string;
+    team?: string;
   };
   challenges?: Challenge[];
   images?: string[];
@@ -65,9 +78,9 @@ export const ALL_PROJECTS: Project[] = [
   {
     id: 1,
     featured: 1,
-    name: "Vision Car",
+    name: "Vision Car.",
     description:
-      "Une application web et mobile pour dématérialiser la délivrance des cartes nationales d'identités(cni) du cameroun.",
+      "API Rest complete pour une application de ventes et gestion des voitures de luxe.",
     mainImage: "images.jpeg",
     tags: [ingenirie, projetsSolo, backend],
     infos: {
@@ -78,10 +91,21 @@ export const ALL_PROJECTS: Project[] = [
       reasonForNoLink: reasonLink.notOnline,
     },
     details: {
-      problem: "The problem here",
-      solution: "The sution here",
-      myTasks: "My task here",
-      techStack: [nestjs, reactjs, postgres, prisma],
+      problem: `Je souhaite approfondir mes compétences et mettre en pratique l'ensembles 
+      des nouvelles technologies que j'ai apprise. Je veux m'assurer de développer une 
+      application qui contient des fonctionnalités très avancés et qui peut être utilisé
+      dans le monde réel. Une application dont je vais m'occuper de toutes les phase les plusimportantes 
+      du développement d'un logiciel: Analyse des besoin, conception, design, développement, test, documentation,
+      deploiement.`,
+      solution: `Pour y arriver, je me suis crée une entreprise fictive au nom de vision-car qui vend 
+      des voitures de luxe. j'ai rescencé les fonctionnalités les plus importantes qu'une application 
+      similaire aurait besoin, gestion de l'authentification, gestion des rôles des acteurs du système, 
+      restreindre les access aux ressources de l'API avec des authorization, gestion de tous les acteurs, 
+      commmandes, factures. Gestion de l'intéractivités entre les acteurs. tests unitaires et end to end, `,
+      myTasks: `après j'ai réalisé la conception qui m'a permit de deduire le schema 
+        de la BD. Ensuite je me suis mis à développer le backend du projet. En parallele du développement du backend, 
+        je réalisait les maquettes du projet.`,
+      techStack: [nestjs, reactjs, postgres, prisma, stripe, jest],
     },
     images: ["image1", "image2"],
   },
@@ -90,8 +114,8 @@ export const ALL_PROJECTS: Project[] = [
     id: 2,
     featured: 2,
     name: "C.N.I.C",
-    description:
-      "Un système numérique permetant la dématérialisation  des Carte Nationale d'Identité(CNI) du Cameroun 🇨🇲.",
+    description: `Un système  numérique efficace et pratique pour  la dématérialisation de la délivrance des 
+      Cartes Nationales d'Identité (CNI) au Cameroun 🇨🇲.`,
     mainImage: "images.jpeg",
     tags: [ingenirie, projetDequipe, backend, Tags.nestjs, Tags.reactjs],
     infos: {
@@ -100,36 +124,52 @@ export const ALL_PROJECTS: Project[] = [
       publishDate: "22 janvier 2022",
       reasonForNoGithub: reasonGithub.privateCode,
       reasonForNoLink:
-        "Le projet est en cours d'évaluation par le gouvernnement Camerounais.",
+        "Le projet est un cours d'évaluation par le gouvernement camerounais",
     },
     details: {
-      problem:
-        "Le Cameroun rencontre un serieux problème de délivrance des carte nationnale d'identité dans les delaie prévu. Cette difficulté à une consequence directe sur la population qui ne peuvent éffectuer des démarches administratives.",
-      solution:
-        "Pour venir à bout de ce challenge nous avons pensé à un système informatique simple qui vas permettre de délivrer des CNI numérique qui pourons être uniquement avec un smartphone en quelques minutes.",
-      myTasks: `Pour ce projet très passionant, j'ai intervenu pendant les étapes
-       de conception et de développement côté serveur. Une fois que nous avons mis en 
-       place les documents nécessaires de conception, en temps que membre de l'équippe  
-       backend mon rôle était d'initialiser et interconnecter les technologies 
-       nécessaire du projet, de définir une architecture adapté qui permettrons une intégration facile des collègues, d'implémenter les block de code réutilisables qui permettrons 
-       aux autres développeurs backend un style de développement homogène, d'implementer 
-       des fonctionnalités qui m'était assignés, de review le côte de mes collegues et 
-       leurs des améliorations, de communiquer avec l'équipe Frontend et Mobile pour 
-       leurs aider à tirer un bon parti de l'API, de participer aux reunions et donner 
-       le compte rendu de l'avancement de projet côté backend.`,
-      techStack: [nestjs, reactjs, postgres, prisma, flutter],
-      team: "Notre équippe est constitués de 09 membres dont 1 designer, 2 développeurs frontend, 2 développeurs backend et 3 dévelopeurs mobiles et 1 développeur fullstack.",
+      problem: `La problématique de délivrance des cartes nationales d'identité est 
+        devenue une préoccupation majeure au Cameroun en raison des retards 
+        accumulés avant la distribution de ces cartes. Cette situation a des 
+        conséquences directes sur les citoyens qui risquent de rencontrer des 
+        difficultés lors de voyages ou dans la constitution de dossiers administratifs etc. 
+        Ainsi, il est nécessaire d'innover le système en proposant une solution moderne 
+        qui facilite les démarches des citoyens tout en permettant au gouvernement de 
+        réaliser des économies.`,
+      solution: `Pour remédier à cette problématique, nous avons mis  en 
+      place un système informatique simplifié permettant la délivrance de cartes nationales 
+      d'identité numériques. Les informations de ces cartes pourront être obtenues en quelques 
+      minutes et utilisées exclusivement via un smartphone, offrant ainsi une solution moderne 
+      et pratique pour les citoyens. De plus, cette solution pourrait permettre au gouvernement 
+      de réaliser des économies en réduisant les coûts liés à la production et à la distribution 
+      des cartes au format papier.`,
+      myTasks: `Au cours de ce projet passionnant, j'ai intervenu pendant les étapes de 
+      conception et de développement. Après que nous avons mis en place les documents de 
+      conception nécessaires, en tant que membre de l'équipe backend, j'ai initialisé et 
+      interconnecter les technologies requises pour le projet côté serveur, définir une 
+      architecture adaptée pour permettre une intégration facile des autres développeurs, 
+      implémenter des blocs de code réutilisables pour assurer un style de développement 
+      homogène par l'équipe, implémenter les fonctionnalités de l'API et des optimisations, 
+      faire la review du travail de mes collègues et si possible proposer des pistes améliorations. 
+      Communiquer avec l'équipe Frontend et Mobile pour une meilleure utilisation de l'API,  participer 
+      aux réunions avec le MOA pour lui fournir plus d'informations sur le projet backend.`,
+      techStack: [nestjs, reactjs, mongoDb, flutter, mongoose, render, vercel],
+      team: "Notre équipe est constituée de 10 membres, dont 1 designer, 3 développeurs frontend, 2 développeurs backend, 3 développeurs mobiles et 1 développeur fullstack. ",
     },
 
-    challenges: [
-      {
-        challengeTitle: "Notre plus grand challenge",
-        challengeDescription:
-          "Une fois que notre MOA nous a fait part de l'institulé du projet(Mettre en place système informatique pour la dématérealisation des CNI du Cameroun), il était question pour nous de reflechir comment le système devais fonctionner dans ça globalité",
-        solutionTitle: "La solution ingénieuse de l'équippe.",
-        solutionDescription: "la solution ",
-      },
-    ],
+    // challenges: [
+    //   {
+    //     challengeTitle: "Notre plus grand challenge",
+    //     challengeDescription: `Notre MOA nous a présenté un projet à réaliser se résumant à une
+    //     simple ligne : "mettre en place un système informatique pour dématérialiser la délivrance
+    //     des CNI du Cameroun". Le projet était très succinct et nous disposions de peu
+    //     d'informations pour proposer une solution. Il était donc nécessaire pour nous de partir
+    //     de cette base simpliste pour concevoir et développer un nouveau système complet afin de
+    //     mener à bien cette mission.`,
+    //     solutionTitle: "La solution ingénieuse de l'équippe.",
+    //     solutionDescription:
+    //       "Nous avons commencé par réaliser plusieurs réunions entre membre de l'équippe pour définir les besoins du projet. Ensuite nous nous somme conserté pour définir la meilleur approche ou système à mettre en place pour répondre à ces besoins. Nous avons ensuit développé un prototype du système à mettre en place",
+    //   },
+    // ],
 
     images: ["image1", "image2"],
   },

@@ -1,5 +1,5 @@
 export enum reasonGithub {
-  privateCode = "Le projet est privé sur github",
+  privateCode = "Le programme de ce projet est propriétaire.",
 }
 
 export enum reasonLink {

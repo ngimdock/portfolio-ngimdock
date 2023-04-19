@@ -13,6 +13,7 @@ import logo_nextjs from "../../public/assets/svg/logos_nextjs2.svg";
 import logo_render from "../../public/assets/svg/simple-icons_render.svg";
 import logo_socketio from "../../public/assets/svg/logos_socket-io.svg";
 import logo_flutter from "../../public/assets/svg/logo_flutter.svg";
+import logo_mongoose from "../../public/assets/svg/logo_mongoose.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -30,6 +31,7 @@ export type TechStackNames =
   | "postgres"
   | "prisma"
   | "mongoDb"
+  | "mongoose"
   | "reactjs"
   | "tailwind"
   | "firebase"
@@ -39,7 +41,10 @@ export type TechStackNames =
   | "nextjs"
   | "java"
   | "socketio"
-  | "flutter";
+  | "flutter"
+  | "vercel"
+  | "stripe"
+  | "jest";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -93,6 +98,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     src: logo_mongodb,
     setOpacity: false,
     link: "https://www.mongodb.com/",
+    selected: false,
+  },
+
+  mongoose: {
+    tecnoName: "Mongoose",
+    alt: "Mongoose",
+    // src: "logo_mongodb.svg",
+    src: logo_mongoose,
+    setOpacity: false,
+    link: "https://mongoosejs.com/",
     selected: false,
   },
 
@@ -194,6 +209,36 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     src: logo_flutter,
     sizeIcon: 32,
     link: "https://flutter.dev/",
+    setOpacity: false,
+    selected: false,
+  },
+
+  vercel: {
+    tecnoName: "Vercel",
+    alt: "Vercel",
+    src: logo_flutter,
+    sizeIcon: 32,
+    link: "https://vercel.com/",
+    setOpacity: false,
+    selected: false,
+  },
+
+  stripe: {
+    tecnoName: "Stripe",
+    alt: "Stripe",
+    src: logo_flutter,
+    sizeIcon: 32,
+    link: "https://stripe.com/fr-us",
+    setOpacity: false,
+    selected: false,
+  },
+
+  jest: {
+    tecnoName: "Jest",
+    alt: "Jest",
+    src: logo_flutter,
+    sizeIcon: 32,
+    link: "https://jestjs.io/",
     setOpacity: false,
     selected: false,
   },

@@ -18,13 +18,13 @@ export const About = () => {
             voluptates hic impedit tempore, veritatis cum debitis ex,
             repudiandae incidunt magnam doloremque tenetur commodi maiores
             dignissimos odio, eaque molestiae voluptate facilis?`,
-    image: "/assets/images/images.jpeg",
+    image: "images.jpeg",
   };
 
   const HOOBIES = {
     h2: "Histoire et hobbies.",
     text: `Si j'était un animal sauvage, je serait sûrement un ours, l'ours de`,
-    image: "/assets/images/images.jpeg",
+    image: "images.jpeg",
   };
 
   return (

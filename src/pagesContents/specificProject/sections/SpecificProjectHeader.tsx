@@ -94,6 +94,9 @@ export const SpecificProjectHeader = ({
                 <div className="hidden hover:cursor-not-allowed hover:opacity-80 animate sm:block">
                   {projectGithub}
                 </div>
+                <Para classe="sm:hidden w-44 mx-auto text-center">
+                  {project.infos.reasonForNoLink}
+                </Para>
               </Tooltip>
             )}
 

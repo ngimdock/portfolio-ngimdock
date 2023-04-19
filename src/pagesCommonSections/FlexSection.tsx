@@ -40,7 +40,7 @@ export const FlexSectionLeft = ({
     >
       <div
         style={{
-          backgroundImage: `url('${image}')`,
+          backgroundImage: `url('/assets/images/${image}')`,
         }}
         className="w-full h-56 sm:h-auto "
       ></div>
@@ -90,7 +90,7 @@ export const FlexSectionRight = ({
 
       <div
         style={{
-          backgroundImage: `url('${image}')`,
+          backgroundImage: `url('/assets/images/${image}')`,
         }}
         className="w-full h-56 sm:h-auto "
       ></div>
