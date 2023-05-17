@@ -3,6 +3,7 @@ import {
   ABOUT,
   CONTACT,
   FORMATIONS,
+  POSITION_Y,
   PROJECTS,
   RESUME,
   ROUTE_ABOUT,
@@ -75,8 +76,8 @@ export const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "relative z-50 flex items-center justify-between w-full pt-8",
-        positionY > 120 && " pt-6"
+        "relative z-50 flex items-center justify-between w-full "
+        // positionY > POSITION_Y && " pt-4"
       )}
     >
       <Link

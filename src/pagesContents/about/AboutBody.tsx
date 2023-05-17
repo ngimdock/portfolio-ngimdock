@@ -31,8 +31,8 @@ export const AboutBody = () => {
   return (
     <>
       <Header
-        title={`Hello c'est ${userName}, l'ours de winterfell.`}
-        description={`Je m'apelle ${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} mais je suis beaucoup plus connue sur le nom de ${userName}.`}
+        title={`Hey c'est ${userName}, l'ours de winterfell.`}
+        description={`Je suis ${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} mais la plupart m'appelle ${userName}.`}
         buttonCTA={
           <div className="flex justify-center ">
             <ScrollDown />

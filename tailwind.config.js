@@ -12,14 +12,9 @@ module.exports = {
       },
 
       colors: ({ colors }) => ({
-        // primary: "#43B3AE",
         // primary: "#39A78D",
-        // primary: "#0085b2",
-        primary: "#0098cc",
-        // primary: "#00abe5",
-        // primary: "#00BFFF",
-        // primary: "#0b84ba",
-        // primary: "#C03247",
+        // primary: "#0098cc",
+        primary: "#C03247",
         "primary-dark": "#08638b",
         dark: "#121212",
         "dark-2": "#2B2B2B",

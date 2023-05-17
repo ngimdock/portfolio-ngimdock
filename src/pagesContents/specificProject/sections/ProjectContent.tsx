@@ -3,8 +3,9 @@ import { title } from "process";
 import { ReactNode } from "react";
 import useIsInViewport from "use-is-in-viewport";
 import { H2, Para } from "../../../components";
-import { Project } from "../../../data";
+import { Challenge, Project } from "../../../data";
 import { TagBg } from "../../../components/tag-bg/tabBg";
+import Image from "next/image";
 
 type ProjectContentProps = {
   project: Project;
@@ -25,7 +26,9 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
           <Card title="Le problème">{project.details.problem}</Card>
           <Card title="La solution">{project.details.solution}</Card>
           <Card title="Ma mission">{project.details.myTasks}</Card>
-          <Card title="Stacks utilisées & Equipe">
+          <Card
+            title={`Stacks utilisées ${project.details.team ? "& Equipe" : ""}`}
+          >
             <div className="flex flex-wrap items-center mt-8 gap-x-4 gap-y-2">
               {project.details.techStack.map((item, index) => (
                 <TagBg color="dark" size="lg" key={index} textColor="">
@@ -73,12 +76,7 @@ export const Card = ({ title, children, primaryTitle }: CardPops) => {
 };
 
 type ChallengeBoxProps = {
-  challenge: {
-    challengeTitle: string;
-    challengeDescription: string;
-    solutionTitle: string;
-    solutionDescription: string;
-  };
+  challenge: Challenge;
 };
 
 const ChallengeBox = ({ challenge }: ChallengeBoxProps) => {
@@ -87,9 +85,10 @@ const ChallengeBox = ({ challenge }: ChallengeBoxProps) => {
     challengeDescription,
     solutionTitle,
     solutionDescription,
+    solutionImage,
   } = challenge;
   return (
-    <article className="p-4 sm:p-8 bg-dark-3 hover:-translate-y-4 animate">
+    <article className="p-4 sm:p-8 md:py-10 bg-dark-3 hover:-translate-y-4 animate">
       <div className="flex flex-col max-w-4xl space-y-8">
         <div>
           <H2>{challengeTitle}</H2>
@@ -99,6 +98,14 @@ const ChallengeBox = ({ challenge }: ChallengeBoxProps) => {
         <div>
           <H2>{solutionTitle}</H2>
           <Para size="sm">{solutionDescription}</Para>
+          <div className="flex justify-between mt-6">
+            {solutionImage && (
+              <img
+                alt={solutionTitle}
+                src={`/assets/images/${solutionImage}`}
+              />
+            )}
+          </div>
         </div>
       </div>
     </article>

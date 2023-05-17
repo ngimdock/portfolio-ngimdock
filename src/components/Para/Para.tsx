@@ -23,7 +23,7 @@ export const Para = ({ children, size, classe }: ParaType) => {
 };
 
 const defaultProps: ParaType = {
-  children: "paragraph",
+  children: "",
   size: "md",
 };
 

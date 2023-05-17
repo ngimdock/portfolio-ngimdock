@@ -1,3 +1,4 @@
+import next from "next/types";
 import { reasonGithub, reasonLink } from "../enums";
 import { Tags } from "./tags";
 import { TECH_STACK, TechStackType } from "./techno";
@@ -16,6 +17,7 @@ const {
   vercel,
   stripe,
   jest,
+  nextjs,
 } = TECH_STACK;
 
 const {
@@ -40,11 +42,12 @@ export enum ProjectType {
   engineering = "Ingénierie",
 }
 
-interface Challenge {
+export interface Challenge {
   challengeTitle: string;
   challengeDescription: string;
   solutionTitle: string;
   solutionDescription: string;
+  solutionImage?: string;
 }
 
 export type Project = {
@@ -77,41 +80,6 @@ export type Project = {
 export const ALL_PROJECTS: Project[] = [
   {
     id: 1,
-    featured: 1,
-    name: "Vision Car.",
-    description:
-      "API Rest complete pour une application de ventes et gestion des voitures de luxe.",
-    mainImage: "images.jpeg",
-    tags: [ingenirie, projetsSolo, backend],
-    infos: {
-      industrie: "Informatique",
-      type: ProjectType.SHOWCASE_WEBSITE,
-      publishDate: "22 janvier 2022",
-      github: "https://github.com/ngimdock/vision-car-server",
-      reasonForNoLink: reasonLink.notOnline,
-    },
-    details: {
-      problem: `Je souhaite approfondir mes compétences et mettre en pratique l'ensembles 
-      des nouvelles technologies que j'ai apprise. Je veux m'assurer de développer une 
-      application qui contient des fonctionnalités très avancés et qui peut être utilisé
-      dans le monde réel. Une application dont je vais m'occuper de toutes les phase les plusimportantes 
-      du développement d'un logiciel: Analyse des besoin, conception, design, développement, test, documentation,
-      deploiement.`,
-      solution: `Pour y arriver, je me suis crée une entreprise fictive au nom de vision-car qui vend 
-      des voitures de luxe. j'ai rescencé les fonctionnalités les plus importantes qu'une application 
-      similaire aurait besoin, gestion de l'authentification, gestion des rôles des acteurs du système, 
-      restreindre les access aux ressources de l'API avec des authorization, gestion de tous les acteurs, 
-      commmandes, factures. Gestion de l'intéractivités entre les acteurs. tests unitaires et end to end, `,
-      myTasks: `après j'ai réalisé la conception qui m'a permit de deduire le schema 
-        de la BD. Ensuite je me suis mis à développer le backend du projet. En parallele du développement du backend, 
-        je réalisait les maquettes du projet.`,
-      techStack: [nestjs, reactjs, postgres, prisma, stripe, jest],
-    },
-    images: ["image1", "image2"],
-  },
-
-  {
-    id: 2,
     featured: 2,
     name: "C.N.I.C",
     description: `Un système  numérique efficace et pratique pour  la dématérialisation de la délivrance des 
@@ -156,22 +124,69 @@ export const ALL_PROJECTS: Project[] = [
       team: "Notre équipe est constituée de 10 membres, dont 1 designer, 3 développeurs frontend, 2 développeurs backend, 3 développeurs mobiles et 1 développeur fullstack. ",
     },
 
-    // challenges: [
-    //   {
-    //     challengeTitle: "Notre plus grand challenge",
-    //     challengeDescription: `Notre MOA nous a présenté un projet à réaliser se résumant à une
-    //     simple ligne : "mettre en place un système informatique pour dématérialiser la délivrance
-    //     des CNI du Cameroun". Le projet était très succinct et nous disposions de peu
-    //     d'informations pour proposer une solution. Il était donc nécessaire pour nous de partir
-    //     de cette base simpliste pour concevoir et développer un nouveau système complet afin de
-    //     mener à bien cette mission.`,
-    //     solutionTitle: "La solution ingénieuse de l'équippe.",
-    //     solutionDescription:
-    //       "Nous avons commencé par réaliser plusieurs réunions entre membre de l'équippe pour définir les besoins du projet. Ensuite nous nous somme conserté pour définir la meilleur approche ou système à mettre en place pour répondre à ces besoins. Nous avons ensuit développé un prototype du système à mettre en place",
-    //   },
-    // ],
+    challenges: [
+      {
+        challengeTitle: "Challenge rencontré.",
+        challengeDescription: `Trouver le système informatique pour numériser la délivrance de ces cartes nationales d'identité a été notre plus grand défi.`,
+        solutionTitle: "La solution ingénieuse de l'équippe.",
+        solutionDescription: `Nous nous sommes organisés en équipe afin de trouver une solution à proposer. 
+        Après trois réunions au cours desquelles nous avons discuté et fait des propositions entre 
+        membres, nous sommes convenus de mettre en place un système constitué de trois 
+        applications : une application frontend, une application mobile et une application backend. 
+        L'application frontend permettra une gestion des utilisateurs par les différents commissariats,
+         tandis que l'application mobile permettra à chaque utilisateur du système d'accéder à sa CNI 
+         via un QR-code fourni par le commissariat. Enfin, l'application backend fournira les API 
+         nécessaires aux deux applications clientes.`,
+      },
+    ],
 
     images: ["image1", "image2"],
+  },
+
+  {
+    id: 2,
+    featured: 1,
+    name: "Vision Car.",
+    description:
+      "API Rest complete pour une application de ventes et gestion des voitures de luxe.",
+    mainImage: "images.jpeg",
+    tags: [ingenirie, projetsSolo, backend],
+    infos: {
+      industrie: "Informatique",
+      type: ProjectType.SHOWCASE_WEBSITE,
+      publishDate: "22 janvier 2022",
+      github: "https://github.com/ngimdock/vision-car-server",
+      reasonForNoLink: reasonLink.notOnline,
+    },
+    details: {
+      problem: `Je souhaite approfondir mes compétences et mettre en pratique l'ensembles 
+      des nouvelles technologies que j'ai apprise. Je veux m'assurer de développer une 
+      application qui contient des fonctionnalités très avancés et qui peut être utilisé
+      dans le monde réel. Une application dont je vais m'occuper de toutes les phase les plusimportantes 
+      du développement d'un logiciel: Analyse des besoin, conception, design, développement, test, documentation,
+      deploiement.`,
+      solution: `Pour y arriver, je me suis crée une entreprise fictive au nom de vision-car qui vend 
+      des voitures de luxe. j'ai rescencé les fonctionnalités les plus importantes qu'une application 
+      similaire aurait besoin, gestion de l'authentification, gestion des rôles des acteurs du système, 
+      restreindre les access aux ressources de l'API avec des authorization, gestion de tous les acteurs, 
+      commmandes, factures. Gestion de l'intéractivités entre les acteurs. tests unitaires et end to end, `,
+      myTasks: `après j'ai réalisé la conception qui m'a permit de deduire le schema 
+        de la BD. Ensuite je me suis mis à développer le backend du projet. En parallele du développement du backend, 
+        je réalisait les maquettes du projet.`,
+      techStack: [nestjs, reactjs, postgres, prisma, stripe, jest],
+    },
+    images: ["contact-call-to-action.jpg", "dan.png"],
+    challenges: [
+      {
+        challengeTitle: "Premier challenge",
+        challengeDescription:
+          "Un des plus grand challenge sur ce projet à été d'éffectuer une bonne conception de la base de donnée.",
+        solutionTitle: "Solution de conception",
+        solutionDescription:
+          "J'ai réalisé un MCD(Modèle Conceptuel de Donnée) évolutif que j'ai pu mettre en place après avoir bien définir les besoins du projet. Le schema de la BD est très adapté s'adapte facilement à des mises à jour.",
+        solutionImage: "contact-call-to-action.jpg",
+      },
+    ],
   },
 
   {
@@ -179,7 +194,7 @@ export const ALL_PROJECTS: Project[] = [
     featured: 2,
     name: "Ngimdock portfolio",
     description:
-      "Mon site vitrine pour mettre en avant mes compétences de développeur d'applications web.",
+      "Mon portfolio pour mettre en avant ses compétences de développeurs web auprès de mes potentiels clients.",
     mainImage: "contact-call-to-action.jpg",
     tags: [Tags.frontend, Tags.siteVitrine, Tags.projetsSolo, Tags.reactjs],
     infos: {
@@ -190,40 +205,59 @@ export const ALL_PROJECTS: Project[] = [
       reasonForNoGithub: reasonGithub.privateCode,
     },
     details: {
-      problem: `Bear est une entreprise de prestation des services dans 
-        le développement des application web qui souhaite mettre en 
-        avant ses réalisations afin obtenir des prospects qualifiers.`,
-      solution: `Nous avons pensé à lui développer un site vitrine sur-mesure 
-      avec une interface utilisateur agréable et adapté à ça clientèle.
-      Le but principalece ici est de mettre en avant ses réa`,
-      myTasks: "My task here",
-      techStack: [reactjs, tailwind, firebase],
-      team: "Team details",
+      problem: `Bear est une entreprise de prestation des services dans le développement 
+      des applications web qui souhaite mettre en avant ses réalisations afin d'obtenir 
+      des prospects qualifiers.`,
+      solution: `J'ai pensé à lui développer un site vitrine sur mesure avec une 
+      interface utilisateur agréable et adaptée à sa clientèle. Le but principal 
+      ici est de mettre en avant ses réalisations.`,
+      myTasks:
+        "Je suis chargé de développer en toute autonomie le projet dans sa globalité,  réalisation des maquettes, implémentation avec les technologies modernes, optimisation des performances, mise en ligne et maintenance.",
+      techStack: [nextjs, tailwind, firebase],
     },
     challenges: [
       {
         challengeTitle: "Premier challenge",
         challengeDescription:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste",
+          "Développer un site avec une interface et  expérience utilisateur remarquable.",
         solutionTitle: "Résolution du challenge",
         solutionDescription:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste, illo animi repellendus odit veniam atque. Error recusandae",
-      },
-
-      {
-        challengeTitle: "Deuxième challenge",
-        challengeDescription:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste",
-        solutionTitle: "Résolution du challenge",
-        solutionDescription:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo ullam cupiditate cum consequuntur recusandae, ab iste, illo animi repellendus odit veniam atque. Error recusandae",
+          "Je me suis inspiré de plusieurs sites en ligne afin de mettre en place les maquettes du projet sur figma, en utilisant un framwork comme nextjs, la vitesse de chargement du site est excellente et je mise aussi sur l'accessibilité et le referencement naturel.",
+        solutionImage: "contact-call-to-action.jpg",
       },
     ],
     images: ["dan.png", "contact-call-to-action.jpg", "nest.png", "dan.png"],
   },
 
   {
-    id: 2,
+    id: 4,
+    featured: 2,
+    name: "NTI-shop",
+    description:
+      "Une application e-commerce de vente des appareils électroniques.",
+    mainImage: "images.jpeg",
+    tags: [Tags.ingenirie, Tags.projetsSolo],
+    infos: {
+      industrie: "E-commerce",
+      type: ProjectType.WEB_APP,
+      publishDate: "22 janvier 2022",
+      link: "https://nti-shop.web.app/",
+      reasonForNoGithub: reasonGithub.privateCode,
+    },
+    details: {
+      problem:
+        "Le client veut gagner en crédibilité et augmenter les ventes de ses appareils avec une présence sur le web.",
+      solution:
+        "J'ai mis en place une application web avec laquelle il pourra gérer ses articles depuis une interface d'administration pour permettre aux clients de consulter son catalogue et effectuer les commandes plus simplement.",
+      myTasks:
+        "Je me suis chargé de développer le projet depuis l'étape de réalisation des interfaces du site jusqu'à sa mise en ligne.",
+      techStack: [reactjs, tailwind, firebase],
+    },
+    images: [],
+  },
+
+  {
+    id: 5,
     featured: 4,
     name: "Business-Teach",
     description:
@@ -248,32 +282,7 @@ export const ALL_PROJECTS: Project[] = [
   },
 
   {
-    id: 4,
-    featured: 2,
-    name: "NTI-shop",
-    description:
-      "Une application web et mobile pour dématérialiser la délivrance des cartes nationales d'identités(cni) du cameroun.",
-    mainImage: "images.jpeg",
-    tags: [Tags.ingenirie, Tags.projetsSolo],
-    infos: {
-      industrie: "Informatique",
-      type: ProjectType.SHOWCASE_WEBSITE,
-      publishDate: "22 janvier 2022",
-      link: "https://nti-shop.web.app/",
-      reasonForNoGithub: reasonGithub.privateCode,
-    },
-    details: {
-      problem: "The problem here",
-      solution: "The sution here",
-      myTasks: "My task here",
-      techStack: [reactjs, tailwind, firebase],
-      team: "Team details",
-    },
-    images: ["image1", "image2"],
-  },
-
-  {
-    id: 5,
+    id: 6,
     name: "Becon website",
     description:
       "Une application web et mobile pour dématérialiser la délivrance des cartes nationales d'identités(cni) du cameroun.",

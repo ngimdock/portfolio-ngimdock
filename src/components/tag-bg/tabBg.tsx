@@ -14,7 +14,7 @@ export const TagBg = ({ size, color, children, classe }: TagBgType) => {
       className={clsx(
         size === "sm" && "py-2 px-3.5 text-xs",
         size === "md" && "p-3 px-5 text-xs",
-        size === "lg" && "p-4 px-6 text-sm",
+        size === "lg" && "py-3 px-6 text-sm",
         color === "green" &&
           " text-light bg-green-700 hover:bg-green-600 animate",
         color === "dark" && "text text-light bg-dark",

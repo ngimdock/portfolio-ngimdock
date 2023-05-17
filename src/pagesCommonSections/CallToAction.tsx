@@ -35,6 +35,8 @@ export const CallToAction = ({ actionData, classe }: CallToActionProps) => {
 
   const { button, image, title } = actionData;
 
+  console.log({ image });
+
   return (
     <section
       ref={targetRef}

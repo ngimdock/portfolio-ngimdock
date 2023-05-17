@@ -17,6 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Navbar } from "../src/pagesCommonSections";
 import clsx from "clsx";
 import { useScrollWindow } from "../src/hooks";
+import { POSITION_Y } from "../src/lib";
 
 register();
 
@@ -29,12 +30,12 @@ export default function App({ Component, pageProps }: AppProps) {
       <NavbarMobile />
 
       <div className={clsx("flex justify-center")}>
-        <div className={clsx("container fixed top-0 z-40 mx-auto ")}>
+        <div className={clsx(clsx("container fixed top-0 z-40 mx-auto p-4"))}>
           <Navbar />
         </div>
 
-        {positionY > 120 && (
-          <div className="fixed top-0 z-30 w-full h-20 py-4 mx-auto shadow-sm bg-dark/70 shadow-light/10"></div>
+        {positionY > POSITION_Y && (
+          <div className="fixed top-0 z-30 w-full py-2 h-16 mx-auto shadow-sm  bg-dark-3/95"></div>
         )}
       </div>
       <Component {...pageProps} />

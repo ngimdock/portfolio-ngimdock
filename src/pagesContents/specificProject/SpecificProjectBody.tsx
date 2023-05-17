@@ -15,7 +15,7 @@ export const SpecificProjectBody = ({ project }: SpecificProjectBodyProps) => {
   return (
     <>
       <section className="container">
-        <Navbar />
+        {/* <Navbar /> */}
         <SpecificProjectHeader project={project} />
         <ProjectContent project={project} />
         {images.length ? <ProjectImages images={images} /> : null}
