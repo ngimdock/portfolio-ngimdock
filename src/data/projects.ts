@@ -260,12 +260,11 @@ export const ALL_PROJECTS: Project[] = [
     id: 5,
     featured: 4,
     name: "Business-Teach",
-    description:
-      "Une application web et mobile pour dématérialiser la délivrance des cartes nationales d'identités(cni) du cameroun.",
+    description: "Une application de recherche des répétiteurs au Cameroun.",
     mainImage: "images.jpeg",
-    tags: [Tags.ingenirie, Tags.projetDequipe],
+    tags: [Tags.applicationWeb, Tags.projetDequipe, Tags.frontend],
     infos: {
-      industrie: "Informatique",
+      industrie: "Enseignement",
       type: ProjectType.WEB_APP,
       publishDate: "23 janvier 2022",
       link: "https://bteach-server.web.app/",
