@@ -260,7 +260,7 @@ export const ALL_PROJECTS: Project[] = [
     id: 5,
     featured: 4,
     name: "Business-Teach",
-    description: "Une application de recherche des répétiteurs au Cameroun.",
+    description: "Une application pour trouver des répétiteurs au Cameroun.",
     mainImage: "images.jpeg",
     tags: [Tags.applicationWeb, Tags.projetDequipe, Tags.frontend],
     infos: {
@@ -271,11 +271,13 @@ export const ALL_PROJECTS: Project[] = [
       github: "https://github.com/ngimdock/bteach",
     },
     details: {
-      problem: "The problem here",
-      solution: "The sution here",
-      myTasks: "My task here",
+      problem:
+        "Le point de départ de ce projet était la participation à un programme de développement organisé par Google, où les participants devaient développer une application pour résoudre un problème concret dans leur pays.",
+      solution:
+        "Nous avons choisi d'intervenir dans le domaine de l'enseignement en créant une plateforme permettant aux personnes de trouver des professeurs particuliers sur mesure, en fonction de leur profil et  qualification.",
+      myTasks:
+        "Mon intervention principale a été durant la phase de développement des fonctionnalités, ainsi que la réalisation et l'intégration des maquettes.",
       techStack: [reactjs, tailwind, firebase],
-      team: "Team details",
     },
     images: [],
   },
