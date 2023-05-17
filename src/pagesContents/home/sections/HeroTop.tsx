@@ -29,9 +29,9 @@ export const HeroTop = () => {
           <h1 className="text-light header-h1 font-Inter">
             <span className="block header-name">Ngimdock Zemfack,</span>
             <span className="header-job ">
-              Software Engineer, nest
+              Software Engineer, Node
               <span className="font-thin font-Inter fint-">-</span>
-              react.
+              React.
             </span>
           </h1>
           <p className="mt-3 sm:text-lg text-light header-p">
