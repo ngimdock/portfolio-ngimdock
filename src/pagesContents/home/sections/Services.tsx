@@ -33,11 +33,11 @@ export const Services = () => {
       <div className="flex flex-col items-center col-span-4 md:items-start">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <H3>services</H3>
-          <H2 classe="mt-2">Développement web sur-mésure.</H2>
+          <H2 classe="mt-2">Développement web sur-mesure.</H2>
           <Para classe="mt-3">
-            Je pourais intégrer votre équipe pour augmenter la productivité,
-            vous développer une solution complète ou encore former les futurs
-            développeur de votre entreprise.
+            Je pourrais intégrer votre équipe afin d'augmenter la productivité,
+            Développer une solution complète de votre produit ou encore former
+            les futurs développeurs de votre entreprise.
           </Para>
         </div>
 
