@@ -27,8 +27,8 @@ export const ProjectsBody = () => {
   return (
     <>
       <Header
-        title="Présentation de mes projets ."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, lacinia conse"
+        title="Consulter tous mes projets."
+        description="Une liste non exhaustive des projets donc j'ai développé ou fait partir de l'équipe de développement."
         buttonCTA={
           <ButtonLink href={ROUTE_CONTACT} color="primary">
             Me contacter

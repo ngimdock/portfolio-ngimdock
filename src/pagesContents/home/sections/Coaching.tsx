@@ -10,11 +10,7 @@ export const Coaching = () => {
     h3: "Formations",
     h2: "Je forme les futurs développeurs de ton entreprise / organisation.",
     image: "images.jpeg",
-    text: `Au cours de mon parcours, j'ai acquis des compétences techniques et
-            personnelles qui ne peuvent attendre d'être partagé. Je m'occupe de
-            la formation des futurs développeurs de ton entreprise, je les
-            enseigne tous ce qu'ils ont besoin pour développer des applications
-            robustes.`,
+    text: `Au cours de mon parcours, j'ai acquis des compétences techniques et personnelles qui ne peuvent attendre d'être partagé. Je m'occupe de la formation des futurs développeurs de ton entreprise, je les enseigne tout ce dont ils ont besoin pour développer des applications robustes..`,
 
     children: (
       <ButtonLink href={ROUTE_FORMATIONS} color="primary" classe="mt-5">

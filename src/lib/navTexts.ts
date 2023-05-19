@@ -1,4 +1,4 @@
-export const HOME = "accieul";
+export const HOME = "accueil";
 export const SERVICES = "services";
 export const PROJECTS = "projets";
 export const SKILLS = "compétences";
