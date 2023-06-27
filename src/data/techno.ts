@@ -291,7 +291,7 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   postgres,
   prisma,
   mongoDb,
-  socketio,
+  aws,
 ].map((tech) => ({
   ...tech,
   selected: false,

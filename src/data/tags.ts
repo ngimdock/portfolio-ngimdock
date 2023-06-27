@@ -5,11 +5,10 @@ export const Tags = {
   projetDequipe: "Projet d'équipe",
   projetsSolo: "Projet solo",
   applicationWeb: "Application web",
-  siteVitrine: "Site vitrine",
   backend: "Backend",
   frontend: "Frontend",
-  mobile: "mobile",
   design: "Design",
+  siteVitrine: "Site vitrine",
   nestjs: TECH_STACK.nestjs.tecnoName,
   reactjs: TECH_STACK.reactjs.tecnoName,
 } as const;

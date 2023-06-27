@@ -140,7 +140,7 @@ export const ALL_PROJECTS: Project[] = [
       },
     ],
 
-    images: ["image1", "image2"],
+    images: [],
   },
 
   {
@@ -303,6 +303,6 @@ export const ALL_PROJECTS: Project[] = [
       techStack: [reactjs, tailwind, firebase],
       team: "Team details",
     },
-    images: ["image1", "image2"],
+    images: [],
   },
 ];

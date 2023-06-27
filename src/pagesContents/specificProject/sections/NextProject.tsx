@@ -46,8 +46,8 @@ export const NextProject = ({ project }: Props) => {
           <Image
             src={`/assets/images/${nextProject.mainImage}`}
             alt={nextProject.description}
-            width={400}
-            height={400}
+            width={450}
+            height={300}
           />
         </div>
 

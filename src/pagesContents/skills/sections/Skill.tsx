@@ -13,6 +13,7 @@ import {
   TechStackType,
 } from "../../../data";
 import { Techno } from "../../home/sections/Projects";
+import { TagBg } from "../../../components/tag-bg/tabBg";
 
 export const Skill = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -33,7 +34,8 @@ export const Skill = () => {
             </H2>
 
             <p className="text-primary text-[11px] -translate-y-1.5 flex items-center space-x-1">
-              <RiStarSmileFill className="text-base" />
+              (<RiStarSmileFill className="text-base" />
+              <span>spécialité</span>)
             </p>
           </div>
           <div className="flex items-center mt-2 space-x-8 xl:space-x-12">
@@ -66,16 +68,21 @@ export const Skill = () => {
 
         <div>
           <H2 classe=" leading-0" size="sm">
-            Autres
+            Bonnes pratiques
           </H2>
-          <div className="flex items-center mt-2 space-x-10 xl:space-x-12 ">
-            {TECHNOS_OTHERS.map((techno: TechStackType, index) => (
+          <div className="flex flex-wrap items-center space-y-1.5 mt-2 space-x-6 xl:space-x-6 pt-1.5 ">
+            {/* {TECHNOS_OTHERS.map((techno: TechStackType, index) => (
               <div
                 key={index}
                 className="flex flex-col justify-center space-y-3"
               >
                 <Techno tecnoData={techno} onSelectTechno={() => {}} />
               </div>
+            ))} */}
+            {["CLEAN ARCHI", "DDD", "CQRS", "SOLID"].map((c) => (
+              <TagBg color="dark" size="lg" key={c}>
+                {c}
+              </TagBg>
             ))}
           </div>
         </div>
