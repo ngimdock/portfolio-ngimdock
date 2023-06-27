@@ -29,8 +29,6 @@ export const AllProjects = () => {
   const [projects, setProjects] = useState(ALL_PROJECTS);
 
   function onSelectTag(tagName: string) {
-    console.log({ tagName });
-
     if (tagName === TOUS) {
       setTags(allTags);
 

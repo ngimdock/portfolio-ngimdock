@@ -6,6 +6,7 @@ import { H2, Para } from "../../../components";
 import { Challenge, Project } from "../../../data";
 import { TagBg } from "../../../components/tag-bg/tabBg";
 import Image from "next/image";
+import { NextProject } from "./NextProject";
 
 type ProjectContentProps = {
   project: Project;
