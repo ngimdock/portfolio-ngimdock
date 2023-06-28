@@ -31,7 +31,7 @@ export const AboutBody = () => {
   return (
     <>
       <Header
-        title={`Hey c'est ${userName}, l'ours de winterfell.`}
+        title={`Hey c'est ${userName}, l'ours de winterfell ☄️`}
         description={`Je suis ${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} mais la plupart m'appelle ${userName}.`}
         buttonCTA={
           <div className="flex justify-center ">
