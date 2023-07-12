@@ -7,6 +7,7 @@ import TextSphere from "../../../components/textSphere/textSphere";
 import TextShpereMobileSkill from "../../../components/textSphere/textSphereMobileSkill";
 import TextShpereSkill from "../../../components/textSphere/textSphereSkill";
 import {
+  GOOD_PRACTICES,
   TECHNOS_BACKEND,
   TECHNOS_FROTEND,
   TECHNOS_OTHERS,
@@ -79,7 +80,7 @@ export const Skill = () => {
                 <Techno tecnoData={techno} onSelectTechno={() => {}} />
               </div>
             ))} */}
-            {["CLEAN ARCHI", "DDD", "CQRS", "SOLID"].map((c) => (
+            {GOOD_PRACTICES.map((c) => (
               <TagBg color="dark" size="lg" key={c}>
                 {c}
               </TagBg>

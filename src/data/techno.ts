@@ -204,7 +204,7 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   },
 
   flutter: {
-    tecnoName: "Fullter",
+    tecnoName: "Flutter",
     alt: "https://flutter.dev/",
     src: logo_flutter,
     sizeIcon: 32,
@@ -283,7 +283,6 @@ export const TECHNOS_FROTEND: TechStackType[] = [
   reactjs,
   tailwind,
   nextjs,
-  firebase,
 ];
 
 export const TECHNOS_BACKEND: TechStackType[] = [
@@ -307,3 +306,5 @@ export const HEROTOP_STACK: TechStackType[] = [
   reactjs,
   tailwind,
 ];
+
+export const GOOD_PRACTICES = ["CLEAN ARCHI", "DDD", "CQRS", "SOLID"];

@@ -1,4 +1,5 @@
 import { RiDatabase2Fill, RiGroupFill, RiVideoFill } from "react-icons/ri";
+import { ROUTE_FORMATIONS, ROUTE_SERVICES } from "../lib";
 
 export type OneServiceType = {
   icon: any;

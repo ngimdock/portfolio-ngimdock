@@ -152,8 +152,8 @@ export const ALL_PROJECTS: Project[] = [
     mainImage: "images.jpeg",
     tags: [ingenirie, projetsSolo, backend],
     infos: {
-      industrie: "Informatique",
-      type: ProjectType.SHOWCASE_WEBSITE,
+      industrie: "E-commerce",
+      type: ProjectType.WEB_APP,
       publishDate: "22 janvier 2022",
       github: "https://github.com/ngimdock/vision-car-server",
       reasonForNoLink: reasonLink.notOnline,
