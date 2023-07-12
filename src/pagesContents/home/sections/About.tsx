@@ -25,13 +25,12 @@ export const About = () => {
           <H2 classe="mt-3">Développeur fullstack typescript</H2>
         </div>
         <Para>
-          Je suis un développeur passionné depuis plusieurs années. J'ai une
-          bonne expertise en développement fullstack, avec une préférence pour
-          les technologies modernes telles que Nodejs(Nestjs) et React. Mon
-          ambition est de produire un code de qualité, bien structuré et
-          facilement maintenable. Je suis également un fervent défenseur des
-          méthodologies agiles et de la collaboration en équipe pour atteindre
-          des résultats optimaux.
+          Bien que je sois un développeur pouvant aussi bien intervenir sur le
+          back comme le front, mon plus grand centre d'intérêt et ma spécialité
+          est le backend. J'aime bien travailler dans une équipe qui contient
+          des développeurs plus expérimentés car je pourrais apprendres des
+          nouveaux concepts et les maîtriser rapidement. Transférer mes
+          compétences aux profils plus juniors est aussi un grand plaisir.
         </Para>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
           <ButtonLink href={ROUTE_ABOUT} color="primary" classe="inline">

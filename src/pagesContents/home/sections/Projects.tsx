@@ -67,7 +67,7 @@ export const Projects = () => {
       <H3 classe="sm:hidden">Portfolio</H3>
       <H2 classe="mt-3">Découvrez mes dernières réalisations.</H2>
       <Para>
-        Une liste non exhaustive des projets donc j'ai développé ou fait partir
+        Une liste non exhaustive des projets que j'ai développé ou fait partir
         de l'équipe de développement.
       </Para>
 
