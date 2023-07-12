@@ -13,7 +13,7 @@ export const About = () => {
   const [isInViewport, targetRef] = useIsInViewport();
 
   const UPGRATE_SKILLS = {
-    h2: "Monté en competences.",
+    h2: "Monté en compétences.",
     text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
             voluptates hic impedit tempore, veritatis cum debitis ex,
             repudiandae incidunt magnam doloremque tenetur commodi maiores

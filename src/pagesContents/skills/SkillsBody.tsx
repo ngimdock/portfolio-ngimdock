@@ -44,8 +44,8 @@ export const SkillsBody = () => {
     <>
       <Header
         routesPath={ROUTES_PATH}
-        title="Présentation de mes compétences"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, lacinia conse"
+        title="Mes compétences techniques."
+        description="Ingénieur logiciel, javascript & typescript."
         buttonCTA={<Button color="primary">en savoir plus</Button>}
       />
 

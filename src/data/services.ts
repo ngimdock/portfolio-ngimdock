@@ -21,7 +21,7 @@ export const SERVICES: OneServiceType[] = [
   },
   {
     icon: RiDatabase2Fill,
-    title: "développement backend",
+    title: "développement  backend",
     numberProject: "04+ projets",
     desciption: `Confiez-moi le développement complet de la partie backend de votre application. 
     Je suis en charge de la conception, du développement et des tests de l'API, en utilisant 
@@ -32,7 +32,11 @@ export const SERVICES: OneServiceType[] = [
   {
     icon: RiVideoFill,
     title: "formation & coaching",
-    numberProject: "01+ personnes",
-    desciption: `Apprendre à développer est très difficile, des tutoriels périmés, documentation difficile à parcourir. Vous pouvez passer plusieurs années d'apprentissage sans réellement progresser. Si vous êtes une entreprise ou une école de formation, je peux rapidement faire monter en compétences vos apprenants avec mes formations. Je leur apprends exactement ce dont ils ont besoin pour devenir des développeurs exceptionnels.`,
+    numberProject: "01+ formation",
+    desciption: `Trouver un bon formateur en développement web est compliqué, 
+    certains développeurs sont très compétents mais n'ont pas une approche adaptée pour la 
+    formation des débutants et cela peut impacter leur montée en compétence. 
+    Je vous propose un programme d'accompagnement sur-mesure en fonction des profils des apprenants.
+    ils se verront apprendre rapidement après chaque module de formation.`,
   },
 ];
