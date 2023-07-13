@@ -12,10 +12,10 @@ export const HistoryHobbies = () => {
       ref={targetRef}
       className={clsx(
         isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container mt-24 sm:mt-8 m grid-cols-2 space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-20 sm:text-left"
+        "container mt-24 sm:mt-8 m grid-cols-2 flex   flex-col-reverse space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-20 sm:text-left"
       )}
     >
-      <div className="py-12">
+      <div className="md:py-12 mt-6 md:mt-0">
         <H2>Histoires & hobiies</H2>
         <p className="mt-3 sm:text-md text-light-dark">
           Quand j'étais plus jeune, je voulais devenir acteur de ciné et tourner
@@ -50,7 +50,7 @@ export const HistoryHobbies = () => {
         style={{
           backgroundImage: `url('/assets/images/histoires-hobbies.jpeg')`,
         }}
-        className="object-none w-full bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
+        className="object-none w-full h-72 md:h-auto  bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
       ></div>
     </section>
   );
