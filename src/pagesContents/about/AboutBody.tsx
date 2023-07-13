@@ -32,7 +32,7 @@ export const AboutBody = () => {
     <>
       <Header
         title={`Hey c'est ${userName}, l'ours de winterfell ☄️`}
-        description={`Je suis ${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} mais la plupart m'appelle ${userName}.`}
+        description={`Ingénieur logiciel depuis le cameroun.`}
         buttonCTA={
           <div className="flex justify-center ">
             <ScrollDown />

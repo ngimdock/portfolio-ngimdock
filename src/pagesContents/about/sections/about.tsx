@@ -3,28 +3,16 @@ import useIsInViewport from "use-is-in-viewport";
 import { H2, Para } from "../../../components";
 import ngimdock_photo from "../../../../public/assets/images/profile-pic2.png";
 import Image from "next/image";
-import {
-  FlexSectionLeft,
-  FlexSectionProps,
-  FlexSectionRight,
-} from "../../../pagesCommonSections/FlexSection";
+import { FlexSectionRight } from "../../../pagesCommonSections/FlexSection";
+import { UpgrateSkill } from "./UpgrateSkill";
+import { HistoryHobbies } from "./HistoryHobbies";
 
 export const About = () => {
   const [isInViewport, targetRef] = useIsInViewport();
-
-  const UPGRATE_SKILLS = {
-    h2: "Monté en compétences.",
-    text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-            voluptates hic impedit tempore, veritatis cum debitis ex,
-            repudiandae incidunt magnam doloremque tenetur commodi maiores
-            dignissimos odio, eaque molestiae voluptate facilis?`,
-    image: "images.jpeg",
-  };
-
   const HOOBIES = {
-    h2: "Histoire et hobbies.",
-    text: `Si j'était un animal sauvage, je serait sûrement un ours, l'ours de`,
-    image: "images.jpeg",
+    h2: "Histoires et hobbies.",
+    text: `Quand j'était encore gamin, je voulais dévenir acteur et ciné et tourner avec des grand acteurs comme will smith(Le même rêve que )`,
+    image: "histoires-hobbies.jpeg",
   };
 
   return (
@@ -39,23 +27,23 @@ export const About = () => {
         <div className="mt-6 sm:mt-0">
           <H2>Parcours tech.</H2>
           <Para>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-            voluptates hic impedit tempore, veritatis cum debitis ex,
-            repudiandae incidunt magnam doloremque tenetur commodi maiores
-            dignissimos odio, eaque molestiae voluptate facilis?
+            J'ai écrit mes premières lignes de code sur papier en seconde. Après
+            le BAC, je me suis vu refuser l'admission en informatique par mon
+            université avec pour raison que je n'avais pas eu une excellente
+            note en mathématiques au BAC. J'ai dû débuter mes études en maths et
+            obtenir mon BAC+1 dans cette filière afin de reprendre mes études en
+            informatique jusqu'à l'obtention de mon bac+4. Pendant ce parcours
+            j'ai travaillé́ avec des amis et des entreprises sur plusieurs
+            projets passionnants et rencontré de bonnes personnes ❤️
           </Para>
         </div>
 
         <NgimdockImage />
       </div>
 
-      <FlexSectionLeft
-        data={UPGRATE_SKILLS}
-        scrollEffect={true}
-        paddingY={true}
-      />
+      <UpgrateSkill />
 
-      <FlexSectionRight data={HOOBIES} scrollEffect={true} paddingY={true} />
+      <HistoryHobbies />
     </section>
   );
 };

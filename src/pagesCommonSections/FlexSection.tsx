@@ -42,7 +42,7 @@ export const FlexSectionLeft = ({
         style={{
           backgroundImage: `url('/assets/images/${image}')`,
         }}
-        className="w-full  sm:h-auto  bg-center bg-no-repeat bg-cover object-none"
+        className="w-full  sm:h-auto  bg-center bg-no-repeat bg-cover object-none rounded-2xl"
       ></div>
 
       <div className={paddingY ? "sm:py-20" : "sm:py-4"}>
@@ -92,7 +92,7 @@ export const FlexSectionRight = ({
         style={{
           backgroundImage: `url('/assets/images/${image}')`,
         }}
-        className="w-full h-56 sm:h-auto "
+        className="w-full  sm:h-auto  bg-center bg-no-repeat bg-cover object-none rounded-2xl"
       ></div>
     </section>
   );

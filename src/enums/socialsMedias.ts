@@ -7,6 +7,7 @@ export type SocialsMediaNames =
   | "linkedin"
   | "twitter"
   | "github"
+  | "medium"
   | "freecodecamp"
   | "whatsapp"
   | "mail";
@@ -25,6 +26,11 @@ export const SOCIALS_MEDIAS: Record<SocialsMediaNames, SocialMedia> = {
   github: {
     name: "Github",
     link: process.env.NEXT_PUBLIC_LINK_GITHUB as string,
+  },
+
+  medium: {
+    name: "Medium",
+    link: process.env.NEXT_PUBLIC_LINK_MEDIUM as string,
   },
 
   freecodecamp: {
