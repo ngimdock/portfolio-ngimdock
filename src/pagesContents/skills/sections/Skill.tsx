@@ -39,7 +39,7 @@ export const Skill = () => {
               <span>spécialité</span>)
             </p>
           </div>
-          <div className="flex items-center mt-2 space-x-8 xl:space-x-12">
+          <div className="flex flex-wrap items-center mt-2 space-x-8 xl:space-x-12">
             {TECHNOS_BACKEND.map((techno: TechStackType, index) => (
               <div
                 key={index}

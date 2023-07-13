@@ -14,6 +14,7 @@ import logo_render from "../../public/assets/svg/simple-icons_render.svg";
 import logo_socketio from "../../public/assets/svg/logos_socket-io.svg";
 import logo_flutter from "../../public/assets/svg/logo_flutter.svg";
 import logo_mongoose from "../../public/assets/svg/logo_mongoose.svg";
+import logo_graphql from "../../public/assets/svg/logos_graphql.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -44,7 +45,8 @@ export type TechStackNames =
   | "flutter"
   | "vercel"
   | "stripe"
-  | "jest";
+  | "jest"
+  | "graphql";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -207,7 +209,7 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     tecnoName: "Flutter",
     alt: "https://flutter.dev/",
     src: logo_flutter,
-    sizeIcon: 32,
+    sizeIcon: 28,
     link: "https://flutter.dev/",
     setOpacity: false,
     selected: false,
@@ -242,6 +244,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     setOpacity: false,
     selected: false,
   },
+
+  graphql: {
+    tecnoName: "GraphQL",
+    alt: "GraphQL",
+    src: logo_graphql,
+    sizeIcon: 32,
+    link: "https://graphql.org/",
+    setOpacity: false,
+    selected: false,
+  },
 } as const;
 
 const {
@@ -259,6 +271,7 @@ const {
   nextjs,
   render,
   socketio,
+  graphql,
 } = TECH_STACK;
 
 export const TECHNOS: TechStackType[] = [
@@ -283,18 +296,22 @@ export const TECHNOS_FROTEND: TechStackType[] = [
   reactjs,
   tailwind,
   nextjs,
-];
+].map((tech) => ({
+  ...tech,
+  selected: false,
+  sizeIcon: tech.sizeIcon && tech.sizeIcon + 10,
+}));
 
 export const TECHNOS_BACKEND: TechStackType[] = [
   nestjs,
   postgres,
-  prisma,
+  graphql,
   mongoDb,
   aws,
 ].map((tech) => ({
   ...tech,
   selected: false,
-  sizeIcon: tech.sizeIcon && tech.sizeIcon + 5,
+  sizeIcon: tech.sizeIcon && tech.sizeIcon + 12,
 }));
 
 export const TECHNOS_OTHERS: TechStackType[] = [aws, neo4j, java, render];
@@ -302,7 +319,7 @@ export const TECHNOS_OTHERS: TechStackType[] = [aws, neo4j, java, render];
 export const HEROTOP_STACK: TechStackType[] = [
   nestjs,
   postgres,
-  prisma,
+  graphql,
   reactjs,
   tailwind,
 ];

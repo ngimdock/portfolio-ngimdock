@@ -1,10 +1,6 @@
-import {
-  RiHomeHeartLine,
-  RiStackLine,
-  RiInformationLine,
-} from "react-icons/ri";
+import { RiHomeHeartLine, RiStackLine } from "react-icons/ri";
 import { Button, RoutePathType } from "../../components";
-import { ROUTE_HOME, ROUTE_SKILLS } from "../../lib";
+import { ROUTE_CONTACT, ROUTE_HOME, ROUTE_SKILLS } from "../../lib";
 import {
   CallToAction,
   CallToACtionType,
@@ -13,6 +9,7 @@ import {
 import { DEFAULT_CALL_TO_ACTION_DATA } from "../home/HomeBody";
 import { Experiences } from "./sections/Experiences";
 import { Skill } from "./sections/Skill";
+import { ButtonLink } from "../../components/botton/ButtonLink";
 
 export const SkillsBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
@@ -46,7 +43,11 @@ export const SkillsBody = () => {
         routesPath={ROUTES_PATH}
         title="Mes compétences techniques."
         description="Ingénieur logiciel, javascript & typescript."
-        buttonCTA={<Button color="primary">en savoir plus</Button>}
+        buttonCTA={
+          <ButtonLink href={ROUTE_CONTACT} color="primary">
+            me contacter
+          </ButtonLink>
+        }
       />
 
       <Skill />

@@ -20,10 +20,10 @@ const experiences: SkillType[] = [
   {
     companyName: "Freelance",
     jobTitle: "Backend & Frontend",
-    jobPeriod: "Semptembre 2021 - present",
+    jobPeriod: "Semptembre 2021 - présent",
     jobLocation: REMOTE,
     jobDescription:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non quam officia velit provident at itaque eos nobis atque amet expedita dolor minus dolore.",
+      "J'ai effectué plusieurs missions en freelance généralement pour les start-up. Mes tâches étaient principalement de développer les feature des applications afin de faire évoluer le produit tout en étant d'une grande force de proposition.",
     jobLinkText: "consulter",
     jobLink: ROUTE_PROJECTS,
   },
@@ -32,24 +32,24 @@ const experiences: SkillType[] = [
     companyName: "GDSC Yaounde 1",
     jobTitle: "Formateur web",
     jobPeriod: "Semptembre 2020 - Juin 2021",
-    jobLocation: REMOTE,
+    jobLocation: "Universite Yaounde 1",
     jobDescription:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non quam officia velit provident at itaque eos nobis atque amet expedita dolor minus dolore.",
+      "Faire partir de l'équipe de formation web du Google développer Student Club de d'UY1 à été une belle expérience, nous avions pour mission de former les débutants en programmation à travers les workshops et des séminaires supervisés par google. Vous pouvez avoir plus de détails dans la section expériences de mon profil Linkedin.",
     jobLinkText: "visiter",
-    jobLink: "#",
+    jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
   },
 ];
 
 export const Formations: SkillType[] = [
   {
     companyName: "Universite Yaounde 1",
-    jobTitle: "Bac + 5 genie logiciel",
+    jobTitle: "Bac + 4 genie logiciel",
     jobPeriod: "Semptembre 2017 - Juin 2023",
     jobLocation: "Yaoundé, Cameroun",
     jobDescription:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non quam officia velit provident at itaque eos nobis atque amet expedita dolor minus dolore.",
-    jobLinkText: "consulter",
-    jobLink: "#",
+      "Après mon BAC+1 en mathématiques, j'ai décidé de reprendre mes études en informatique ou j'ai obtenu un BAC+4 en génie logiciel dans une des meilleures universités des technologies du Cameroun  🇨🇲",
+    jobLinkText: "En savoir plus",
+    jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
   },
 
   {
@@ -58,9 +58,9 @@ export const Formations: SkillType[] = [
     jobPeriod: "Janvier 2019 - Aout 2019",
     jobLocation: "Remote",
     jobDescription:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit non quam officia velit provident at itaque eos nobis atque amet expedita dolor minus dolore.",
-    jobLinkText: "visiter",
-    jobLink: "#",
+      "En plus de mes études, j'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc. vous pouvez consulter mes certifications depuis le site de freecodecamp.",
+    jobLinkText: "Consulter",
+    jobLink: "https://www.freecodecamp.org/dan73",
   },
 ];
 
