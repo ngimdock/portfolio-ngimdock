@@ -20,7 +20,7 @@ export const UpgrateSkill = () => {
         style={{
           backgroundImage: `url('/assets/images/monte-competences.jpg')`,
         }}
-        className="object-none h-72 md:h-auto w-full bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
+        className="object-none grayscale h-72 md:h-auto w-full bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
       ></div>
       <div className="md:py-12">
         <H2>Monté en compétences.</H2>

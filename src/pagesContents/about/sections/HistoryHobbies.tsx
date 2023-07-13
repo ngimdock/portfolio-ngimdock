@@ -48,9 +48,9 @@ export const HistoryHobbies = () => {
 
       <div
         style={{
-          backgroundImage: `url('/assets/images/histoires-hobbies.jpeg')`,
+          backgroundImage: `url('/assets/images/me-assis.jpg')`,
         }}
-        className="object-none w-full h-72 md:h-auto  bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
+        className="object-none grayscale w-full h-72 md:h-auto  bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
       ></div>
     </section>
   );
