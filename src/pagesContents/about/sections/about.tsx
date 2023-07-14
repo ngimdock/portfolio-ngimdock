@@ -10,7 +10,7 @@ import { HistoryHobbies } from "./HistoryHobbies";
 export const About = () => {
   const [isInViewport, targetRef] = useIsInViewport();
   const HOOBIES = {
-    h2: "Histoires et hobbies.",
+    h2: "Histoires et Hobbies.",
     text: `Quand j'était encore gamin, je voulais dévenir acteur et ciné et tourner avec des grand acteurs comme will smith(Le même rêve que )`,
     image: "histoires-hobbies.jpeg",
   };
@@ -34,7 +34,7 @@ export const About = () => {
             obtenir mon BAC+1 dans cette filière afin de reprendre mes études en
             informatique jusqu'à l'obtention de mon bac+4. Pendant ce parcours
             j'ai travaillé́ avec des amis et des entreprises sur plusieurs
-            projets passionnants et rencontré de bonnes personnes ❤️
+            projets passionnants et rencontré des personnes formidables ❤️
           </Para>
         </div>
 

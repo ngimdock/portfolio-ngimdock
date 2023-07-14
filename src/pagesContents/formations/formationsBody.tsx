@@ -26,7 +26,7 @@ export const FormationsBody = () => {
     <>
       <Header
         title="Formation en développement web"
-        description="Je forme les futurs développeurs fullstack compétents de ton entreprise."
+        description="Je forme les futurs développeurs de ton entreprise."
         buttonCTA={
           <div className="flex justify-center ">
             <ScrollDown />
