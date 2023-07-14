@@ -3,11 +3,12 @@ import { useState } from "react";
 import { RiLinksLine } from "react-icons/ri";
 import { toast } from "react-toastify";
 import useIsInViewport from "use-is-in-viewport";
-import { sendContactForm } from "../../../api/api";
 import { Button } from "../../../components";
 import { InputText } from "../../../components/inputs/inputText";
 import { TextArea } from "../../../components/inputs/TextArea";
 import { SocialMedia, SOCIALS_MEDIAS } from "../../../enums";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export interface FormValues {
   name: string;
@@ -30,6 +31,8 @@ const initFormData = { isLoading: false, error: "", values: initValues };
 export const Contact = () => {
   const [isInViewport, targetRef] = useIsInViewport();
 
+  const form = useRef<HTMLFormElement>(null);
+
   const [formData, setFormData] = useState(initFormData);
 
   const handleSubmit = async (e: any) => {
@@ -40,20 +43,25 @@ export const Contact = () => {
       isLoading: true,
     }));
 
-    const { email, phone } = formData.values;
-
-    // check valid email
-
-    // check valid phone
-
-    // send email
-
-    await sendContactForm(formData.values);
-
-    // console.log({ result });
+    emailjs
+      .sendForm(
+        "service_8jnzppn",
+        "template_cvrhi1i",
+        form.current as HTMLFormElement,
+        "dF8oxiRknGv_IVm_E"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          // e.target.reset();
+          toast.success(" Message reçu, je vous reponds dans la journée.");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setFormData(initFormData);
-    toast.success(" Message reçu, je vous reponds dans la journée.");
   };
 
   const handleChange = (e: any, inputName: string) => {
@@ -101,12 +109,14 @@ export const Contact = () => {
       </div>
 
       <form
+        ref={form}
         onSubmit={handleSubmit}
         className="flex flex-col-reverse grid-cols-2 col-span-7 gap-y-5 sm:gap-y-0 sm:grid cla gap-x-5"
       >
         <div>
           <TextArea
             value={formData.values.message}
+            name="message"
             onChange={(e) => handleChange(e, "message")}
           />
           <Button
@@ -117,8 +127,6 @@ export const Contact = () => {
           >
             Envoyer
           </Button>
-
-          <input type="submit" value="send" />
         </div>
         <div className="space-y-5">
           <InputText
@@ -127,6 +135,7 @@ export const Contact = () => {
             registerName="object"
             placeholder="Object"
             value={formData.values.subject}
+            name="subject"
             onChange={(e) => handleChange(e, "subject")}
           />
           <InputText
@@ -134,6 +143,7 @@ export const Contact = () => {
             disabled={formData.isLoading}
             registerName="name"
             placeholder="Votre nom"
+            name="userName"
             value={formData.values.name}
             onChange={(e) => handleChange(e, "name")}
           />
@@ -143,6 +153,7 @@ export const Contact = () => {
             registerName="email"
             placeholder="Email"
             type="email"
+            name="userEmail"
             value={formData.values.email}
             onChange={(e) => handleChange(e, "email")}
           />
@@ -151,6 +162,7 @@ export const Contact = () => {
             disabled={formData.isLoading}
             registerName="phone"
             placeholder="Téléphone"
+            name="userPhone"
             value={formData.values.phone}
             onChange={(e) => handleChange(e, "phone")}
           />

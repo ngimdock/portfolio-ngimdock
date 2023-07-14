@@ -2,7 +2,6 @@ import { RiBearSmileLine, RiHomeHeartLine } from "react-icons/ri";
 import { RoutePathType, ScrollDown } from "../../components";
 import { ROUTE_CONTACT, ROUTE_FORMATIONS, ROUTE_HOME } from "../../lib";
 import { CallToAction, Header } from "../../pagesCommonSections";
-import { DEFAULT_CALL_TO_ACTION_DATA } from "../home/HomeBody";
 import { FormationsModules } from "./sections/modules";
 import { FormationPresentation } from "./sections/presentation";
 
@@ -41,13 +40,12 @@ export const FormationsBody = () => {
 
       <CallToAction
         actionData={{
-          title:
-            "Accelère la monté en compétence des développeurs de ta boîte.",
+          title: "Accélère la montée en compétence de tes apprenants",
           button: {
             text: "me contacter",
             link: ROUTE_CONTACT,
           },
-          image: "images.jpeg",
+          image: "pexels-cottonbro-studio-3584967.jpg",
         }}
         classe="separed-sections"
       />

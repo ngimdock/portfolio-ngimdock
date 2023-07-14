@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 type InputTextProps = {
   placeholder: string;
   registerName: string;
+  name: string;
   isRequired?: boolean;
   value: string;
   disabled: boolean;
@@ -17,6 +18,7 @@ export const InputText = ({
   isRequired,
   disabled,
   value,
+  name,
   onChange,
 }: InputTextProps) => {
   const { register, watch } = useForm();
@@ -28,6 +30,7 @@ export const InputText = ({
       required={!!isRequired}
       disabled={disabled}
       value={value}
+      name={name}
       onChange={onChange}
       className={clsx(
         disabled && " cursor-not-allowed",
