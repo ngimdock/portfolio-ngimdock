@@ -19,7 +19,7 @@ export const RoutePath = ({ allRoutes }: RoutePathProp) => {
         ({ icon, id, link, text }: RoutePathType, currentItemIndex: number) => (
           <div
             key={id}
-            className="flex items-center space-x-1 sm:space-x-3 text-primary hover:text-primary-dark animate"
+            className="flex items-center space-x-1 sm:space-x-3 text-primary hover:opacity-70 animate"
           >
             <Link
               href={link}

@@ -34,6 +34,7 @@ export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const [formData, setFormData] = useState(initFormData);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -45,10 +46,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_8jnzppn",
-        "template_cvrhi1i",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         form.current as HTMLFormElement,
-        "dF8oxiRknGv_IVm_E"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
       )
       .then(
         (result) => {
@@ -56,7 +57,11 @@ export const Contact = () => {
           setFormData(initFormData);
         },
         (error) => {
-          console.log(error.text);
+          setFormData((prevState) => ({
+            ...prevState,
+            isLoading: false,
+          }));
+          toast.error("Une erreur est survenue.");
         }
       );
   };

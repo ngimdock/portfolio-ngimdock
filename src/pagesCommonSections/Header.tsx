@@ -1,5 +1,4 @@
-import { H2, RoutePathType } from "../components";
-import { Navbar } from "./Navbar";
+import { H2, Para, RoutePathType } from "../components";
 import { RoutePath } from "../components";
 import useIsInViewport from "use-is-in-viewport";
 import clsx from "clsx";
@@ -33,7 +32,8 @@ export const Header = ({
         <div className="col-span-6">
           <RoutePath allRoutes={routesPath} />
           <H2 classe="mt-3">{title}</H2>
-          <p className="mt-4 max-w-[400px] mx-auto sm:mx-0">{description}</p>
+          {/* <p className="mt-4 max-w-[400px] mx-auto sm:mx-0">{description}</p> */}
+          <Para classe="max-w-[400px] mx-auto sm:mx-0">{description}</Para>
         </div>
         <div className="flex justify-center col-span-2 mt-12 sm:mt-0">
           {buttonCTA}

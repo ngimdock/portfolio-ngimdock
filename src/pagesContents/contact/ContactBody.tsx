@@ -29,7 +29,7 @@ export const ContactBody = () => {
     <>
       <Header
         title="Me contacter."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, lacinia conse"
+        description="Envoyez-moi un message ou écrivez-moi sur mes réseaux, je vous réponds dans la journée."
         buttonCTA={<ScrollDown />}
         routesPath={ROUTES_PATH}
       />
