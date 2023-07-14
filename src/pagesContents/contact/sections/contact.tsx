@@ -52,16 +52,13 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          // e.target.reset();
           toast.success(" Message reçu, je vous reponds dans la journée.");
+          setFormData(initFormData);
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    setFormData(initFormData);
   };
 
   const handleChange = (e: any, inputName: string) => {
@@ -75,10 +72,7 @@ export const Contact = () => {
   };
 
   const socialsMedias: SocialMedia[] = [
-    {
-      name: "Whatsapp",
-      link: "link",
-    },
+    SOCIALS_MEDIAS.whatsapp,
     SOCIALS_MEDIAS.linkedin,
     SOCIALS_MEDIAS.twitter,
   ];
@@ -116,6 +110,7 @@ export const Contact = () => {
         <div>
           <TextArea
             value={formData.values.message}
+            isRequired={true}
             name="message"
             onChange={(e) => handleChange(e, "message")}
           />
@@ -158,7 +153,7 @@ export const Contact = () => {
             onChange={(e) => handleChange(e, "email")}
           />
           <InputText
-            isRequired={true}
+            isRequired={false}
             disabled={formData.isLoading}
             registerName="phone"
             placeholder="Téléphone"
