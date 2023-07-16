@@ -15,6 +15,10 @@ import logo_socketio from "../../public/assets/svg/logos_socket-io.svg";
 import logo_flutter from "../../public/assets/svg/logo_flutter.svg";
 import logo_mongoose from "../../public/assets/svg/logo_mongoose.svg";
 import logo_graphql from "../../public/assets/svg/logos_graphql.svg";
+import logos_typeorm from "../../public/assets/svg/logos_typeorm.svg";
+import logos_clean_archi from "../../public/assets/svg/CleanArchitecture.svg";
+import logos_cqrs from "../../public/assets/svg/cqrs.svg";
+import logos_redis from "../../public/assets/svg/logos_redis.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -46,7 +50,11 @@ export type TechStackNames =
   | "vercel"
   | "stripe"
   | "jest"
-  | "graphql";
+  | "graphql"
+  | "typeorm"
+  | "redis"
+  | "cleanArchi"
+  | "cqrs";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -251,6 +259,42 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     src: logo_graphql,
     sizeIcon: 32,
     link: "https://graphql.org/",
+    setOpacity: false,
+    selected: false,
+  },
+  typeorm: {
+    tecnoName: "TypeOrm",
+    alt: "TypeOrm",
+    src: logos_typeorm,
+    sizeIcon: 32,
+    link: "https://typeorm.io/",
+    setOpacity: false,
+    selected: false,
+  },
+  redis: {
+    tecnoName: "Redis",
+    alt: "Redis",
+    src: logos_redis,
+    sizeIcon: 32,
+    link: "https://redis.io/docs/",
+    setOpacity: false,
+    selected: false,
+  },
+  cleanArchi: {
+    tecnoName: "Clean archi",
+    alt: "Clean architecture",
+    src: logos_clean_archi,
+    sizeIcon: 32,
+    link: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html",
+    setOpacity: false,
+    selected: false,
+  },
+  cqrs: {
+    tecnoName: "CQRS",
+    alt: "CQRS",
+    src: logos_cqrs,
+    sizeIcon: 32,
+    link: "https://docs.nestjs.com/recipes/cqrs",
     setOpacity: false,
     selected: false,
   },
