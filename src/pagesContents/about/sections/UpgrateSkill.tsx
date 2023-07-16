@@ -39,6 +39,12 @@ export const UpgrateSkill = () => {
             text="open source"
             targerBlack={true}
           />{" "}
+          , développer des{" "}
+          <UnderlineLink
+            link="https://www.npmjs.com/package/nestjs-google-drive"
+            text="packets npm"
+            targerBlack={true}
+          />{" "}
           et participer à des concours de programmation organisés par{" "}
           <UnderlineLink
             link="https://i.ibb.co/3mnm2cY/google.png"

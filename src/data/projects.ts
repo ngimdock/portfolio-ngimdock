@@ -45,8 +45,8 @@ export enum ProjectType {
 export interface Challenge {
   challengeTitle: string;
   challengeDescription: string;
-  solutionTitle: string;
-  solutionDescription: string;
+  solutionTitle?: string;
+  solutionDescription?: string;
   solutionImage?: string;
 }
 
@@ -235,7 +235,7 @@ export const ALL_PROJECTS: Project[] = [
     name: "NTI-shop",
     description:
       "Une application e-commerce de vente des appareils électroniques.",
-    mainImage: "images.jpeg",
+    mainImage: "hero-nti-4.svg",
     tags: [Tags.ingenirie, Tags.projetsSolo],
     infos: {
       industrie: "E-commerce",
@@ -246,14 +246,40 @@ export const ALL_PROJECTS: Project[] = [
     },
     details: {
       problem:
-        "Le client veut gagner en crédibilité et augmenter les ventes de ses appareils avec une présence sur le web.",
-      solution:
-        "J'ai mis en place une application web avec laquelle il pourra gérer ses articles depuis une interface d'administration pour permettre aux clients de consulter son catalogue et effectuer les commandes plus simplement.",
+        "Le commerçant souhaite accroître son chiffre d'affaires en augmentant les ventes des appareils. Pour y parvenir, il aimerait exposer ses produits à une clientèle plus étendue sur internet afin de la fidéliser et ainsi réaliser des ventes en ligne en plus de celle de ses boutiques physiques",
+      solution: `Pour l'aider à atteindre ses objectifs, j'ai proposé de développer une application web pour gérer 
+        sa boutique en ligne. Cette application comporte une interface d'administration lui permettant 
+        de gérer les produits, leurs catégories et également de proposer des suggestions d'appareils aux clients. Les 
+        clients pourront s'inscrire sur la plateforme, sauvegarder des appareils, les commander et les partager 
+        avec d'autres personnes.`,
       myTasks:
-        "Je me suis chargé de développer le projet depuis l'étape de réalisation des interfaces du site jusqu'à sa mise en ligne.",
+        "Je suis en charge du développement de l'application depuis l'étape de la réalisation des designs jusqu'à la mise en ligne du site. Je propose des fonctionnalités au commençant en fonction de ses objectifs.",
       techStack: [reactjs, tailwind, firebase],
     },
-    images: [],
+    images: [
+      "categories.svg",
+      "products.svg",
+      "footer.svg",
+      "account.svg",
+      "hero-nti-4.svg",
+      "details.svg",
+    ],
+    challenges: [
+      {
+        challengeTitle: "L'interface d'administration.",
+        challengeDescription:
+          "Le commerçant va créer les produits et leurs catégories depuis cette interface, elle va être connectée à l'API firebase de gestion des bases de données(Firestore) en ligne pour la sauvegarde et restitution des données.",
+        solutionTitle: "preview",
+        solutionImage: "nti-admin.svg",
+      },
+      {
+        challengeTitle: "La documentation intégrée",
+        challengeDescription:
+          "L'interface d'administration contient une documentation intégrée pour faciliter son utilisation.",
+        solutionTitle: "preview",
+        solutionImage: "documentation.svg",
+      },
+    ],
   },
 
   {

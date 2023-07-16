@@ -29,7 +29,7 @@ export const H2 = ({ children, color, size, classe }: H2Type) => {
 const defaultProps: H2Type = {
   color: "light",
   size: "md",
-  children: "Titre h2",
+  children: "",
 };
 
 H2.defaultProps = defaultProps;

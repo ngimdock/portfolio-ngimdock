@@ -16,7 +16,7 @@ export const HistoryHobbies = () => {
       )}
     >
       <div className="md:py-12 mt-6 md:mt-0">
-        <H2>Histoires & hobiies</H2>
+        <H2>Histoires & hobbies</H2>
         <p className="mt-3 sm:text-md text-light-dark">
           Quand j'étais plus jeune, je voulais devenir acteur de ciné et tourner
           avec des grands noms comme{" "}

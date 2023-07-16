@@ -83,13 +83,19 @@ export const SpecificProjectHeader = ({
         <InfoBanner title="Consulter le projet">
           <div className="flex items-center justify-center mt-2 space-x-2 text-xs font-Inter">
             {project.infos.github ? (
-              <a href={project.infos.github} target="_blank" rel="noreferrer">
+              <a
+                href={project.infos.github}
+                target="_blank"
+                rel="noreferrer"
+                className="block"
+              >
                 {projectGithub}
               </a>
             ) : (
               <Tooltip
                 tooltipContent={project.infos.reasonForNoGithub}
                 id="reasonNotGithub"
+                className="hidden sm:block"
               >
                 <div className="hidden hover:cursor-not-allowed hover:opacity-80 animate sm:block">
                   {projectGithub}
@@ -101,7 +107,12 @@ export const SpecificProjectHeader = ({
             )}
 
             {project.infos.link ? (
-              <a href={project.infos.link} target="_blank" rel="noreferrer">
+              <a
+                href={project.infos.link}
+                target="_blank"
+                rel="noreferrer"
+                className="block"
+              >
                 {projectLink}
               </a>
             ) : (

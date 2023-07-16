@@ -29,8 +29,8 @@ export const About = () => {
           <Para>
             J'ai écrit mes premières lignes de code sur papier en seconde. Après
             le BAC, je me suis vu refuser l'admission en informatique par mon
-            université avec pour raison que je n'avais pas eu une excellente
-            note en mathématiques au BAC. J'ai dû débuter mes études en maths et
+            université avec pour raison que je n'avais pas une excellente note
+            en mathématiques au BAC. J'ai dû débuter mes études en maths et
             obtenir mon BAC+1 dans cette filière afin de reprendre mes études en
             informatique jusqu'à l'obtention de mon bac+4. Pendant ce parcours
             j'ai travaillé́ avec des amis et des entreprises sur plusieurs
