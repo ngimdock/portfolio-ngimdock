@@ -84,7 +84,7 @@ export const ALL_PROJECTS: Project[] = [
     name: "C.N.I.C",
     description: `Un système  numérique efficace et pratique pour  la dématérialisation de la délivrance des 
       Cartes Nationales d'Identité (CNI) au Cameroun 🇨🇲.`,
-    mainImage: "images.jpeg",
+    mainImage: "cnic-hero.svg",
     tags: [ingenirie, projetDequipe, backend, Tags.nestjs, Tags.reactjs],
     infos: {
       industrie: "Gouvernemment",
@@ -126,21 +126,29 @@ export const ALL_PROJECTS: Project[] = [
 
     challenges: [
       {
-        challengeTitle: "Challenge rencontré.",
-        challengeDescription: `Trouver le système informatique pour numériser la délivrance de ces cartes nationales d'identité a été notre plus grand défi.`,
-        solutionTitle: "La solution ingénieuse de l'équippe.",
-        solutionDescription: `Nous nous sommes organisés en équipe afin de trouver une solution à proposer. 
-        Après trois réunions au cours desquelles nous avons discuté et fait des propositions entre 
-        membres, nous sommes convenus de mettre en place un système constitué de trois 
-        applications : une application frontend, une application mobile et une application backend. 
-        L'application frontend permettra une gestion des utilisateurs par les différents commissariats,
-         tandis que l'application mobile permettra à chaque utilisateur du système d'accéder à sa CNI 
-         via un QR-code fourni par le commissariat. Enfin, l'application backend fournira les API 
-         nécessaires aux deux applications clientes.`,
+        challengeTitle: "Enregistrement d'un citoyen.",
+        challengeDescription: `Dans chaque commissariat, des agents vont se servir de l'application 
+                              web pour enregistrer les citoyens désirant une carte nationale d'identité (CNI) numérique. Une fois 
+                              l'enregistrement terminé, ils vont délivrer au citoyen un QR code et un 
+                              numéro d'identification unique qu'il pourra utiliser pour visualiser sa CNI directement.`,
+        solutionImage: "enregistrement.svg",
+        solutionTitle: "Preview",
+        solutionDescription:
+          "Les informations personnelles d'un citoyen enregistré depuis l'application web.",
+      },
+      {
+        challengeTitle: "Identification d'un citoyen.",
+        challengeDescription: `Le citoyen pourra visualiser sa carte nationale d'identité après avoir scanné le code QR qui lui a été attribué au commissariat à l'aide de son smartphone. Il pourra également se servir de son numéro d'identification unique pour effectuer la même opération. Une fois la carte nationale d'identité affichée, il peut s'en servir pour se présenter aux forces de l'ordre ou aux autorités administratives.`,
+        solutionTitle: "Preview",
+        solutionImage: "identification.svg",
       },
     ],
 
-    images: [],
+    images: [
+      "registration-step-1.svg",
+      "registration-step-2.svg",
+      "registration-step-3.svg",
+    ],
   },
 
   {
