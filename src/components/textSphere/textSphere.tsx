@@ -8,7 +8,7 @@ const tagcloud = ".tagcloud";
 const TextShpere = () => {
   useEffect(() => {
     return () => {
-      TagCloud(tagcloud, texts, options);
+      TagCloud(tagcloud, texts, options); // j'ai commenté une partie du code de TagCloud dans le nodemodule
     };
   }, []);
 

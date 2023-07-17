@@ -66,9 +66,7 @@ const SkillCard = ({ skillData }: SkillCardProps) => {
         </div>
 
         <div className="sm:text-right mt-1.5 sm:mt-0">
-          <h4 size="sm" className="text-xs font-Inter text-light">
-            {jobPeriod}
-          </h4>
+          <h4 className="text-xs font-Inter text-light">{jobPeriod}</h4>
           <span className="text-xs font-bold font-Inter text-light">
             {jobLocation}
           </span>

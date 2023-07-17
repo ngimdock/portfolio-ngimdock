@@ -31,7 +31,14 @@ export const FeaturedProjects = () => {
       <H2 classe="text-center sm:text-start">Projects en avant.</H2>
 
       <div className="mt-4">
-        <Carousel data={carouselProjectsData} config={{ withHalft: true }} />
+        <Carousel
+          data={carouselProjectsData}
+          config={{
+            withHalft: true,
+            paginationClicable: true,
+            slidesPerView: 3,
+          }}
+        />
       </div>
     </section>
   );

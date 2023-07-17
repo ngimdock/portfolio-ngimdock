@@ -82,7 +82,7 @@ export const AllProjects = () => {
           <ProjectCard
             projectData={project}
             key={index}
-            config={{ tagNumber: 2 }}
+            config={{ tagNumber: 2, displayTag: true }}
           />
         ))}
       </div>

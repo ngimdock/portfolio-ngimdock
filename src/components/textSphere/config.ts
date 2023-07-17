@@ -1,3 +1,5 @@
+import { TagCloudOptions } from "TagCloud";
+
 export const texts = [
   "communication",
   "clean code",
@@ -18,7 +20,7 @@ export const texts = [
   "refacto",
 ];
 
-export const options = {
+export const options: TagCloudOptions = {
   radius: 300,
   maxSpeed: "normal",
   initSpeed: "normal",
