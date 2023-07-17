@@ -35,9 +35,9 @@ export const Services = () => {
           <H3>services</H3>
           <H2 classe="mt-2">Développement web sur-mesure.</H2>
           <Para classe="mt-3">
-            Je pourrais intégrer votre équipe afin d'augmenter la productivité,
-            Développer une solution complète de votre produit ou encore former
-            les futurs développeurs de votre entreprise.
+            Je pourrais intégrer votre équipe afin d`&apos;`augmenter la
+            productivité, Développer une solution complète de votre produit ou
+            encore former les futurs développeurs de votre entreprise.
           </Para>
         </div>
 
