@@ -67,8 +67,8 @@ export const Projects = () => {
       <H3 classe="sm:hidden">Portfolio</H3>
       <H2 classe="mt-3">Découvrez mes dernières réalisations.</H2>
       <Para>
-        Une liste non exhaustive des projets que j`&apos;`ai développé ou fait
-        partir de l`&apos;`équipe de développement.
+        Une liste non exhaustive des projets que j&apos;ai développé ou fait
+        partir de l&apos;équipe de développement.
       </Para>
 
       <div className="w-full grid-cols-8 grid-rows-2 mt-10 md:grid gap-x-2 lg:gap-x-4">

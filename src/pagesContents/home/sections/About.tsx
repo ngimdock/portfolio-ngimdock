@@ -26,9 +26,9 @@ export const About = () => {
         </div>
         <Para>
           Bien que je sois un développeur pouvant aussi bien intervenir sur le
-          back comme le front, mon plus grand centre d`&apos;`intérêt et ma
-          spécialité est le backend. J`&apos;`aime bien travailler dans une
-          équipe qui contient des développeurs plus expérimentés car je pourrais
+          back comme le front, mon plus grand centre d&apos;intérêt et ma
+          spécialité est le backend. J&apos;aime bien travailler dans une équipe
+          qui contient des développeurs plus expérimentés car je pourrais
           apprendres des nouveaux concepts et les maîtriser rapidement.
           Transférer mes compétences aux profils plus juniors est aussi un grand
           plaisir.

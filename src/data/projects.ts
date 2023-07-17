@@ -25,6 +25,10 @@ const {
   cqrs,
   aws,
   redis,
+  neo4j,
+  reactNative,
+  cypher,
+  expo,
 } = TECH_STACK;
 
 const {
@@ -293,6 +297,50 @@ export const ALL_PROJECTS: Project[] = [
 
   {
     id: 4,
+    // featured: 2,
+    name: "Food Diary",
+    description:
+      "Une application mobile pour recommander les aliments à consommer en vue de maintenir une bonne santé en fonction des aliments habituellement consommés par l'utilisateur.",
+    mainImage: "hero-food-diary.svg",
+    tags: [Tags.projetDequipe, Tags.backend, Tags.nestjs],
+    infos: {
+      industrie: "Alimentation",
+      type: ProjectType.MOBILE_APP,
+      publishDate: "22 janvier 2022",
+      github: "https://github.com/INF4077-GROUP/foodDiary-server",
+      reasonForNoLink: "Application non accessible sur le store.",
+    },
+    details: {
+      problem: `Nous souhaitons mettre en place un système informatique qui va permettre le suivi de l'alimentation d'un utilisateur sur une base quotidienne de façon à pouvoir lui recommander, chaque semaine, les aliments à consommer pour maintenir une bonne santé.`,
+      solution: `Pour y parvenir, nous avons développé une application mobile qui permet de collecter les informations sur ce qu'il mange tous les jours afin de lui recommander les aliments adaptés à sa consommation.`,
+      myTasks:
+        "En tant que membre de l'équipe de développement backend, ma mission consiste à réaliser la mise en place du projet from scratch, puis à le connecter à une base de données graph (Neo4j) pour assurer la persistance des données. En collaboration avec les autres membres de l'équipe, nous travaillons sur la conception de l'application, et j'apporte ma contribution au développement de ses différentes fonctionnalités.",
+      techStack: [neo4j, cypher, typescript, nestjs, reactNative, expo],
+    },
+    challenges: [
+      {
+        challengeTitle: "Collection des informations sur l'alimentation.",
+        challengeDescription:
+          "Chaque jour, l'utilisateur devra enregistrer en fin de journée les informations suivantes : ce qu'il a mangé, ce qu'il a bu, s'il a fait du sport, ainsi que tout malaise éventuel ressenti après la combinaison de certains aliments.",
+        solutionImage: "add-food.svg",
+      },
+      {
+        challengeTitle: "Recommandation des aliments.",
+        challengeDescription:
+          "Pour récommander les aliments à un utilisateur, nous allons nous baser sur un algorithme de récommandation probabiliste en fonction des données de l'utilisateur et des autres utilisateurs de la plateforme.",
+        solutionImage: "recommandations.svg",
+      },
+    ],
+    images: [
+      "authentication.svg",
+      "food-diary-image-2.svg",
+      "food-diary-image-3.svg",
+      "food-diary-image-4.svg",
+    ],
+  },
+
+  {
+    id: 5,
     featured: 2,
     name: "Ngimdock portfolio",
     description:

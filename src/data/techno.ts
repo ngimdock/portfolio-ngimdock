@@ -19,6 +19,7 @@ import logos_typeorm from "../../public/assets/svg/logos_typeorm.svg";
 import logos_clean_archi from "../../public/assets/svg/CleanArchitecture.svg";
 import logos_cqrs from "../../public/assets/svg/cqrs.svg";
 import logos_redis from "../../public/assets/svg/logos_redis.svg";
+import logos_expo from "../../public/assets/svg/logos_expo.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -38,6 +39,7 @@ export type TechStackNames =
   | "mongoDb"
   | "mongoose"
   | "reactjs"
+  | "reactNative"
   | "tailwind"
   | "firebase"
   | "aws"
@@ -54,7 +56,9 @@ export type TechStackNames =
   | "typeorm"
   | "redis"
   | "cleanArchi"
-  | "cqrs";
+  | "cqrs"
+  | "cypher"
+  | "expo";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -129,6 +133,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     sizeIcon: 41,
     setOpacity: true,
     link: "https://react.dev/",
+    selected: false,
+  },
+
+  reactNative: {
+    tecnoName: "React Native",
+    alt: "react-native",
+    src: logo_react,
+    sizeIcon: 41,
+    setOpacity: true,
+    link: "https://reactnative.dev/",
     selected: false,
   },
 
@@ -297,6 +311,23 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     link: "https://docs.nestjs.com/recipes/cqrs",
     setOpacity: false,
     selected: false,
+  },
+  cypher: {
+    tecnoName: "Cypher",
+    alt: "Cypher",
+    src: logo_neo4j,
+    sizeIcon: 32,
+    link: "https://neo4j.com/docs/getting-started/cypher-intro/",
+    setOpacity: false,
+    selected: false,
+  },
+  expo: {
+    tecnoName: "Expo",
+    alt: "Expo",
+    src: logos_expo,
+    link: "https://expo.io/",
+    selected: false,
+    sizeIcon: 32,
   },
 } as const;
 

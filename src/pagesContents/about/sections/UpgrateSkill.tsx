@@ -25,7 +25,7 @@ export const UpgrateSkill = () => {
       <div className="md:py-12">
         <H2>Monté en compétences.</H2>
         <p className="mt-3 sm:text-md text-light-dark">
-          Je me tiens à jour de l`&apos;`évolution technologiques en suivant des
+          Je me tiens à jour de l&apos;évolution technologiques en suivant des
           formations sur des plateformes comme freecodecamp, et udemy qui me
           délivrent des{" "}
           <UnderlineLink
@@ -33,7 +33,7 @@ export const UpgrateSkill = () => {
             text="certifications"
             targerBlack={true}
           />
-          . J`&apos;`aime bien aussi contribuer à des projets{" "}
+          . J&apos;aime bien aussi contribuer à des projets{" "}
           <UnderlineLink
             link="https://gx.dilane3.com/about/team"
             text="open source"
@@ -51,7 +51,7 @@ export const UpgrateSkill = () => {
             text="google"
             targerBlack={true}
           />{" "}
-          ou github. Pendant mes heures libres, j`&apos;`écris des{" "}
+          ou github. Pendant mes heures libres, j&apos;écris des{" "}
           <UnderlineLink
             link="https://medium.com/@ngimdockzemfack"
             text=" articles de blog"
