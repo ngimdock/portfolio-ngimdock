@@ -35,8 +35,8 @@ export const HeroTop = () => {
             </span>
           </h1>
           <p className="mt-3 sm:text-lg text-light header-p">
-            Je développe des sites - applications web sur-mesure et j'adore
-            faire ça.
+            Je développe des sites - applications web sur-mesure et
+            j`&apos;`adore faire ça.
           </p>
 
           <div className="flex items-center justify-center mt-4 space-x-5 sm:justify-start">
