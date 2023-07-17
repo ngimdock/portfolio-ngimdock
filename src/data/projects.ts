@@ -327,7 +327,7 @@ export const ALL_PROJECTS: Project[] = [
       {
         challengeTitle: "Recommandation des aliments.",
         challengeDescription:
-          "Pour récommander les aliments à un utilisateur, nous allons nous baser sur un algorithme de récommandation probabiliste en fonction des données de l'utilisateur et des autres utilisateurs de la plateforme.",
+          "Afin de suggérer les aliments à consommer pour l'utilisateur, nous utiliserons un algorithme de recommandation probabiliste qui prend en compte les données de l'utilisateur ainsi que celles des autres utilisateurs de la plateforme.",
         solutionImage: "recommandations.svg",
       },
     ],
@@ -362,6 +362,31 @@ export const ALL_PROJECTS: Project[] = [
       techStack: [typescript, nextjs, tailwind, vercel],
     },
     challenges: [],
+    images: [],
+  },
+
+  {
+    id: 6,
+    name: "Becon website",
+    description: "Site vitrine de présentation d'une entreprise.",
+    mainImage: "beacon.svg",
+    tags: [Tags.projetsSolo, Tags.siteVitrine, Tags.frontend],
+    infos: {
+      industrie: "Informatique",
+      type: ProjectType.SHOWCASE_WEBSITE,
+      publishDate: "22 janvier 2022",
+      link: "https://beacon-website-302ee.web.app/",
+      reasonForNoGithub: reasonGithub.privateCode,
+    },
+    details: {
+      problem:
+        "L'entreprise Becon souhaite faire connaître ses activités et ses services aux utilisateurs par le biais d'Internet.",
+      solution:
+        "J'ai conçu un site vitrine pour atteindre cet objectif pour présenter l'entreprise et les services proposés aux clients potentiels",
+      myTasks:
+        "Ma tâche est d'intégrer les designs fourni par Beacon de manière responssif.",
+      techStack: [reactjs, tailwind, firebase],
+    },
     images: [],
   },
 
@@ -432,30 +457,6 @@ export const ALL_PROJECTS: Project[] = [
   //     myTasks:
   //       "Mon intervention principale a été durant la phase de développement des fonctionnalités, ainsi que la réalisation et l'intégration des maquettes.",
   //     techStack: [reactjs, tailwind, firebase],
-  //   },
-  //   images: [],
-  // },
-
-  // {
-  //   id: 7,
-  //   name: "Becon website",
-  //   description:
-  //     "Une application web et mobile pour dématérialiser la délivrance des cartes nationales d'identités(cni) du cameroun.",
-  //   mainImage: "images.jpeg",
-  //   tags: [Tags.projetsSolo],
-  //   infos: {
-  //     industrie: "Informatique",
-  //     type: ProjectType.SHOWCASE_WEBSITE,
-  //     publishDate: "22 janvier 2022",
-  //     link: "https://beacon-website-302ee.web.app/",
-  //     reasonForNoGithub: reasonGithub.privateCode,
-  //   },
-  //   details: {
-  //     problem: "The problem here",
-  //     solution: "The sution here",
-  //     myTasks: "My task here",
-  //     techStack: [reactjs, tailwind, firebase],
-  //     team: "Team details",
   //   },
   //   images: [],
   // },
