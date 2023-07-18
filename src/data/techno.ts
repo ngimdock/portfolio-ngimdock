@@ -373,8 +373,9 @@ export const TECHNOS: TechStackType[] = [
   socketio,
   mongoDb,
   aws,
-  neo4j,
-  java,
+  // neo4j,
+  // java,
+  graphql,
   render,
 ];
 
@@ -407,8 +408,9 @@ export const HEROTOP_STACK: TechStackType[] = [
   nestjs,
   postgres,
   graphql,
+  aws,
   reactjs,
-  tailwind,
+  // tailwind,
 ];
 
 export const GOOD_PRACTICES = ["CLEAN ARCHI", "DDD", "CQRS", "SOLID"];

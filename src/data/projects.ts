@@ -98,7 +98,14 @@ export const ALL_PROJECTS: Project[] = [
     description:
       "Une application web pour la gestion des activités du Syndicat de l'Enseignement Supérieur du Cameroun.",
     mainImage: "synes-home.svg",
-    tags: [craftmanchip, ingenirie, projetDequipe, backend],
+    tags: [
+      craftmanchip,
+      ingenirie,
+      projetDequipe,
+      backend,
+      applicationWeb,
+      Tags.nestjs,
+    ],
     infos: {
       industrie: "Gouvernement",
       type: ProjectType.WEB_APP,
@@ -245,12 +252,12 @@ export const ALL_PROJECTS: Project[] = [
 
   {
     id: 3,
-    featured: 2,
+    featured: 3,
     name: "NTI-shop",
     description:
       "Une application e-commerce de vente des appareils électroniques.",
     mainImage: "hero-nti-4.svg",
-    tags: [Tags.ingenirie, Tags.projetsSolo],
+    tags: [Tags.ingenirie, Tags.projetsSolo, applicationWeb, frontend],
     infos: {
       industrie: "E-commerce",
       type: ProjectType.WEB_APP,
@@ -298,7 +305,7 @@ export const ALL_PROJECTS: Project[] = [
 
   {
     id: 4,
-    // featured: 2,
+    featured: 4,
     name: "Food Diary",
     description:
       "Une application mobile pour recommander les aliments à consommer en vue de maintenir une bonne santé en fonction des aliments habituellement consommés par l'utilisateur.",
@@ -342,7 +349,7 @@ export const ALL_PROJECTS: Project[] = [
 
   {
     id: 5,
-    featured: 2,
+    // featured: 2,
     name: "Ngimdock portfolio",
     description:
       "Mon portfolio pour présenter mes compétences et mes réalisations en tant qu'ingénieur logiciel.",

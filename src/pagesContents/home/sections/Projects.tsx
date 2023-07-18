@@ -15,6 +15,7 @@ import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { ROUTE_PROJECTS, SCREEN_SM } from "../../../lib";
 import { useResizeWindow } from "../../../hooks";
 import { useState } from "react";
+import { Tooltip } from "../../../components/tooltip/Tooltip";
 
 export const Projects = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -75,11 +76,18 @@ export const Projects = () => {
         <div className="col-span-3 row-span-2 bg-dark-3 ">
           <div className="grid grid-cols-4 py-8 md:py-16 gap-x-4 gap-y-8 lg:gap-y-12">
             {technos.map((techno: TechStackType, index) => (
-              <Techno
+              <Tooltip
+                id={techno.tecnoName}
+                // theme="dark"
+                tooltipContent={techno.tecnoName}
                 key={index}
-                tecnoData={techno}
-                onSelectTechno={() => onSelectTechno(techno.tecnoName)}
-              />
+              >
+                <Techno
+                  key={index}
+                  tecnoData={techno}
+                  onSelectTechno={() => onSelectTechno(techno.tecnoName)}
+                />
+              </Tooltip>
             ))}
           </div>
           <ButtonLink
