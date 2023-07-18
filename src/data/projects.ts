@@ -1,4 +1,3 @@
-import next from "next/types";
 import { reasonGithub, reasonLink } from "../enums";
 import { Tags } from "./tags";
 import { TECH_STACK, TechStackType } from "./techno";
