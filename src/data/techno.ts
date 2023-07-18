@@ -20,6 +20,7 @@ import logos_clean_archi from "../../public/assets/svg/CleanArchitecture.svg";
 import logos_cqrs from "../../public/assets/svg/cqrs.svg";
 import logos_redis from "../../public/assets/svg/logos_redis.svg";
 import logos_expo from "../../public/assets/svg/logos_expo.svg";
+import logos_jest from "../../public/assets/svg/logos_jest.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -52,6 +53,7 @@ export type TechStackNames =
   | "vercel"
   | "stripe"
   | "jest"
+  | "superTest"
   | "graphql"
   | "typeorm"
   | "redis"
@@ -260,9 +262,19 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   jest: {
     tecnoName: "Jest",
     alt: "Jest",
-    src: logo_flutter,
+    src: logos_jest,
     sizeIcon: 32,
     link: "https://jestjs.io/",
+    setOpacity: false,
+    selected: false,
+  },
+
+  superTest: {
+    tecnoName: "supertest",
+    alt: "supertest",
+    src: logos_jest,
+    sizeIcon: 32,
+    link: "https://www.npmjs.com/package/supertest",
     setOpacity: false,
     selected: false,
   },
