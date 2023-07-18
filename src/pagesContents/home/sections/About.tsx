@@ -25,10 +25,11 @@ export const About = () => {
           <H2 classe="mt-3">Développeur fullstack typescript</H2>
         </div>
         <Para>
-          Bien que je sois un développeur pouvant aussi bien intervenir sur le
-          back comme le front, mon plus grand centre d&apos;intérêt et ma
-          spécialité est le backend. J&apos;aime bien travailler dans une équipe
-          qui contient des développeurs plus expérimentés car je pourrais
+          Je suis disponible pour tout type d&apos;opportunités en CDI ou
+          freelance en tant que développeur backend Nodejs/Nestjs. Bien que je
+          puisse aussi bien intervenir sur le back comme le front, ma passion et
+          ma spécialité est le backend. J&apos;aime bien travailler dans une
+          équipe qui contient des développeurs plus expérimentés car je pourrais
           apprendres des nouveaux concepts et les maîtriser rapidement.
           Transférer mes compétences aux profils plus juniors est aussi un grand
           plaisir.

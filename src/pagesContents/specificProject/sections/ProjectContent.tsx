@@ -101,9 +101,11 @@ const ChallengeBox = ({ challenge }: ChallengeBoxProps) => {
           <Para size="sm">{solutionDescription}</Para>
           <div className="flex justify-between mt-6">
             {solutionImage && (
-              <img
-                alt={solutionTitle}
+              <Image
                 src={`/assets/images/${solutionImage}`}
+                alt={challengeTitle}
+                width={700}
+                height={1000}
               />
             )}
           </div>
