@@ -82,14 +82,14 @@ a {
 }
 
 .header-name {
-  font-size: 21px;
-  letter-spacing: -2.3px;
+  font-size: 1.6rem;
+  letter-spacing: -1.8px;
 }
 
 .header-job {
-  font-size: 37px;
+  font-size: 2.2rem;
   line-height: 3rem;
-  letter-spacing: -2.5px;
+  letter-spacing: -1.4px;
   font-weight: 900;
 }
 
@@ -102,7 +102,7 @@ a {
 }
 
 .title-h2 {
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 
 .letter-shrink {
@@ -186,24 +186,22 @@ a.animate:hover {
 }
 
 @media (min-width: 640px) {
-  .header-name {
-    font-size: 30px;
-    letter-spacing: -2.3px;
+  /* .header-name {
+    font-size: 1.8rem;
+    letter-spacing: -1.8px;
   }
 
   .header-job {
-    font-size: 45px;
+    font-size: 2.4rem;
     line-height: 3rem;
-    letter-spacing: -2.5px;
-  }
+    letter-spacing: -1.8px;
+  } */
 }
 
-@media (max-width: 354px) {
-  .header-job {
-    font-size: 35px;
-    line-height: 2.5rem;
-    letter-spacing: -2.5px;
-    font-weight: 900;
+@media (max-width: 450px) {
+  .header-name {
+    font-size: 1.4rem;
+    letter-spacing: -1.8px;
   }
 }
 

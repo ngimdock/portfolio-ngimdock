@@ -353,7 +353,7 @@ export const ALL_PROJECTS: Project[] = [
     name: "Ngimdock portfolio",
     description:
       "Mon portfolio pour présenter mes compétences et mes réalisations en tant qu'ingénieur logiciel.",
-    mainImage: "hero-portfolio.svg",
+    mainImage: "hero-portfolio2.png",
     tags: [Tags.frontend, Tags.siteVitrine, Tags.projetsSolo, Tags.reactjs],
     infos: {
       industrie: "Informatique",

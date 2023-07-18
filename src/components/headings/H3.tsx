@@ -9,7 +9,7 @@ type H2Type = {
 
 export const H3 = ({ children, color, size, classe }: H2Type) => {
   return (
-    <h2
+    <h3
       className={clsx(
         "font-black  tracking-tighter font-Inter italic leading-10 flex  items-end ",
         color === "primary" && "text-dark-2",
@@ -22,7 +22,7 @@ export const H3 = ({ children, color, size, classe }: H2Type) => {
     >
       <span className="block "> {children}</span>
       <span className="block w-6 h-1 ml-2 -translate-y-2 sm:w-10 bg-dark-2"></span>
-    </h2>
+    </h3>
   );
 };
 

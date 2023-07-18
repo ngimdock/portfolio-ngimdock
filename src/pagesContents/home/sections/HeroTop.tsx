@@ -27,7 +27,7 @@ export const HeroTop = () => {
       <div className="relative mt-24 sm:mt-32 md:mt-36 ">
         <section className="relative z-10 text-center sm:text-left">
           <h1 className="text-light header-h1 font-Inter">
-            <span className="block header-name">Ngimdock Zemfack,</span>
+            <span className="block header-name">Ngimdock Zemfack.</span>
             <span className="header-job ">
               Software Engineer, Node
               <span className="font-thin font-Inter fint-">-</span>

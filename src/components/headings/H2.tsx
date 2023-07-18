@@ -15,8 +15,8 @@ export const H2 = ({ children, color, size, classe }: H2Type) => {
         color === "primary" && "text-primary",
         color === "light" && "text-light",
         color === "dark-2" && "text-dark-2",
-        size === "lg" && "text-6xl",
-        size === "md" && "text-2xl lg:text-3xl",
+        size === "lg" && "text-4xl",
+        size === "md" && "text-xl lg:text-2xl",
         size === "sm" && "text-xl",
         classe
       )}
