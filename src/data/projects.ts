@@ -368,7 +368,8 @@ export const ALL_PROJECTS: Project[] = [
   {
     id: 6,
     name: "Becon website",
-    description: "Site vitrine de présentation d'une entreprise.",
+    description:
+      "Site vitrine de présentation des services de l'entreprise Beacon.",
     mainImage: "beacon.svg",
     tags: [Tags.projetsSolo, Tags.siteVitrine, Tags.frontend],
     infos: {
@@ -380,61 +381,60 @@ export const ALL_PROJECTS: Project[] = [
     },
     details: {
       problem:
-        "L'entreprise Becon souhaite faire connaître ses activités et ses services aux utilisateurs par le biais d'Internet.",
+        "L'entreprise Beacon souhaite faire connaître ses activités et ses services aux utilisateurs par le biais d'Internet.",
       solution:
-        "J'ai conçu un site vitrine pour atteindre cet objectif pour présenter l'entreprise et les services proposés aux clients potentiels",
+        "J'ai conçu un site vitrine pour atteindre cet objectif afin de présenter l'entreprise et les services proposés aux clients potentiels.",
       myTasks:
-        "Ma tâche est d'intégrer les designs fourni par Beacon de manière responssif.",
+        "Ma tâche consiste à intégrer les designs fournis par Beacon de manière à ce qu'ils soient responsives et s'adaptent à tous les différents types d'appareils.",
       techStack: [reactjs, tailwind, firebase],
     },
     images: [],
   },
 
-  // {
-  //   id: 5,
-  //   featured: 1,
-  //   name: "Vision Car.",
-  //   description:
-  //     "API Rest complete pour une application de ventes et gestion des voitures de luxe.",
-  //   mainImage: "images.jpeg",
-  //   tags: [ingenirie, projetsSolo, backend],
-  //   infos: {
-  //     industrie: "E-commerce",
-  //     type: ProjectType.WEB_APP,
-  //     publishDate: "22 janvier 2022",
-  //     github: "https://github.com/ngimdock/vision-car-server",
-  //     reasonForNoLink: reasonLink.notOnline,
-  //   },
-  //   details: {
-  //     problem: `Je souhaite approfondir mes compétences et mettre en pratique l'ensembles
-  //     des nouvelles technologies que j'ai apprise. Je veux m'assurer de développer une
-  //     application qui contient des fonctionnalités très avancés et qui peut être utilisé
-  //     dans le monde réel. Une application dont je vais m'occuper de toutes les phase les plusimportantes
-  //     du développement d'un logiciel: Analyse des besoin, conception, design, développement, test, documentation,
-  //     deploiement.`,
-  //     solution: `Pour y arriver, je me suis crée une entreprise fictive au nom de vision-car qui vend
-  //     des voitures de luxe. j'ai rescencé les fonctionnalités les plus importantes qu'une application
-  //     similaire aurait besoin, gestion de l'authentification, gestion des rôles des acteurs du système,
-  //     restreindre les access aux ressources de l'API avec des authorization, gestion de tous les acteurs,
-  //     commmandes, factures. Gestion de l'intéractivités entre les acteurs. tests unitaires et end to end, `,
-  //     myTasks: `après j'ai réalisé la conception qui m'a permit de deduire le schema
-  //       de la BD. Ensuite je me suis mis à développer le backend du projet. En parallele du développement du backend,
-  //       je réalisait les maquettes du projet.`,
-  //     techStack: [nestjs, reactjs, postgres, prisma, stripe, jest],
-  //   },
-  //   images: ["contact-call-to-action.jpg", "dan.png"],
-  //   challenges: [
-  //     {
-  //       challengeTitle: "Premier challenge",
-  //       challengeDescription:
-  //         "Un des plus grand challenge sur ce projet à été d'éffectuer une bonne conception de la base de donnée.",
-  //       solutionTitle: "Solution de conception",
-  //       solutionDescription:
-  //         "J'ai réalisé un MCD(Modèle Conceptuel de Donnée) évolutif que j'ai pu mettre en place après avoir bien définir les besoins du projet. Le schema de la BD est très adapté s'adapte facilement à des mises à jour.",
-  //       solutionImage: "contact-call-to-action.jpg",
-  //     },
-  //   ],
-  // },
+  {
+    id: 7,
+    name: "Vision Car.",
+    description:
+      "API Rest complete pour une application de ventes et gestion des voitures de luxe.",
+    mainImage: "images.jpeg",
+    tags: [ingenirie, projetsSolo, backend],
+    infos: {
+      industrie: "E-commerce",
+      type: ProjectType.WEB_APP,
+      publishDate: "22 janvier 2022",
+      github: "https://github.com/ngimdock/vision-car-server",
+      reasonForNoLink: reasonLink.notOnline,
+    },
+    details: {
+      problem: `Je souhaite approfondir mes compétences et mettre en pratique l'ensembles
+      des nouvelles technologies que j'ai apprise. Je veux m'assurer de développer une
+      application qui contient des fonctionnalités très avancés et qui peut être utilisé
+      dans le monde réel. Une application dont je vais m'occuper de toutes les phase les plusimportantes
+      du développement d'un logiciel: Analyse des besoin, conception, design, développement, test, documentation,
+      deploiement.`,
+      solution: `Pour y arriver, je me suis crée une entreprise fictive au nom de vision-car qui vend
+      des voitures de luxe. j'ai rescencé les fonctionnalités les plus importantes qu'une application
+      similaire aurait besoin, gestion de l'authentification, gestion des rôles des acteurs du système,
+      restreindre les access aux ressources de l'API avec des authorization, gestion de tous les acteurs,
+      commmandes, factures. Gestion de l'intéractivités entre les acteurs. tests unitaires et end to end, `,
+      myTasks: `après j'ai réalisé la conception qui m'a permit de deduire le schema
+        de la BD. Ensuite je me suis mis à développer le backend du projet. En parallele du développement du backend,
+        je réalisait les maquettes du projet.`,
+      techStack: [nestjs, reactjs, postgres, prisma, stripe, jest],
+    },
+    images: ["contact-call-to-action.jpg", "dan.png"],
+    challenges: [
+      {
+        challengeTitle: "Premier challenge",
+        challengeDescription:
+          "Un des plus grand challenge sur ce projet à été d'éffectuer une bonne conception de la base de donnée.",
+        solutionTitle: "Solution de conception",
+        solutionDescription:
+          "J'ai réalisé un MCD(Modèle Conceptuel de Donnée) évolutif que j'ai pu mettre en place après avoir bien définir les besoins du projet. Le schema de la BD est très adapté s'adapte facilement à des mises à jour.",
+        solutionImage: "contact-call-to-action.jpg",
+      },
+    ],
+  },
   // {
   //   id: 6,
   //   featured: 4,
