@@ -29,6 +29,7 @@ const {
   cypher,
   expo,
   superTest,
+  nodejs,
 } = TECH_STACK;
 
 const {
@@ -401,7 +402,7 @@ export const ALL_PROJECTS: Project[] = [
                   réalisation de tests unitaires et de tests de end en end, ainsi que le déploiement de 
                   l'application sur une plateforme PaaS telle que Render.`,
       myTasks: `J'ai implémenté toutes les fonctionnalités énumérées dans la section "solution" ci-dessus. De plus, j'ai créé quelques designs avec Figma pour présenter le projet de manière plus efficace.`,
-      techStack: [nestjs, postgres, prisma, jest, superTest],
+      techStack: [nestjs, postgres, prisma, typescript, redis, jest, superTest],
     },
     images: [
       "visoin-car-image-1.svg",

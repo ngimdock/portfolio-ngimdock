@@ -21,6 +21,7 @@ import logos_cqrs from "../../public/assets/svg/cqrs.svg";
 import logos_redis from "../../public/assets/svg/logos_redis.svg";
 import logos_expo from "../../public/assets/svg/logos_expo.svg";
 import logos_jest from "../../public/assets/svg/logos_jest.svg";
+import logos_nodejs from "../../public/assets/svg/logos_nodejs-icon.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -34,6 +35,7 @@ export type TechStackType = {
 
 export type TechStackNames =
   | "typescript"
+  | "nodejs"
   | "nestjs"
   | "postgres"
   | "prisma"
@@ -73,13 +75,21 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     link: "https://www.typescriptlang.org/",
     selected: false,
   },
-
+  nodejs: {
+    tecnoName: "Nodejs",
+    alt: "Nodejs",
+    src: logos_nodejs,
+    sizeIcon: 30,
+    setOpacity: false,
+    link: "https://nodejs.org/",
+    selected: false,
+  },
   nestjs: {
     tecnoName: "Nestjs",
     alt: "Nestjs",
     // src: "logos_nestjs_color.svg",
     src: logo_nestjs,
-    sizeIcon: 38,
+    sizeIcon: 36,
     setOpacity: true,
     link: "https://nestjs.com/",
     selected: true,
@@ -263,7 +273,7 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     tecnoName: "Jest",
     alt: "Jest",
     src: logos_jest,
-    sizeIcon: 32,
+    sizeIcon: 26,
     link: "https://jestjs.io/",
     setOpacity: false,
     selected: false,
@@ -283,7 +293,7 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     tecnoName: "GraphQL",
     alt: "GraphQL",
     src: logo_graphql,
-    sizeIcon: 32,
+    sizeIcon: 30,
     link: "https://graphql.org/",
     setOpacity: false,
     selected: false,
@@ -359,6 +369,9 @@ const {
   render,
   socketio,
   graphql,
+  redis,
+  nodejs,
+  jest,
 } = TECH_STACK;
 
 export const TECHNOS: TechStackType[] = [
@@ -377,6 +390,7 @@ export const TECHNOS: TechStackType[] = [
   // java,
   graphql,
   render,
+  redis,
 ];
 
 export const TECHNOS_FROTEND: TechStackType[] = [
@@ -396,6 +410,9 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   graphql,
   mongoDb,
   aws,
+  nodejs,
+  redis,
+  jest,
 ].map((tech) => ({
   ...tech,
   selected: false,

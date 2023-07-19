@@ -21,7 +21,7 @@ export const TextSphere = () => {
           radius: sizeCircle,
           useContainerInlineStyles: true,
           useItemInlineStyles: true,
-          maxSpeed: "normal",
+          maxSpeed: "fast",
           containerClass: "tag-cloud__container",
           itemClass: "tag-cloud__item",
         })}
