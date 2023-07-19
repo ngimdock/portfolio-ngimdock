@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@frank-mayer/react-tag-cloud": "^1.2.1",
     "@next/font": "13.0.7",
     "@types/node": "18.11.15",
     "@types/react": "18.0.26",

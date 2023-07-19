@@ -37,6 +37,13 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@frank-mayer/react-tag-cloud@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@frank-mayer/react-tag-cloud/-/react-tag-cloud-1.2.1.tgz#c444963537c4c7b638ca2266906f3c4c952e4d35"
+  integrity sha512-xmbwDCLgk9PUpMzbUZU4Y8nMWX1rtnaP+B0h7Hkagtc+eWBzqYCxDOaXncXdcSpxVEbDbpT0ntK+bcuzy9zZyg==
+  dependencies:
+    TagCloud "^2.3.2"
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
