@@ -1,10 +1,9 @@
 import { H2, H3, Para } from "../../../components";
 import useIsInViewport from "use-is-in-viewport";
 import clsx from "clsx";
-import TextSphere from "../../../components/textSphere/textSphere";
-import TextShpereMobile from "../../../components/textSphere/textSphereMobile";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { ROUTE_ABOUT } from "../../../lib";
+import { TextSphere } from "../../../components/textSphere/textSphere";
 
 export const About = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -40,9 +39,7 @@ export const About = () => {
           </ButtonLink>
         </div>
       </div>
-
       <TextSphere />
-      <TextShpereMobile />
     </section>
   );
 };

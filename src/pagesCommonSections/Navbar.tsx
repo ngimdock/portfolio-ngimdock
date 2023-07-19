@@ -85,7 +85,7 @@ export const Navbar = () => {
         className="flex items-center space-x-1.5 text-primary"
       >
         <GiBearFace size={44} className="hidden sm:block" />
-        <GiBearFace size={46} className="sm:hidden" />
+        <GiBearFace size={40} className="sm:hidden" />
         <span className="hidden font-bold sm:block">Bear</span>
       </Link>
       <ul className="items-center hidden space-x-4 text-xs font-medium md:flex lg:space-x-5 text-light">

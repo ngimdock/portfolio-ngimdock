@@ -5,7 +5,6 @@ import ngimdock_photo from "../../../../public/assets/images/profile-pic2.png";
 import Image from "next/image";
 import { UpgrateSkill } from "./UpgrateSkill";
 import { HistoryHobbies } from "./HistoryHobbies";
-import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud";
 
 export const About = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -45,7 +44,6 @@ export const About = () => {
       <UpgrateSkill />
 
       <HistoryHobbies />
-      <RotativeCircle />
     </section>
   );
 };
@@ -73,40 +71,3 @@ const NgimdockImage = ({ classe }: NgimdockImageProps) => {
     </section>
   );
 };
-
-const RotativeCircle = () => (
-  <TagCloud
-    options={(w: Window & typeof globalThis): TagCloudOptions => ({
-      // radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
-      radius: 280,
-      useContainerInlineStyles: true,
-      useItemInlineStyles: true,
-      maxSpeed: "fast",
-    })}
-    onClick={(tag: string, ev: MouseEvent) => alert(tag)}
-    onClickOptions={{ passive: true }}
-  >
-    {[
-      "VSCode",
-      "TypeScript",
-      "React",
-      "Preact",
-      "Parcel",
-      "Jest",
-      "Next",
-      "ESLint",
-      "Framer Motion",
-      "Three.js",
-      "VSCode",
-      "TypeScript",
-      "React",
-      "Preact",
-      "Parcel",
-      "Jest",
-      "Next",
-      "ESLint",
-      "Framer Motion",
-      "Three.js",
-    ]}
-  </TagCloud>
-);

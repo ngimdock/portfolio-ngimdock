@@ -20,9 +20,7 @@ export const texts = [
   "refacto",
 ];
 
-export const options: TagCloudOptions = {
-  radius: 300,
-  maxSpeed: "normal",
-  initSpeed: "normal",
-  keep: true,
+export const circleSizes = {
+  mobile: 228,
+  desktop: 320,
 };

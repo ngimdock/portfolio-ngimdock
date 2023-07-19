@@ -1,20 +1,16 @@
 import clsx from "clsx";
-import { useEffect, useState } from "react";
 import { RiStarSmileFill } from "react-icons/ri";
 import useIsInViewport from "use-is-in-viewport";
 import { H2 } from "../../../components";
-import TextSphere from "../../../components/textSphere/textSphere";
-import TextShpereMobileSkill from "../../../components/textSphere/textSphereMobileSkill";
-import TextShpereSkill from "../../../components/textSphere/textSphereSkill";
 import {
   GOOD_PRACTICES,
   TECHNOS_BACKEND,
   TECHNOS_FROTEND,
-  TECHNOS_OTHERS,
   TechStackType,
 } from "../../../data";
 import { Techno } from "../../home/sections/Projects";
 import { TagBg } from "../../../components/tag-bg/tabBg";
+import { TextSphere } from "../../../components/textSphere/textSphere";
 
 export const Skill = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -90,8 +86,7 @@ export const Skill = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center xl:translate-x-28">
-        <TextShpereMobileSkill />
-        <TextShpereSkill />
+        <TextSphere />
       </div>
     </section>
   );
