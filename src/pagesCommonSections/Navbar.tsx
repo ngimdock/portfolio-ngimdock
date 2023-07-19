@@ -60,13 +60,10 @@ export const NAV_DATAS: NavRouteType[] = [
     route: CONTACT,
     link: ROUTE_CONTACT,
   },
-
-  {
-    id: 8,
-    route: RESUME,
-    link: ROUTE_HOME,
-  },
 ];
+
+const navLinkClassname =
+  "hover:text-light hover:bg-primary py-0.5 px-1.5 animate font-Inter";
 
 export const Navbar = () => {
   const { openMobileNav } = useContext(mobileNavContext);
@@ -90,14 +87,17 @@ export const Navbar = () => {
       </Link>
       <ul className="items-center hidden space-x-4 text-xs font-medium md:flex lg:space-x-5 text-light">
         {NAV_DATAS.map(({ id, link, route }: NavRouteType) => (
-          <Link
-            key={id}
-            href={link}
-            className="hover:text-light hover:bg-primary py-0.5 px-1.5 animate font-Inter"
-          >
+          <Link key={id} href={link} className={navLinkClassname}>
             {route}
           </Link>
         ))}
+        <Link
+          href={process.env.NEXT_PUBLIC_MY_CV as string}
+          target="_blank"
+          className={navLinkClassname}
+        >
+          {RESUME}
+        </Link>
       </ul>
 
       <div
