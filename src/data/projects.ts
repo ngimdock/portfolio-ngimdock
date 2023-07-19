@@ -137,10 +137,10 @@ export const ALL_PROJECTS: Project[] = [
       team: "L'équipe de développement est constitué de 5 membres dont 2 développeurs backend et 3 développeurs frontend.",
     },
     images: [
-      "contributions.svg",
-      "create-communiques.svg",
-      "events.svg",
-      "create-event.svg",
+      "contributions2.svg",
+      "create-communiques2.svg",
+      "events2.svg",
+      "create-event2.svg",
     ],
     challenges: [
       {
@@ -148,7 +148,7 @@ export const ALL_PROJECTS: Project[] = [
         challengeDescription:
           "Le SYNES est constitué de plusieurs services comme le Congrès, le conseil national(CN), le bureau exécutif national(BEN), la coordination de l'institution d'enseignement supérieur(CSI), la section SYNES de l'établissement(SSE). Certains membres de ces services sont amenés à intéragire avec l'application.",
         solutionTitle: "Preview",
-        solutionImage: "services.svg",
+        solutionImage: "services2.svg",
       },
 
       {
@@ -158,14 +158,14 @@ export const ALL_PROJECTS: Project[] = [
         solutionTitle: "Preview",
         solutionDescription:
           "Cette interface permet d'ajouter une contribution financière d'un membre de l'organisation.",
-        solutionImage: "transparence.svg",
+        solutionImage: "transparence2.svg",
       },
       {
         challengeTitle: "Activités du SYNES",
         challengeDescription:
           "Il est important d'informer tous les membres de SYNES des activités(Communiqués, évènements, sanctions) organisées afin de leur permettre de participer facilement.",
         solutionTitle: "Preview",
-        solutionImage: "activites.svg",
+        solutionImage: "activites2.svg",
       },
     ],
   },
