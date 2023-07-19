@@ -255,7 +255,7 @@ export const ALL_PROJECTS: Project[] = [
     name: "NTI-shop",
     description:
       "Une application e-commerce de vente des appareils électroniques.",
-    mainImage: "hero-nti-4.svg",
+    mainImage: "hero-nti.svg",
     tags: [Tags.ingenirie, Tags.projetsSolo, applicationWeb, frontend],
     infos: {
       industrie: "E-commerce",
