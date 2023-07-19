@@ -9,7 +9,7 @@ export const Coaching = () => {
   const DATA: FlexSectionData = {
     h3: "Formations",
     h2: "Je forme les futurs développeurs de votre entreprise / organisation.",
-    image: "formation_web.jpg",
+    image: "coaching4.jpg",
     text: `Que vous soyez une école qui aimerait former ses étudiants en développement web ou une 
     entreprise qui souhaiterait faire monter en compétence ses développeurs rapidement, 
     je peux vous aider à atteindre vos objectifs avec mon programme d'accompagnement sur-mesure en présentiel ou en ligne.`,

@@ -15,7 +15,7 @@ export const HistoryHobbies = () => {
         "container mt-24 sm:mt-8 m grid-cols-2 flex   flex-col-reverse space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-16 sm:text-left"
       )}
     >
-      <div className="md:py-12 mt-6 md:mt-0">
+      <div className="mt-6 md:py-12 md:mt-0">
         <H2>Histoires & hobbies</H2>
         <p className="mt-3 sm:text-md text-light-dark">
           Quand j&apos;étais plus jeune, je voulais devenir acteur de ciné et
@@ -76,7 +76,7 @@ export const HistoryHobbies = () => {
         style={{
           backgroundImage: `url('/assets/images/me-assis.jpg')`,
         }}
-        className="object-none grayscale w-full h-72 md:h-auto  bg-center bg-no-repeat bg-cover sm:h-auto rounded-2xl"
+        className="object-none w-full bg-center bg-no-repeat bg-cover grayscale h-72 md:h-auto sm:h-auto rounded-2xl"
       ></div>
     </section>
   );

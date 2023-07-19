@@ -27,14 +27,14 @@ export const About = () => {
           <H2>Parcours tech.</H2>
           <Para>
             J&apos;ai écrit mes premières lignes de code sur papier en seconde.
-            Après le BAC, je me suis vu refuser l&apos;admission en informatique
-            par mon université avec pour raison que je n&apos;avais pas une
-            excellente note en mathématiques au BAC. J&apos;ai dû débuter mes
-            études en maths et obtenir mon BAC+1 dans cette filière afin de
-            reprendre mes études en informatique jusqu&apos;à l&apos;obtention
-            de mon bac+4. Pendant ce parcours j&apos;ai travaillé́ avec des amis
-            et des entreprises sur plusieurs projets passionnants et rencontré
-            des personnes formidables ❤️
+            Suite à l&apos;obtention de mon baccalauréat, j&apos;ai poursuivi
+            mes études en mathématique et ai réussi ma première année
+            d&apos;université. Cependant, j&apos;ai décidé de retourner à mes
+            racines en choisissant de me former en informatique, car c&apos;est
+            là ma véritable passion. Tout au long de ce parcours, j&apos;ai eu
+            l&apos;opportunité de collaborer avec des amis ainsi que des
+            entreprises sur différents projets passionnants, et j&apos;ai fait
+            la connaissance de personnes formidables ❤️.
           </Para>
         </div>
 

@@ -8,7 +8,7 @@ import { ROUTE_CONTACT } from "../../lib";
 import { Coaching } from "./sections/Coaching";
 
 export const DEFAULT_CALL_TO_ACTION_DATA = {
-  image: "contact-call-to-action.jpg",
+  image: "contact-call-to-action2.jpg",
   // image: "keyboard.jpg",
   title: "Fait passer ton projet web au niveau supérieur.",
   button: {

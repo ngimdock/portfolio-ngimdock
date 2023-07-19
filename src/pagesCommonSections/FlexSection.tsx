@@ -18,7 +18,7 @@ export interface FlexSectionProps {
 }
 
 const defaultClassName =
-  "container mt-24 sm:mt-8 m grid-cols-2 space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-20 sm:text-left";
+  "container sm:mt-8 m grid-cols-2 space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-20 sm:text-left";
 
 export const FlexSectionLeft = ({
   data,
@@ -35,14 +35,14 @@ export const FlexSectionLeft = ({
       className={clsx(
         !scrollEffect && "visibleDiv noTranslateDiv",
         isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        defaultClassName
+        `${defaultClassName}`
       )}
     >
       <div
         style={{
           backgroundImage: `url('/assets/images/${image}')`,
         }}
-        className="w-full h-28 md:h-auto sm:h-auto  bg-center bg-no-repeat bg-cover object-none rounded-2xl"
+        className="object-none w-full bg-center bg-no-repeat bg-cover h-52 md:h-auto sm:h-auto rounded-2xl"
       ></div>
 
       <div className={paddingY ? "sm:py-20" : "sm:py-4"}>
@@ -74,10 +74,10 @@ export const FlexSectionRight = ({
       className={clsx(
         !scrollEffect && "visibleDiv noTranslateDiv",
         isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        defaultClassName
+        `${defaultClassName} flex flex-col-reverse`
       )}
     >
-      <div className={paddingY ? "sm:py-20" : "sm:py-4"}>
+      <div className={clsx(paddingY ? "sm:py-20" : "sm:py-4", "mt-5 md:mt-0")}>
         <div className="flex flex-col items-center sm:items-start">
           {h3 && <H3>{h3}</H3>}
           <H2>{h2}</H2>
@@ -92,7 +92,7 @@ export const FlexSectionRight = ({
         style={{
           backgroundImage: `url('/assets/images/${image}')`,
         }}
-        className="w-full h-28 md:h-auto sm:h-auto  bg-center bg-no-repeat bg-cover object-none rounded-2xl"
+        className="object-none w-full bg-center bg-no-repeat bg-cover h-52 md:h-auto sm:h-auto rounded-2xl"
       ></div>
     </section>
   );

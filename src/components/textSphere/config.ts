@@ -1,5 +1,3 @@
-import { TagCloudOptions } from "TagCloud";
-
 export const texts = [
   "communication",
   "clean code",

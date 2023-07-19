@@ -12,7 +12,7 @@ export const FormationsModules = () => {
   }
 
   return (
-    <section className="container flex flex-col space-y-36 separed-sections">
+    <section className="container flex flex-col space-y-16 md:space-y-36 md:separed-sections">
       {FORMATION_MODULES.map((formation, index) => {
         const result = isPair(index) ? (
           <FlexSectionRight data={formation} key={index} />

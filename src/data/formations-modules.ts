@@ -25,7 +25,7 @@ export const FORMATION_MODULES: FlexSectionData[] = [
 
   {
     h2: "Technologies complémentaires",
-    image: "hello.jpg",
+    image: "hello2.jpg",
     text: `Il s'agit d'un ensemble de technologies, d'outils ou simplement de bonnes pratiques utilisés pour faciliter le développement, tels que: Git/Github, Docker, Figma, SCRUM`,
   },
 ];

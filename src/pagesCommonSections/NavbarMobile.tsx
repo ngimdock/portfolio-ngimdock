@@ -7,6 +7,7 @@ import {
   ROUTE_PROJECTS,
   ROUTE_SKILLS,
   ROUTE_HOME,
+  RESUME,
 } from "../lib";
 
 import headphone from "../../public/assets/svg/headphone.svg";
@@ -27,6 +28,8 @@ type NavRouteType = {
   route: string;
   link: string;
 };
+
+const navLinkClassname = "hover:text-primary hover:cursor-pointer animate ";
 
 export const NavbarMobile = () => {
   const { isMobileOpen, closeMobileNav } = useContext(mobileNavContext);
@@ -80,14 +83,18 @@ export const NavbarMobile = () => {
       <ul className="flex flex-col items-center space-y-8 text-sm font-bold text-center uppercase item-center">
         {NAV_DATAS.map(({ id, route, link }: NavRouteType) => (
           <div key={id} onClick={() => closeMobileNav()}>
-            <Link
-              href={link}
-              className="hover:text-primary hover:cursor-pointer animate "
-            >
+            <Link href={link} className={navLinkClassname}>
               {route}
             </Link>
           </div>
         ))}
+        <Link
+          href={process.env.NEXT_PUBLIC_MY_CV as string}
+          target="_blank"
+          className={navLinkClassname}
+        >
+          {RESUME}
+        </Link>
       </ul>
 
       <div
