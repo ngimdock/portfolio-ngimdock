@@ -1,29 +1,31 @@
 import Image from "next/image";
-import ngimdock_photo from "../../../../public/assets/images/profile-pic2.png";
 import { H2, Para } from "../../../components";
-import { ALL_PROJECTS, Project } from "../../../data";
+import { Project } from "../../../data";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { TagBg } from "../../../components/tag-bg/tabBg";
 import useIsInViewport from "use-is-in-viewport";
 import clsx from "clsx";
+import { projectContext } from "../../../dataManager/context/projectContext";
 
 export interface Props {
   project: Project;
 }
 
 export const NextProject = ({ project }: Props) => {
+  const { projects: all_projects } = useContext(projectContext);
+
   const [isInViewport, targetRef] = useIsInViewport();
 
   const [nextProject, setNextProject] = useState<Project>(project);
 
   useEffect(() => {
-    const secondProject = ALL_PROJECTS.find((p) => p.id === project.id + 1);
+    const secondProject = all_projects.find((p) => p.id === project.id + 1);
 
     if (!!secondProject) setNextProject(secondProject as Project);
     else
       setNextProject(
-        ALL_PROJECTS.find((p) => p.id === project.id - 1) as Project
+        all_projects.find((p) => p.id === project.id - 1) as Project
       );
   }, [project]);
 

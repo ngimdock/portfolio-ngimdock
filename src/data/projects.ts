@@ -257,7 +257,13 @@ export const ALL_PROJECTS: Project[] = [
     description:
       "Une application e-commerce de vente des appareils électroniques.",
     mainImage: "hero-nti.svg",
-    tags: [Tags.ingenirie, Tags.projetsSolo, applicationWeb, frontend],
+    tags: [
+      Tags.ingenirie,
+      Tags.projetsSolo,
+      applicationWeb,
+      frontend,
+      Tags.design,
+    ],
     infos: {
       industrie: "E-commerce",
       type: ProjectType.WEB_APP,
@@ -379,7 +385,7 @@ export const ALL_PROJECTS: Project[] = [
     description:
       "API Rest complète et Open Source pour une application de ventes  des voitures de luxe (+30 étoiles sur github). ",
     mainImage: "vision-car-hero.svg",
-    tags: [backend, projetsSolo],
+    tags: [backend, projetsSolo, Tags.nestjs],
     infos: {
       industrie: "E-commerce",
       type: ProjectType.WEB_APP,

@@ -1,15 +1,17 @@
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useIsInViewport from "use-is-in-viewport";
-import { H2, Tag } from "../../../components";
-import { TagBg } from "../../../components/tag-bg/tabBg";
-import { ALL_PROJECTS, Project } from "../../../data";
+import { H2 } from "../../../components";
+import { Project } from "../../../data";
 import { Tags } from "../../../data/tags";
 import { ProjectCard } from "../../../pagesCommonSections";
+import { projectContext } from "../../../dataManager/context/projectContext";
 
 const TOUS = "Tous";
 
 export const AllProjects = () => {
+  const { projects: all_projects } = useContext(projectContext);
+
   const [isInViewport, targetRef] = useIsInViewport();
 
   const tagsArray = Object.entries(Tags).map(([, tagName]) => ({
@@ -26,13 +28,13 @@ export const AllProjects = () => {
 
   const [tags, setTags] = useState(allTags);
 
-  const [projects, setProjects] = useState(ALL_PROJECTS);
+  const [projects, setProjects] = useState(all_projects);
 
   function onSelectTag(tagName: string) {
     if (tagName === TOUS) {
       setTags(allTags);
 
-      return setProjects(ALL_PROJECTS);
+      return setProjects(all_projects);
     }
     const tagsNoSelected = tags.map((techno) => ({
       ...techno,
@@ -44,7 +46,7 @@ export const AllProjects = () => {
     });
 
     const projectsWithSelectedTag = getProjectBuildWithTechno(
-      ALL_PROJECTS,
+      all_projects,
       tagName
     );
 

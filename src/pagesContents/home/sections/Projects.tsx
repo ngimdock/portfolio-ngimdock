@@ -2,27 +2,24 @@ import clsx from "clsx";
 import Image from "next/image";
 import useIsInViewport from "use-is-in-viewport";
 import { Button, H2, H3, Para } from "../../../components";
-import {
-  ALL_PROJECTS,
-  Project,
-  TECHNOS,
-  TechStackType,
-  TECH_STACK,
-} from "../../../data";
+import { Project, TECHNOS, TechStackType, TECH_STACK } from "../../../data";
 import { ProjectCard } from "../../../pagesCommonSections";
 import img from "../../../../public/assets/images/images.jpeg";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { ROUTE_PROJECTS, SCREEN_SM } from "../../../lib";
 import { useResizeWindow } from "../../../hooks";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Tooltip } from "../../../components/tooltip/Tooltip";
+import { projectContext } from "../../../dataManager/context/projectContext";
 
 export const Projects = () => {
+  const { projects: all_projects } = useContext(projectContext);
+
   const [isInViewport, targetRef] = useIsInViewport();
 
   const [technos, setTechnos] = useState(TECHNOS);
   const [projects, setProjects] = useState(
-    getProjectBuildWithTechno(ALL_PROJECTS, TECH_STACK.nestjs.tecnoName)
+    getProjectBuildWithTechno(all_projects, TECH_STACK.nestjs.tecnoName)
   );
 
   function onSelectTechno(tecnoName: string) {
@@ -35,7 +32,7 @@ export const Projects = () => {
     });
 
     const technosWithTheTargetName = getProjectBuildWithTechno(
-      ALL_PROJECTS,
+      all_projects,
       tecnoName
     );
 

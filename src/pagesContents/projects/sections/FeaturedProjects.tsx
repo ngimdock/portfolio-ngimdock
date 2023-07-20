@@ -3,13 +3,15 @@ import { SwiperSlide } from "swiper/react";
 import useIsInViewport from "use-is-in-viewport";
 import { H2 } from "../../../components";
 import { Carousel } from "../../../components/carousel/Carousel";
-import { ALL_PROJECTS } from "../../../data";
 import { ProjectCard } from "../../../pagesCommonSections";
+import { useContext } from "react";
+import { projectContext } from "../../../dataManager/context/projectContext";
 
 export const FeaturedProjects = () => {
+  const { projects: all_projects } = useContext(projectContext);
   const [isInViewport, targetRef] = useIsInViewport();
 
-  const featuredProjects = ALL_PROJECTS.filter((project) => project.featured);
+  const featuredProjects = all_projects.filter((project) => project.featured);
 
   const carouselProjectsData = featuredProjects.map((project) => (
     <SwiperSlide key={project.id}>

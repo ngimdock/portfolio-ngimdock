@@ -1,11 +1,11 @@
-import { redirect } from "next/dist/server/api-utils";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Base } from "../../src/Base";
 import { Metadata } from "../../src/components";
 import { SplashScreen } from "../../src/components/splashScreen/splashScreen";
-import { ALL_PROJECTS, Project } from "../../src/data";
+import { Project } from "../../src/data";
 import { SpecificProjectBody } from "../../src/pagesContents/specificProject/SpecificProjectBody";
+import { projectContext } from "../../src/dataManager/context/projectContext";
 
 type Props = {
   params: {
@@ -14,10 +14,12 @@ type Props = {
 };
 
 const SpecificProject = () => {
+  const { projects: all_projects } = useContext(projectContext);
+
   const router = useRouter();
   const { projectId } = router.query;
 
-  const project = ALL_PROJECTS.find(
+  const project = all_projects.find(
     (p) => p.id === Number(projectId)
   ) as Project;
 
