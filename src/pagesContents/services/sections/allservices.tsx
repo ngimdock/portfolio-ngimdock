@@ -46,7 +46,7 @@ export const ServiceCard = ({ serviceData }: ServiceCardProps) => {
       {serviceData.link && (
         <div className="flex justify-center mt-3 ">
           <Link
-            href={serviceData.link}
+            href={serviceData.link ?? ""}
             className="text-xs font-Inter text-primary hover:opacity-50 animate underline"
           >
             En savoir plus
