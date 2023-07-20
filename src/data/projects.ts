@@ -105,6 +105,7 @@ export const ALL_PROJECTS: Project[] = [
       backend,
       applicationWeb,
       Tags.nestjs,
+      Tags.reactjs,
     ],
     infos: {
       industrie: "Gouvernement",
@@ -258,11 +259,11 @@ export const ALL_PROJECTS: Project[] = [
       "Une application e-commerce de vente des appareils électroniques.",
     mainImage: "hero-nti.svg",
     tags: [
-      Tags.ingenirie,
-      Tags.projetsSolo,
       applicationWeb,
+      Tags.projetsSolo,
       frontend,
       Tags.design,
+      Tags.reactjs,
     ],
     infos: {
       industrie: "E-commerce",
@@ -316,7 +317,7 @@ export const ALL_PROJECTS: Project[] = [
     description:
       "Une application mobile pour recommander les aliments à consommer en vue de maintenir une bonne santé en fonction des aliments habituellement consommés par l'utilisateur.",
     mainImage: "hero-food-diary.svg",
-    tags: [Tags.projetDequipe, Tags.backend, Tags.nestjs],
+    tags: [Tags.projetDequipe, Tags.backend, Tags.nestjs, ingenirie],
     infos: {
       industrie: "Alimentation",
       type: ProjectType.MOBILE_APP,

@@ -32,10 +32,10 @@ export const Footer = () => {
             <p className="text-sm">
               {process.env.NEXT_PUBLIC_MY_JOB?.toUpperCase()}
             </p>
-            <p className="mt-1 text-xs opacity-50">
+            {/* <p className="mt-1 text-xs opacity-50">
               <span className="uppercase">Whatsapp : </span>{" "}
               <span> + 6 55 95 14 94</span>
-            </p>
+            </p> */}
           </div>
         </div>
 

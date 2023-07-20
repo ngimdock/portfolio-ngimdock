@@ -9,6 +9,7 @@ import "../styles/splash-screen.css";
 import "../styles/splash-screen.css";
 import "../styles/textSphere.css";
 import "../styles/carousel.css";
+import "../styles/pyramidLoader.css";
 
 import { register } from "swiper/element/bundle";
 import { ToastProvider } from "../src/dataManager/provider/ToastProvider";
