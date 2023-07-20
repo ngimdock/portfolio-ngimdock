@@ -22,6 +22,7 @@ import logos_redis from "../../public/assets/svg/logos_redis.svg";
 import logos_expo from "../../public/assets/svg/logos_expo.svg";
 import logos_jest from "../../public/assets/svg/logos_jest.svg";
 import logos_nodejs from "../../public/assets/svg/logos_nodejs-icon.svg";
+import logos_expressjs from "../../public/assets/svg/logo_express.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -41,6 +42,7 @@ export type TechStackNames =
   | "prisma"
   | "mongoDb"
   | "mongoose"
+  | "expressjs"
   | "reactjs"
   | "reactNative"
   | "tailwind"
@@ -134,6 +136,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     src: logo_mongoose,
     setOpacity: false,
     link: "https://mongoosejs.com/",
+    selected: false,
+  },
+
+  expressjs: {
+    tecnoName: "Expressjs",
+    alt: "Expressjs",
+    src: logos_expressjs,
+    sizeIcon: 30,
+    setOpacity: false,
+    link: "https://expressjs.com/",
     selected: false,
   },
 
@@ -372,6 +384,7 @@ const {
   redis,
   nodejs,
   jest,
+  expressjs,
 } = TECH_STACK;
 
 export const TECHNOS: TechStackType[] = [
@@ -411,6 +424,7 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   mongoDb,
   aws,
   nodejs,
+  expressjs,
   redis,
   jest,
 ].map((tech) => ({

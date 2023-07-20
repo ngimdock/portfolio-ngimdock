@@ -25,13 +25,13 @@ export const About = () => {
         </div>
         <Para>
           Je suis disponible pour tout type d&apos;opportunités en CDI ou
-          freelance en tant que développeur backend Nodejs/Nestjs. Bien que je
-          puisse aussi bien intervenir sur le back comme le front, ma passion et
-          ma spécialité est le backend. J&apos;aime bien travailler dans une
-          équipe qui contient des développeurs plus expérimentés car je pourrais
-          apprendres des nouveaux concepts et les maîtriser rapidement.
-          Transférer mes compétences aux profils plus juniors est aussi un grand
-          plaisir.
+          freelance en tant que développeur backend Nodejs/Nestjs. Mes
+          compétences en software craftsmanship me permettent de m&apos;adapter
+          rapidement à d&apos;autres librairies ou frameworks. J&apos;aime bien
+          travailler dans une équipe qui contient des développeurs plus
+          expérimentés car je pourrais apprendres des nouveaux concepts et les
+          maîtriser rapidement. Transférer mes compétences aux profils plus
+          juniors est aussi un grand plaisir.
         </Para>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
           <ButtonLink href={ROUTE_ABOUT} color="primary" classe="inline">

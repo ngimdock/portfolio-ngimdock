@@ -46,15 +46,16 @@ export const NAV_DATAS: NavRouteType[] = [
     link: ROUTE_SKILLS,
   },
   {
-    id: 5,
-    route: ABOUT,
-    link: ROUTE_ABOUT,
-  },
-  {
     id: 6,
     route: FORMATIONS,
     link: ROUTE_FORMATIONS,
   },
+  {
+    id: 5,
+    route: ABOUT,
+    link: ROUTE_ABOUT,
+  },
+
   {
     id: 7,
     route: CONTACT,
@@ -63,7 +64,7 @@ export const NAV_DATAS: NavRouteType[] = [
 ];
 
 const navLinkClassname =
-  "hover:text-light hover:bg-primary py-0.5 px-1.5 animate font-Inter";
+  "hover:text-light hover:bg-primary py-0.5 px-1 animate font-Inter";
 
 export const Navbar = () => {
   const { openMobileNav } = useContext(mobileNavContext);

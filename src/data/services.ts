@@ -1,11 +1,12 @@
 import { RiDatabase2Fill, RiGroupFill, RiVideoFill } from "react-icons/ri";
-import { ROUTE_FORMATIONS, ROUTE_SERVICES } from "../lib";
+import { ROUTE_FORMATIONS } from "../lib";
 
 export type OneServiceType = {
   icon: any;
   title: string;
   numberProject: string;
   desciption: string;
+  link?: string;
 };
 
 export const SERVICES: OneServiceType[] = [
@@ -38,5 +39,6 @@ export const SERVICES: OneServiceType[] = [
     formation des débutants et cela peut impacter leur montée en compétence. 
     Je vous propose un programme d'accompagnement sur-mesure en fonction des profils des apprenants.
     ils se verront apprendre rapidement après chaque module de formation.`,
+    link: ROUTE_FORMATIONS,
   },
 ];

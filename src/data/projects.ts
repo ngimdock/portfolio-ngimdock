@@ -359,7 +359,7 @@ export const ALL_PROJECTS: Project[] = [
     // featured: 2,
     name: "Ngimdock portfolio",
     description:
-      "Mon portfolio pour présenter mes compétences et mes réalisations en tant qu'ingénieur logiciel.",
+      "Mon portfolio pour présenter mes compétences et mes réalisations.",
     mainImage: "hero-portfolio2.png",
     tags: [Tags.frontend, Tags.siteVitrine, Tags.projetsSolo, Tags.reactjs],
     infos: {
@@ -384,7 +384,7 @@ export const ALL_PROJECTS: Project[] = [
     id: 6,
     name: "Vision Car.",
     description:
-      "API Rest complète et Open Source pour une application de ventes  des voitures de luxe (+30 étoiles sur github). ",
+      "API Rest complète et Open Source pour une application de ventes  des voitures de luxe (+29 étoiles sur github). ",
     mainImage: "vision-car-hero.svg",
     tags: [backend, projetsSolo, Tags.nestjs],
     infos: {
@@ -445,6 +445,7 @@ export const ALL_PROJECTS: Project[] = [
     },
     images: [],
   },
+
   // {
   //   id: 6,
   //   featured: 4,

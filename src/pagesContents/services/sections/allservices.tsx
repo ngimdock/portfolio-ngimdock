@@ -2,6 +2,7 @@ import clsx from "clsx";
 import useIsInViewport from "use-is-in-viewport";
 import { H2, Para } from "../../../components";
 import { OneServiceType, SERVICES } from "../../../data";
+import Link from "next/link";
 
 export const AllServices = () => {
   const [isInViewport, targetRef] = useIsInViewport();
@@ -41,6 +42,17 @@ export const ServiceCard = ({ serviceData }: ServiceCardProps) => {
       <Para classe="mt-10" size="sm">
         {desciption}
       </Para>
+
+      {serviceData.link && (
+        <div className="flex justify-center mt-3 ">
+          <Link
+            href={serviceData.link}
+            className="text-xs font-Inter text-primary hover:opacity-50 animate underline"
+          >
+            En savoir plus
+          </Link>
+        </div>
+      )}
     </article>
   );
 };
