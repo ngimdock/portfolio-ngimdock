@@ -79,7 +79,7 @@ const SkillCard = ({ skillData }: SkillCardProps) => {
 
       <div className="flex mt-5 sm:justify-end">
         <Link
-          href={jobLink}
+          href={jobLink ? jobLink : ""}
           className="flex items-center space-x-2 text-sm text-right text-light font-Inter hover:text-primary animate"
         >
           <RiLinksLine /> <span>{jobLinkText}</span>
