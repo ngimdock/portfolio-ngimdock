@@ -366,7 +366,7 @@ export const ALL_PROJECTS: Project[] = [
       industrie: "Informatique",
       type: ProjectType.SHOWCASE_WEBSITE,
       publishDate: "22 janvier 2022",
-      link: "https://visio-zemfack.vercel.app/",
+      link: "https://ngimdock-zemfack.vercel.app/",
       reasonForNoGithub: reasonGithub.privateCode,
     },
     details: {
