@@ -132,8 +132,8 @@ export const Contact = () => {
           <InputText
             isRequired={true}
             disabled={formData.isLoading}
-            registerName="object"
-            placeholder="Object"
+            registerName="objet"
+            placeholder="Objet"
             value={formData.values.subject}
             name="subject"
             onChange={(e) => handleChange(e, "subject")}

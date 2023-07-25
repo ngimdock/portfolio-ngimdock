@@ -25,8 +25,8 @@ export const UpgrateSkill = () => {
       <div className="md:py-12">
         <H2>Monté en compétences.</H2>
         <p className="mt-3 sm:text-md text-light-dark">
-          Je me tiens à jour de l&apos;évolution technologiques en suivant des
-          formations sur des plateformes comme freecodecamp, et udemy qui me
+          Je me tiens à jour de l&apos;évolution technologique en suivant des
+          formations sur des plateformes comme Freecodecamp, et Udemy qui me
           délivrent des{" "}
           <UnderlineLink
             link="https://www.freecodecamp.org/certification/dan73/javascript-algorithms-and-data-structures"
@@ -57,7 +57,7 @@ export const UpgrateSkill = () => {
             text=" articles de blog"
             targerBlack={true}
           />{" "}
-          sur des sujets en rapport avec le développement web et partage mes
+          sur des sujets en rapport avec le développement web et partager mes
           expériences sur{" "}
           <UnderlineLink
             link={SOCIALS_MEDIAS.linkedin.link}

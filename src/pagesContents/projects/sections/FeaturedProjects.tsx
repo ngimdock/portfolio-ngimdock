@@ -30,7 +30,7 @@ export const FeaturedProjects = () => {
         "container separed-sections"
       )}
     >
-      <H2 classe="text-center sm:text-start">Projects en avant.</H2>
+      <H2 classe="text-center sm:text-start">Projets en avant.</H2>
 
       <div className="mt-4">
         <Carousel

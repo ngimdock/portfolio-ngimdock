@@ -31,8 +31,8 @@ export const AboutBody = () => {
   return (
     <>
       <Header
-        title={`Hey c'est ${userName}, l'ours de winterfell ☄️`}
-        description={`Ingénieur logiciel depuis le cameroun.`}
+        title={`Hello c'est ${userName} ☄️`}
+        description={`Ingénieur logiciel depuis le Cameroun.`}
         buttonCTA={
           <div className="flex justify-center ">
             <ScrollDown />

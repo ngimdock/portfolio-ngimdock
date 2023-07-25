@@ -79,7 +79,7 @@ export const AllProjects = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 mt-4 overflow-y-scroll md:grid-cols-3 sm:grid-cols-2 max-h-[450px] sm:max-h-[590px]">
+      <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-3 sm:grid-cols-2">
         {projects.map((project, index) => (
           <ProjectCard
             projectData={project}

@@ -1,8 +1,8 @@
-export const HOME = "accueil";
-export const SERVICES = "services";
-export const PROJECTS = "projets";
-export const SKILLS = "compétences";
-export const ABOUT = "à propos";
-export const CONTACT = "contact";
-export const FORMATIONS = "formations";
-export const RESUME = "resumé | cv";
+export const HOME = "Accueil";
+export const SERVICES = "Services";
+export const PROJECTS = "Projets";
+export const SKILLS = "Compétences";
+export const ABOUT = "À propos";
+export const CONTACT = "Contact";
+export const FORMATIONS = "Formations";
+export const RESUME = "Resumé";

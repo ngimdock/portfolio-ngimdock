@@ -11,7 +11,7 @@ export function UnderlineLink({ link, text, targerBlack }: UnderlineLinkProps) {
     <Link
       href={link ? link : ""}
       target={targerBlack ? "_blank" : "_self"}
-      className="underline font-Inter hover:text-primary animate"
+      className="underline font-Inter hover:text-primary animate font-semibold"
     >
       {text}
     </Link>

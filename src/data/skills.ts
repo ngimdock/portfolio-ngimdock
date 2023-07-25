@@ -53,7 +53,7 @@ export const Formations: SkillType[] = [
   },
 
   {
-    companyName: "Freecadecamp",
+    companyName: "Freecodecamp",
     jobTitle: "Certifications web",
     jobPeriod: "Janvier 2019 - Aout 2019",
     jobLocation: "Remote",

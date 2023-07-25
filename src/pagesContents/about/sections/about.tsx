@@ -26,9 +26,8 @@ export const About = () => {
         <div className="mt-6 sm:mt-0">
           <H2>Parcours tech.</H2>
           <Para>
-            J&apos;ai écrit mes premières lignes de code sur papier en seconde.
-            Suite à l&apos;obtention de mon baccalauréat, j&apos;ai poursuivi
-            mes études en mathématique et ai réussi ma première année
+            Suite à l&apos;obtention de mon baccalauréat, j&apos;ai commencé mes
+            études en mathématique et ai réussi ma première année
             d&apos;université. Cependant, j&apos;ai décidé de retourner à mes
             racines en choisissant de me former en informatique, car c&apos;est
             là ma véritable passion. Tout au long de ce parcours, j&apos;ai eu

@@ -39,7 +39,7 @@ export const SOCIALS_MEDIAS: Record<SocialsMediaNames, SocialMedia> = {
   },
 
   whatsapp: {
-    name: "whatsapp",
+    name: "Whatsapp",
     link: `https://wa.me/${process.env.NEXT_PUBLIC_MY_WHATSAPP_PHONE}`,
   },
 
