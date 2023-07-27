@@ -130,20 +130,27 @@ export function Techno({ tecnoData, onSelectTechno }: TechnoProps) {
         selected && "border-2 border-primary py-3 px-0"
       )}
     >
-      <Image
-        width={
-          sizeIcon
-            ? windowSize < SCREEN_SM
-              ? sizeIcon - 15
-              : sizeIcon
-            : windowSize < SCREEN_SM
-            ? 38
-            : 50
-        }
-        alt={alt}
-        src={src}
-        className="block opacity-40 group-hover:opacity-60 animate"
-      />
+      <Tooltip
+        id={tecnoName}
+        // theme="dark"
+        tooltipContent={tecnoName}
+        key={tecnoName}
+      >
+        <Image
+          width={
+            sizeIcon
+              ? windowSize < SCREEN_SM
+                ? sizeIcon - 15
+                : sizeIcon
+              : windowSize < SCREEN_SM
+              ? 38
+              : 50
+          }
+          alt={alt}
+          src={src}
+          className="block opacity-40 group-hover:opacity-60 animate"
+        />
+      </Tooltip>
       <span className="hidden text-xs text-light-dark font-Inter">
         {tecnoName}
       </span>

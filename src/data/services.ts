@@ -18,7 +18,7 @@ export const SERVICES: OneServiceType[] = [
     back et/ou frontend. Tout en collaborant avec les autres membres de l'équipe, je développe 
     et teste les fonctionnalités du projet de manière itérative. Nous travaillons en méthode 
     agile et je n'hésite pas d'être d'une grande force de proposition en vue de mes expériences 
-    préccedentes.`,
+    précédentes.`,
   },
   {
     icon: RiDatabase2Fill,

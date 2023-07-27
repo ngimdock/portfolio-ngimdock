@@ -1,10 +1,8 @@
 export const texts = [
   "communication",
-  "clean code",
-  "dry",
-  "propositions",
+  "DRY",
   "api rest",
-  "api graphql",
+  "graphql",
   "clean archi",
   "DDD",
   "CQRS",
@@ -14,8 +12,8 @@ export const texts = [
   "solid",
   "patterns",
   "propositions",
-  "http",
-  "refacto",
+  "HTTP",
+  "refactoring",
 ];
 
 export const circleSizes = {

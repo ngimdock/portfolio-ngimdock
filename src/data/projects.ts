@@ -202,16 +202,7 @@ export const ALL_PROJECTS: Project[] = [
       et pratique pour les citoyens. De plus, cette solution pourrait permettre au gouvernement 
       de réaliser des économies en réduisant les coûts liés à la production et à la distribution 
       des cartes au format papier.`,
-      myTasks: `Au cours de ce projet passionnant, j'ai intervenu pendant les étapes de 
-      conception et de développement. Après que nous avons mis en place les documents de 
-      conception nécessaires, en tant que membre de l'équipe backend, j'ai initialisé et 
-      interconnecter les technologies requises pour le projet côté serveur, définir une 
-      architecture adaptée pour permettre une intégration facile des autres développeurs, 
-      implémenter des blocs de code réutilisables pour assurer un style de développement 
-      homogène par l'équipe, implémenter les fonctionnalités de l'API et des optimisations, 
-      faire la review du travail de mes collègues et si possible proposer des pistes améliorations. 
-      Communiquer avec l'équipe Frontend et Mobile pour une meilleure utilisation de l'API,  participer 
-      aux réunions avec le MOA pour lui fournir plus d'informations sur le projet backend.`,
+      myTasks: `Au cours de ce projet passionnant, j'ai intervenu pendant les étapes de conception et de développement. Après que nous avons mis en place les documents de conception nécessaires, en tant que membre de l'équipe backend, j'ai initialisé et interconnecté les technologies requises pour le projet côté serveur, défini une architecture adaptée pour permettre une intégration facile des autres développeurs, implémenté des blocs de code réutilisables pour assurer un style de développement homogène par l'équipe, implémenté les fonctionnalités de l'API et des optimisations, fait la revue du travail de mes collègues et si possible proposé des pistes d'amélioration. Communiqué avec l'équipe Frontend et Mobile pour une meilleure utilisation de l'API, participé aux réunions avec le MOA pour lui fournir plus d'informations sur le projet backend.`,
       techStack: [nestjs, reactjs, mongoDb, flutter, mongoose, render, vercel],
       team: "Notre équipe est constituée de 10 membres, dont 1 designer, 3 développeurs frontend, 2 développeurs backend, 3 développeurs mobiles et 1 développeur fullstack. ",
     },
