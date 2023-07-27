@@ -39,10 +39,10 @@ export const About = () => {
             targerBlack={true}
           />{" "}
           me permettent de m&apos;adapter rapidement à d&apos;autres librairies
-          ou frameworks. J&apos;aime bien travailler dans une équipe qui
-          contient des développeurs plus expérimentés car je pourrais apprendres
-          des nouveaux concepts et les maîtriser rapidement. Transférer mes
-          compétences aux profils plus juniors est aussi un grand plaisir.
+          ou frameworks. J&apos;apprécie discuter avec d&apos;autres
+          développeurs sur des sujets qui me permettent de découvrir de nouveaux
+          concepts à apprendre. Transférer mes compétences aux profils plus
+          juniors est aussi un grand plaisir.
         </p>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
           <ButtonLink href={ROUTE_ABOUT} color="primary" classe="inline">

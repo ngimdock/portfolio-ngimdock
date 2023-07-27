@@ -170,75 +170,119 @@ export const ALL_PROJECTS: Project[] = [
       },
     ],
   },
+  // {
+  //   id: 2,
+  //   featured: 2,
+  //   name: "C.N.I.C",
+  //   description: `Un système  numérique efficace et pratique pour  la dématérialisation de la délivrance des
+  //     Cartes Nationales d'Identité (CNI) au Cameroun 🇨🇲.`,
+  //   mainImage: "cnic-hero.svg",
+  //   tags: [ingenirie, projetDequipe, backend, Tags.nestjs, Tags.reactjs],
+  //   infos: {
+  //     industrie: "Gouvernement",
+  //     type: ProjectType.engineering,
+  //     publishDate: "22 janvier 2022",
+  //     reasonForNoGithub: reasonGithub.privateCode,
+  //     reasonForNoLink:
+  //       "Le projet est un cours d'évaluation par le gouvernement camerounais",
+  //   },
+  //   details: {
+  //     problem: `La problématique de délivrance des cartes nationales d'identité est
+  //       devenue une préoccupation majeure au Cameroun en raison des retards
+  //       accumulés avant la distribution de ces cartes. Cette situation a des
+  //       conséquences directes sur les citoyens qui risquent de rencontrer des
+  //       difficultés lors de voyages ou dans la constitution de dossiers administratifs etc.
+  //       Ainsi, il est nécessaire d'innover le système en proposant une solution moderne
+  //       qui facilite les démarches des citoyens tout en permettant au gouvernement de
+  //       réaliser des économies.`,
+  //     solution: `Pour remédier à cette problématique, nous avons mis  en
+  //     place un système informatique simplifié permettant la délivrance de cartes nationales
+  //     d'identité numériques. Les informations de ces cartes pourront être obtenues en quelques
+  //     minutes et utilisées exclusivement via un smartphone, offrant ainsi une solution moderne
+  //     et pratique pour les citoyens. De plus, cette solution pourrait permettre au gouvernement
+  //     de réaliser des économies en réduisant les coûts liés à la production et à la distribution
+  //     des cartes au format papier.`,
+  //     myTasks: `Au cours de ce projet passionnant, j'ai intervenu pendant les étapes de conception et de développement. Après que nous avons mis en place les documents de conception nécessaires, en tant que membre de l'équipe backend, j'ai initialisé et interconnecté les technologies requises pour le projet côté serveur, défini une architecture adaptée pour permettre une intégration facile des autres développeurs, implémenté des blocs de code réutilisables pour assurer un style de développement homogène par l'équipe, implémenté les fonctionnalités de l'API et des optimisations, fait la revue du travail de mes collègues et si possible proposé des pistes d'amélioration. Communiqué avec l'équipe Frontend et Mobile pour une meilleure utilisation de l'API, participé aux réunions avec le MOA pour lui fournir plus d'informations sur le projet backend.`,
+  //     techStack: [nestjs, reactjs, mongoDb, flutter, mongoose, render, vercel],
+  //     team: "Notre équipe est constituée de 10 membres, dont 1 designer, 3 développeurs frontend, 2 développeurs backend, 3 développeurs mobiles et 1 développeur fullstack. ",
+  //   },
+
+  //   challenges: [
+  //     {
+  //       challengeTitle: "Enregistrement d'un citoyen.",
+  //       challengeDescription: `Dans chaque commissariat, des agents vont se servir de l'application
+  //                             web pour enregistrer les citoyens désirant une carte nationale d'identité (CNI) numérique. Une fois
+  //                             l'enregistrement terminé, ils vont délivrer au citoyen un QR code et un
+  //                             numéro d'identification unique qu'il pourra utiliser pour visualiser sa CNI directement.`,
+  //       solutionImage: "enregistrement.svg",
+  //       solutionTitle: "Preview",
+  //       solutionDescription:
+  //         "Les informations personnelles d'un citoyen enregistré depuis l'application web.",
+  //     },
+  //     {
+  //       challengeTitle: "Identification d'un citoyen.",
+  //       challengeDescription: `Le citoyen pourra visualiser sa carte nationale d'identité après avoir scanné le code QR qui lui a été attribué au commissariat à l'aide de son smartphone. Il pourra également se servir de son numéro d'identification unique pour effectuer la même opération. Une fois la carte nationale d'identité affichée, il peut s'en servir pour se présenter aux forces de l'ordre ou aux autorités administratives.`,
+  //       solutionTitle: "Preview",
+  //       solutionImage: "identification.svg",
+  //     },
+  //     {
+  //       challengeTitle: "Challenge technique",
+  //       challengeDescription:
+  //         "L'un des principaux défis auxquels nous avons été confrontés était de trouver un système astucieux pour résoudre cette problématique, notamment pour les situations où le citoyen ne dispose pas d'une bonne connexion internet ou ne dispose pas de smartphone pour visualiser sa carte.",
+  //       solutionTitle: "Notre approche à ce challenge",
+  //       solutionDescription:
+  //         "Nous avons créé des fonctionnalités qui permettent aux citoyens de consulter leur carte nationale d'identité hors ligne, ainsi que de l'imprimer pour pouvoir l'utiliser si leur téléphone n'a plus de batterie ou s'ils n'en disposent pas.",
+  //     },
+  //   ],
+
+  //   images: [
+  //     "registration-step-1.svg",
+  //     "registration-step-2.svg",
+  //     "registration-step-3.svg",
+  //   ],
+  // },
+
   {
     id: 2,
-    featured: 2,
-    name: "C.N.I.C",
-    description: `Un système  numérique efficace et pratique pour  la dématérialisation de la délivrance des 
-      Cartes Nationales d'Identité (CNI) au Cameroun 🇨🇲.`,
-    mainImage: "cnic-hero.svg",
-    tags: [ingenirie, projetDequipe, backend, Tags.nestjs, Tags.reactjs],
+    featured: 4,
+    name: "Food Diary",
+    description:
+      "Une application mobile pour recommander les aliments à consommer en vue de maintenir une bonne santé en fonction des aliments habituellement consommés par l'utilisateur.",
+    mainImage: "hero-food-diary.svg",
+    tags: [Tags.projetDequipe, Tags.backend, Tags.nestjs, ingenirie],
     infos: {
-      industrie: "Gouvernement",
-      type: ProjectType.engineering,
+      industrie: "Alimentation",
+      type: ProjectType.MOBILE_APP,
       publishDate: "22 janvier 2022",
-      reasonForNoGithub: reasonGithub.privateCode,
-      reasonForNoLink:
-        "Le projet est un cours d'évaluation par le gouvernement camerounais",
+      github: "https://github.com/INF4077-GROUP/foodDiary-server",
+      reasonForNoLink: "Application non accessible sur le store.",
     },
     details: {
-      problem: `La problématique de délivrance des cartes nationales d'identité est 
-        devenue une préoccupation majeure au Cameroun en raison des retards 
-        accumulés avant la distribution de ces cartes. Cette situation a des 
-        conséquences directes sur les citoyens qui risquent de rencontrer des 
-        difficultés lors de voyages ou dans la constitution de dossiers administratifs etc. 
-        Ainsi, il est nécessaire d'innover le système en proposant une solution moderne 
-        qui facilite les démarches des citoyens tout en permettant au gouvernement de 
-        réaliser des économies.`,
-      solution: `Pour remédier à cette problématique, nous avons mis  en 
-      place un système informatique simplifié permettant la délivrance de cartes nationales 
-      d'identité numériques. Les informations de ces cartes pourront être obtenues en quelques 
-      minutes et utilisées exclusivement via un smartphone, offrant ainsi une solution moderne 
-      et pratique pour les citoyens. De plus, cette solution pourrait permettre au gouvernement 
-      de réaliser des économies en réduisant les coûts liés à la production et à la distribution 
-      des cartes au format papier.`,
-      myTasks: `Au cours de ce projet passionnant, j'ai intervenu pendant les étapes de conception et de développement. Après que nous avons mis en place les documents de conception nécessaires, en tant que membre de l'équipe backend, j'ai initialisé et interconnecté les technologies requises pour le projet côté serveur, défini une architecture adaptée pour permettre une intégration facile des autres développeurs, implémenté des blocs de code réutilisables pour assurer un style de développement homogène par l'équipe, implémenté les fonctionnalités de l'API et des optimisations, fait la revue du travail de mes collègues et si possible proposé des pistes d'amélioration. Communiqué avec l'équipe Frontend et Mobile pour une meilleure utilisation de l'API, participé aux réunions avec le MOA pour lui fournir plus d'informations sur le projet backend.`,
-      techStack: [nestjs, reactjs, mongoDb, flutter, mongoose, render, vercel],
-      team: "Notre équipe est constituée de 10 membres, dont 1 designer, 3 développeurs frontend, 2 développeurs backend, 3 développeurs mobiles et 1 développeur fullstack. ",
+      problem: `Nous souhaitons mettre en place un système informatique qui va permettre le suivi de l'alimentation d'un utilisateur sur une base quotidienne de façon à pouvoir lui recommander, chaque semaine, les aliments à consommer pour maintenir une bonne santé.`,
+      solution: `Pour y parvenir, nous avons développé une application mobile qui permet de collecter les informations sur ce qu'il mange tous les jours afin de lui recommander les aliments adaptés à sa consommation.`,
+      myTasks:
+        "En tant que membre de l'équipe de développement backend, ma mission consiste à réaliser la mise en place du projet from scratch, puis à le connecter à une base de données graph (Neo4j) pour assurer la persistance des données. En collaboration avec les autres membres de l'équipe, nous travaillons sur la conception de l'application, et j'apporte ma contribution au développement de ses différentes fonctionnalités.",
+      techStack: [neo4j, cypher, typescript, nestjs, reactNative, expo],
     },
-
     challenges: [
       {
-        challengeTitle: "Enregistrement d'un citoyen.",
-        challengeDescription: `Dans chaque commissariat, des agents vont se servir de l'application 
-                              web pour enregistrer les citoyens désirant une carte nationale d'identité (CNI) numérique. Une fois 
-                              l'enregistrement terminé, ils vont délivrer au citoyen un QR code et un 
-                              numéro d'identification unique qu'il pourra utiliser pour visualiser sa CNI directement.`,
-        solutionImage: "enregistrement.svg",
-        solutionTitle: "Preview",
-        solutionDescription:
-          "Les informations personnelles d'un citoyen enregistré depuis l'application web.",
-      },
-      {
-        challengeTitle: "Identification d'un citoyen.",
-        challengeDescription: `Le citoyen pourra visualiser sa carte nationale d'identité après avoir scanné le code QR qui lui a été attribué au commissariat à l'aide de son smartphone. Il pourra également se servir de son numéro d'identification unique pour effectuer la même opération. Une fois la carte nationale d'identité affichée, il peut s'en servir pour se présenter aux forces de l'ordre ou aux autorités administratives.`,
-        solutionTitle: "Preview",
-        solutionImage: "identification.svg",
-      },
-      {
-        challengeTitle: "Challenge technique",
+        challengeTitle: "Collection des informations sur l'alimentation.",
         challengeDescription:
-          "L'un des principaux défis auxquels nous avons été confrontés était de trouver un système astucieux pour résoudre cette problématique, notamment pour les situations où le citoyen ne dispose pas d'une bonne connexion internet ou ne dispose pas de smartphone pour visualiser sa carte.",
-        solutionTitle: "Notre approche à ce challenge",
-        solutionDescription:
-          "Nous avons créé des fonctionnalités qui permettent aux citoyens de consulter leur carte nationale d'identité hors ligne, ainsi que de l'imprimer pour pouvoir l'utiliser si leur téléphone n'a plus de batterie ou s'ils n'en disposent pas.",
+          "Chaque jour, l'utilisateur devra enregistrer en fin de journée les informations suivantes : ce qu'il a mangé, ce qu'il a bu, s'il a fait du sport, ainsi que tout malaise éventuel ressenti après la combinaison de certains aliments.",
+        solutionImage: "add-food.svg",
+      },
+      {
+        challengeTitle: "Recommandation des aliments.",
+        challengeDescription:
+          "Afin de suggérer les aliments à consommer pour l'utilisateur, nous utiliserons un algorithme de recommandation probabiliste qui prend en compte les données de l'utilisateur ainsi que celles des autres utilisateurs de la plateforme.",
+        solutionImage: "recommandations.svg",
       },
     ],
-
     images: [
-      "registration-step-1.svg",
-      "registration-step-2.svg",
-      "registration-step-3.svg",
+      "authentication.svg",
+      "food-diary-image-2.svg",
+      "food-diary-image-3.svg",
+      "food-diary-image-4.svg",
     ],
   },
 
@@ -303,50 +347,6 @@ export const ALL_PROJECTS: Project[] = [
 
   {
     id: 4,
-    featured: 4,
-    name: "Food Diary",
-    description:
-      "Une application mobile pour recommander les aliments à consommer en vue de maintenir une bonne santé en fonction des aliments habituellement consommés par l'utilisateur.",
-    mainImage: "hero-food-diary.svg",
-    tags: [Tags.projetDequipe, Tags.backend, Tags.nestjs, ingenirie],
-    infos: {
-      industrie: "Alimentation",
-      type: ProjectType.MOBILE_APP,
-      publishDate: "22 janvier 2022",
-      github: "https://github.com/INF4077-GROUP/foodDiary-server",
-      reasonForNoLink: "Application non accessible sur le store.",
-    },
-    details: {
-      problem: `Nous souhaitons mettre en place un système informatique qui va permettre le suivi de l'alimentation d'un utilisateur sur une base quotidienne de façon à pouvoir lui recommander, chaque semaine, les aliments à consommer pour maintenir une bonne santé.`,
-      solution: `Pour y parvenir, nous avons développé une application mobile qui permet de collecter les informations sur ce qu'il mange tous les jours afin de lui recommander les aliments adaptés à sa consommation.`,
-      myTasks:
-        "En tant que membre de l'équipe de développement backend, ma mission consiste à réaliser la mise en place du projet from scratch, puis à le connecter à une base de données graph (Neo4j) pour assurer la persistance des données. En collaboration avec les autres membres de l'équipe, nous travaillons sur la conception de l'application, et j'apporte ma contribution au développement de ses différentes fonctionnalités.",
-      techStack: [neo4j, cypher, typescript, nestjs, reactNative, expo],
-    },
-    challenges: [
-      {
-        challengeTitle: "Collection des informations sur l'alimentation.",
-        challengeDescription:
-          "Chaque jour, l'utilisateur devra enregistrer en fin de journée les informations suivantes : ce qu'il a mangé, ce qu'il a bu, s'il a fait du sport, ainsi que tout malaise éventuel ressenti après la combinaison de certains aliments.",
-        solutionImage: "add-food.svg",
-      },
-      {
-        challengeTitle: "Recommandation des aliments.",
-        challengeDescription:
-          "Afin de suggérer les aliments à consommer pour l'utilisateur, nous utiliserons un algorithme de recommandation probabiliste qui prend en compte les données de l'utilisateur ainsi que celles des autres utilisateurs de la plateforme.",
-        solutionImage: "recommandations.svg",
-      },
-    ],
-    images: [
-      "authentication.svg",
-      "food-diary-image-2.svg",
-      "food-diary-image-3.svg",
-      "food-diary-image-4.svg",
-    ],
-  },
-
-  {
-    id: 5,
     // featured: 2,
     name: "Ngimdock portfolio",
     description:
@@ -372,7 +372,7 @@ export const ALL_PROJECTS: Project[] = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "Vision Car.",
     description:
       "API Rest complète et Open Source pour une application de ventes  des voitures de luxe (+29 étoiles sur github). ",
@@ -400,7 +400,16 @@ export const ALL_PROJECTS: Project[] = [
                   réalisation de tests unitaires et de tests de end en end, ainsi que le déploiement de 
                   l'application sur une plateforme PaaS telle que Render.`,
       myTasks: `J'ai implémenté toutes les fonctionnalités énumérées dans la section "solution" ci-dessus. De plus, j'ai créé quelques designs avec Figma pour présenter le projet de manière plus efficace.`,
-      techStack: [nestjs, postgres, prisma, typescript, redis, jest, superTest],
+      techStack: [
+        nestjs,
+        postgres,
+        prisma,
+        typescript,
+        redis,
+        jest,
+        superTest,
+        render,
+      ],
     },
     images: [
       "visoin-car-image-1.svg",
@@ -412,7 +421,7 @@ export const ALL_PROJECTS: Project[] = [
   },
 
   {
-    id: 7,
+    id: 6,
     name: "Becon website",
     description:
       "Site vitrine de présentation des services de l'entreprise Beacon.",
