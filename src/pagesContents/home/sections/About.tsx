@@ -22,7 +22,7 @@ export const About = () => {
           <div className="flex justify-center lg:justify-start">
             <H3>À propos</H3>
           </div>
-          <H2 classe="mt-3">Développeur fullstack typescript</H2>
+          <H2 classe="mt-3">Software Engineer.</H2>
         </div>
         <p className="mt-3 sm:text-md text-light-dark">
           Je suis disponible pour tout type d&apos;opportunités en CDI ou
