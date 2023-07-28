@@ -110,8 +110,8 @@ export const ALL_PROJECTS: Project[] = [
     infos: {
       industrie: "Gouvernement",
       type: ProjectType.WEB_APP,
-      publishDate: "22 janvier 2022",
-      github: "https://github.com/ngimdock/vision-car-server",
+      publishDate: "15 Juillet 2023",
+      reasonForNoGithub: reasonGithub.privateCode,
       reasonForNoLink: reasonLink.notOnline,
     },
     details: {
@@ -253,15 +253,16 @@ export const ALL_PROJECTS: Project[] = [
     infos: {
       industrie: "Alimentation",
       type: ProjectType.MOBILE_APP,
-      publishDate: "22 janvier 2022",
+      publishDate: "09 janvier 2023",
       github: "https://github.com/INF4077-GROUP/foodDiary-server",
-      reasonForNoLink: "Application non accessible sur le store.",
+      reasonForNoLink:
+        "L'application n'est pas encore disponible dans le store.",
     },
     details: {
       problem: `Nous souhaitons mettre en place un système informatique qui va permettre le suivi de l'alimentation d'un utilisateur sur une base quotidienne de façon à pouvoir lui recommander, chaque semaine, les aliments à consommer pour maintenir une bonne santé.`,
       solution: `Pour y parvenir, nous avons développé une application mobile qui permet de collecter les informations sur ce qu'il mange tous les jours afin de lui recommander les aliments adaptés à sa consommation.`,
       myTasks:
-        "En tant que membre de l'équipe de développement backend, ma mission consiste à réaliser la mise en place du projet from scratch, puis à le connecter à une base de données graph (Neo4j) pour assurer la persistance des données. En collaboration avec les autres membres de l'équipe, nous travaillons sur la conception de l'application, et j'apporte ma contribution au développement de ses différentes fonctionnalités.",
+        "Je suis principalement impliqué dans l'équipe de développement backend, ma mission consiste à réaliser la mise en place du projet from scratch, puis à le connecter à une base de données graph (Neo4j) pour assurer la persistance des données. En collaboration avec les autres membres de l'équipe, nous travaillons sur la conception de l'application, et j'apporte ma contribution au développement de ses différentes fonctionnalités.",
       techStack: [neo4j, cypher, typescript, nestjs, reactNative, expo],
     },
     challenges: [
@@ -303,7 +304,7 @@ export const ALL_PROJECTS: Project[] = [
     infos: {
       industrie: "E-commerce",
       type: ProjectType.WEB_APP,
-      publishDate: "22 janvier 2022",
+      publishDate: "07 Août 2022",
       link: "https://nti-shop.web.app/",
       reasonForNoGithub: reasonGithub.privateCode,
     },
@@ -324,7 +325,7 @@ export const ALL_PROJECTS: Project[] = [
       "products.svg",
       "footer.svg",
       "account.svg",
-      "hero-nti-4.svg",
+      "hero-nti.svg",
       "details.svg",
     ],
     challenges: [
@@ -356,7 +357,7 @@ export const ALL_PROJECTS: Project[] = [
     infos: {
       industrie: "Informatique",
       type: ProjectType.SHOWCASE_WEBSITE,
-      publishDate: "22 janvier 2022",
+      publishDate: "28 juillet 2023",
       link: "https://ngimdock-zemfack.vercel.app/",
       reasonForNoGithub: reasonGithub.privateCode,
     },
@@ -381,7 +382,7 @@ export const ALL_PROJECTS: Project[] = [
     infos: {
       industrie: "E-commerce",
       type: ProjectType.WEB_APP,
-      publishDate: "22 janvier 2022",
+      publishDate: "10 Avril 2023",
       github: "https://github.com/ngimdock/vision-car-server",
       reasonForNoLink: reasonLink.notOnline,
     },
