@@ -26,13 +26,7 @@ export const About = () => {
         </div>
         <p className="mt-3 sm:text-md text-light-dark">
           Je suis disponible pour tout type d&apos;opportunités en CDI ou
-          freelance en tant que développeur backend{" "}
-          <UnderlineLink
-            link="https://nodejs.org/en"
-            text="Nodejs"
-            targerBlack={true}
-          />
-          . Mes compétences en{" "}
+          freelance. Mes compétences en{" "}
           <UnderlineLink
             link="https://www.agilepartner.net/en/le-software-craftsman-super-developpeur/"
             text="software craftsmanship"
