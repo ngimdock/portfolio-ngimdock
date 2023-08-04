@@ -47,7 +47,7 @@ export const Formations: SkillType[] = [
     jobPeriod: "Semptembre 2017 - Juin 2023",
     jobLocation: "Yaoundé, Cameroun",
     jobDescription:
-      "Après avoir obtenu mon diplôme de mathématiques de niveau BAC+1, j'ai décidé de reprendre mes études en informatique. J'ai obtenu un diplôme de BAC+4 en génie logiciel dans l'une des meilleures universités de technologie du Cameroun  🇨🇲",
+      "Je suis titulaire d'un BAC + 4 en génie logiciel et d'un BAC + 1 en mathématiques fondamentales dans l'une des meilleures universités d'Afrique centrale.",
     jobLinkText: "En savoir plus",
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
   },
@@ -58,7 +58,7 @@ export const Formations: SkillType[] = [
     jobPeriod: "Janvier 2019 - Aout 2019",
     jobLocation: "Remote",
     jobDescription:
-      "En plus de mes études, j'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc. Vous pouvez consulter mes certifications sur le site de Freecodecamp.",
+      "J'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc.",
     jobLinkText: "Consulter",
     jobLink: "https://www.freecodecamp.org/dan73",
   },

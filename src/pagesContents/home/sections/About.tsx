@@ -39,7 +39,15 @@ export const About = () => {
           juniors est aussi un grand plaisir.
         </p>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
-          <ButtonLink href={ROUTE_ABOUT} color="primary" classe="inline">
+          <ButtonLink
+            href={process.env.NEXT_PUBLIC_MY_CV as string}
+            targetBlack={true}
+            color="primary"
+            classe="inline"
+          >
+            📜 mon cv
+          </ButtonLink>
+          <ButtonLink href={ROUTE_ABOUT} color="dark-2" classe="inline">
             En savoir plus
           </ButtonLink>
         </div>
