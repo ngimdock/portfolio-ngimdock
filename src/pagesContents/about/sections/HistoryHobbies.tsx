@@ -15,10 +15,10 @@ export const HistoryHobbies = () => {
         "container mt-24 sm:mt-8 m grid-cols-2 flex   flex-col-reverse space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-16 sm:text-left"
       )}
     >
-      <div className="mt-6 md:py-12 md:mt-0">
+      <div className="mt-6  md:mt-0 md:py-20">
         <H2>Histoires & hobbies</H2>
         <p className="mt-3 sm:text-md text-light-dark">
-          Quand j&apos;étais plus jeune, je voulais devenir acteur de ciné et
+          Quand j&apos;étais plus jeune, je voulais devenir acteur de cinéma et
           tourner avec des grands noms comme{" "}
           <UnderlineLink
             link="https://i.ibb.co/NVmgx3q/will-smith.jpg"
@@ -31,9 +31,9 @@ export const HistoryHobbies = () => {
             text="Kabby Lame"
             targerBlack={true}
           />{" "}
-          😅 ). En 2018 après le BAC, des amis et moi avons créé notre groupe de
-          musique et commencé à écrire des textes qui n&apos;ont malheureusement
-          pas fonctionné.J&apos;aime la{" "}
+          😅 ). Après le BAC, des amis et moi avons créé notre groupe de musique
+          et commencé à écrire des textes qui n&apos;ont malheureusement pas
+          fonctionné.J&apos;aime la{" "}
           <UnderlineLink
             // link="https://i.ibb.co/b7Yp69s/photo-1368776392.jpg"
             link="https://www.youtube.com/watch?v=GS-666L0VLE"

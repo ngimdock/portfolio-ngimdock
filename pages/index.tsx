@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Metadata
         title={`Accueil / ${process.env.NEXT_PUBLIC_MY_NAME}`}
-        description={`${process.env.NEXT_PUBLIC_MY_NAME} ${process.env.NEXT_PUBLIC_MY_JOB} - bienvenu sur mon site web personnel, ici vous allez retrouver toutes mes réalisations dans le monde passionant du développement d'applications web.`}
+        description={`${process.env.NEXT_PUBLIC_MY_NAME} ${process.env.NEXT_PUBLIC_MY_JOB} - Développement de fonctionnalités, de sites et d'applications web sur mesure pour les petites et moyennes entreprises.`}
       ></Metadata>
 
       <HomeBody />

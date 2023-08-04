@@ -11,6 +11,7 @@ export type CallToACtionType = {
     link?: string;
     action?: () => void;
     text: string;
+    targetBlack?: boolean;
   };
 };
 
@@ -59,6 +60,7 @@ export const CallToAction = ({ actionData, classe }: CallToActionProps) => {
                 href={button.link as string}
                 color="primary"
                 classe="inline"
+                targetBlack={button.targetBlack}
               >
                 {button.text}
               </ButtonLink>

@@ -26,9 +26,9 @@ export const FormationPresentation = () => {
       </Para>
 
       <Para>
-        Je mets à votre disposition 4 modules de formation complémentaires, vous
-        pouvez sélectionner uniquement ceux qui sont pertinents pour vous
-        apprenant.
+        Je mets à votre disposition 4 modules de formation complémentaires. Vous
+        pouvez sélectionner uniquement ceux qui sont pertinents pour vos
+        apprenants.
       </Para>
     </section>
   );

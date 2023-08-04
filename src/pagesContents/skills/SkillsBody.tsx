@@ -29,10 +29,11 @@ export const SkillsBody = () => {
   ];
 
   const cvCallToActionData: CallToACtionType = {
-    title: "Besoin de plus de détails sur mes expériences ?",
+    title: "En savoir plus sur les compétences ?",
     button: {
       text: "Télécharger mon cv",
-      action: () => console.log("dawnload cv.."),
+      link: process.env.NEXT_PUBLIC_MY_CV as string,
+      targetBlack: true,
     },
     image: DEFAULT_CALL_TO_ACTION_DATA.image,
   };
@@ -44,8 +45,12 @@ export const SkillsBody = () => {
         title="Mes compétences techniques."
         description="Ingénieur logiciel, javascript & typescript."
         buttonCTA={
-          <ButtonLink href={ROUTE_CONTACT} color="primary">
-            me contacter
+          <ButtonLink
+            href={process.env.NEXT_PUBLIC_MY_CV as string}
+            targetBlack={true}
+            color="primary"
+          >
+            Télécharger mon CV
           </ButtonLink>
         }
       />

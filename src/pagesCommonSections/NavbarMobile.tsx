@@ -88,13 +88,13 @@ export const NavbarMobile = () => {
             </Link>
           </div>
         ))}
-        <Link
+        {/* <Link
           href={process.env.NEXT_PUBLIC_MY_CV as string}
           target="_blank"
           className={navLinkClassname}
         >
           {RESUME}
-        </Link>
+        </Link> */}
       </ul>
 
       <div

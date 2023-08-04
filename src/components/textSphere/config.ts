@@ -4,16 +4,17 @@ export const texts = [
   "api rest",
   "graphql",
   "clean archi",
-  "DDD",
   "CQRS",
   "soa",
   "tests",
   "scalabilité",
   "solid",
   "patterns",
-  "propositions",
   "HTTP",
   "refactoring",
+  "Event loop",
+  "promises",
+  "async/await",
 ];
 
 export const circleSizes = {

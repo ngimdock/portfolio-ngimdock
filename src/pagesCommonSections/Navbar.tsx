@@ -92,13 +92,13 @@ export const Navbar = () => {
             {route}
           </Link>
         ))}
-        <Link
+        {/* <Link
           href={process.env.NEXT_PUBLIC_MY_CV as string}
           target="_blank"
           className={navLinkClassname}
         >
           {RESUME}
-        </Link>
+        </Link> */}
       </ul>
 
       <div

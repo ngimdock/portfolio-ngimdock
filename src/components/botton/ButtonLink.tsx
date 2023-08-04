@@ -11,6 +11,7 @@ type ButtonLinkType = {
   isLoading?: boolean;
   classe?: string;
   icon?: any;
+  targetBlack?: boolean;
 };
 
 export const ButtonLink = ({
@@ -23,11 +24,13 @@ export const ButtonLink = ({
   type,
   icon,
   href,
+  targetBlack,
   ...restProps
 }: ButtonLinkType) => {
   return (
     <Link
       href={href ? `${href}` : ""}
+      target={targetBlack ? "_blank" : "_self"}
       className={clsx(
         "flex justify-center space-x-2 items-center text-center text-white text-xs uppercase  font-Inter font-meduim letter-shrink rounded-full hover:-translate-y-1.5 hover:shadow",
         color === "primary" && "bg-primary hover:bg-dark hover:shadow-light",
