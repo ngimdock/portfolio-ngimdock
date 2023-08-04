@@ -54,6 +54,7 @@ const SkillCard = ({ skillData }: SkillCardProps) => {
     jobLocation,
     jobPeriod,
     jobTitle,
+    jobLinkTargetBlack,
   } = skillData;
   return (
     <article className="px-3 py-6 mt-5 bg-dark-3 sm:px-8 hover:-translate-y-3 animate">
@@ -80,6 +81,7 @@ const SkillCard = ({ skillData }: SkillCardProps) => {
       <div className="flex mt-5 sm:justify-end">
         <Link
           href={jobLink ? jobLink : ""}
+          target={jobLinkTargetBlack ? "_blank" : "_self"}
           className="flex items-center space-x-2 text-sm text-right text-light font-Inter hover:text-primary animate"
         >
           <RiLinksLine /> <span>{jobLinkText}</span>

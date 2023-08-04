@@ -8,6 +8,7 @@ export type SkillType = {
   jobLocation: string;
   jobLink: string;
   jobLinkText: string;
+  jobLinkTargetBlack?: boolean;
 };
 export const REMOTE = "Remote";
 type SkillNames = "Experiences" | "Formations";
@@ -37,6 +38,7 @@ const experiences: SkillType[] = [
       "Avoir été membre de l'équipe de formation web du Google développer Student Club de l'UY1 a été une expérience enrichissante. Notre mission était d'initier les débutants à la programmation grâce à des ateliers et des séminaires supervisés par Google. ",
     jobLinkText: "visiter",
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
+    jobLinkTargetBlack: true,
   },
 ];
 
@@ -50,6 +52,7 @@ export const Formations: SkillType[] = [
       "Je suis titulaire d'un BAC + 4 en génie logiciel et d'un BAC + 1 en mathématiques fondamentales dans l'une des meilleures universités d'Afrique centrale.",
     jobLinkText: "En savoir plus",
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
+    jobLinkTargetBlack: true,
   },
 
   {
@@ -61,6 +64,7 @@ export const Formations: SkillType[] = [
       "J'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc.",
     jobLinkText: "Consulter",
     jobLink: "https://www.freecodecamp.org/dan73",
+    jobLinkTargetBlack: true,
   },
 ];
 
