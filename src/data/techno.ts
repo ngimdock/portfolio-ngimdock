@@ -405,7 +405,6 @@ const {
   redis,
   nodejs,
   jest,
-  expressjs,
   rabbitMq,
   elasticSearch,
 } = TECH_STACK;
