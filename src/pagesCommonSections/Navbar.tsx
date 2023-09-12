@@ -50,11 +50,11 @@ export const NAV_DATAS: NavRouteType[] = [
     route: FORMATIONS,
     link: ROUTE_FORMATIONS,
   },
-  {
-    id: 5,
-    route: ABOUT,
-    link: ROUTE_ABOUT,
-  },
+  // {
+  //   id: 5,
+  //   route: ABOUT,
+  //   link: ROUTE_ABOUT,
+  // },
 
   {
     id: 7,
@@ -86,7 +86,7 @@ export const Navbar = () => {
         <GiBearFace size={40} className="sm:hidden" />
         <span className="hidden font-bold sm:block">Bear</span>
       </Link>
-      <ul className="items-center hidden space-x-4 text-xs font-medium md:flex lg:space-x-5 text-light">
+      <ul className="items-center hidden space-x-8 text-xs font-medium md:flex lg:space-x-8 text-light">
         {NAV_DATAS.map(({ id, link, route }: NavRouteType) => (
           <Link key={id} href={link} className={navLinkClassname}>
             {route}

@@ -2,6 +2,7 @@ export const texts = [
   "communication",
   "DRY",
   "api rest",
+  "Microservices",
   "graphql",
   "clean archi",
   "CQRS",

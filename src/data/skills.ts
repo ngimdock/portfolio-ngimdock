@@ -19,6 +19,17 @@ export type Skill = {
 
 const experiences: SkillType[] = [
   {
+    companyName: "ACESY Ltd",
+    jobTitle: "Software Engineer",
+    jobPeriod: "Novembre 2023 - Présent",
+    jobLocation: "Yaoundé - Cameroun",
+    jobDescription:
+      "Ma mission chez ACESY consiste à travailler sur la conception, la modélisation le choix des technologies et le développement du projet Backend. Au besoin, j'interviens également dans l'équipe Frontend.",
+    jobLinkText: "consulter",
+    jobLink: "https://www.linkedin.com/company/acesy/",
+    jobLinkTargetBlack: true,
+  },
+  {
     companyName: "Freelance",
     jobTitle: "Backend & Frontend",
     jobPeriod: "Septembre 2021 - Présent",
@@ -29,17 +40,17 @@ const experiences: SkillType[] = [
     jobLink: ROUTE_PROJECTS,
   },
 
-  {
-    companyName: "GDSC Yaounde 1",
-    jobTitle: "Formateur web",
-    jobPeriod: "Septembre 2020 - Juin 2021",
-    jobLocation: "Université Yaounde 1",
-    jobDescription:
-      "Avoir été membre de l'équipe de formation web du Google développer Student Club de l'UY1 a été une expérience enrichissante. Notre mission était d'initier les débutants à la programmation grâce à des ateliers et des séminaires supervisés par Google. ",
-    jobLinkText: "visiter",
-    jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
-    jobLinkTargetBlack: true,
-  },
+  // {
+  //   companyName: "GDSC Yaounde 1",
+  //   jobTitle: "Formateur web",
+  //   jobPeriod: "Septembre 2020 - Juin 2021",
+  //   jobLocation: "Université Yaounde 1",
+  //   jobDescription:
+  //     "Avoir été membre de l'équipe de formation web du Google développer Student Club de l'UY1 a été une expérience enrichissante. Notre mission était d'initier les débutants à la programmation grâce à des ateliers et des séminaires supervisés par Google. ",
+  //   jobLinkText: "visiter",
+  //   jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
+  //   jobLinkTargetBlack: true,
+  // },
 ];
 
 export const Formations: SkillType[] = [
@@ -54,12 +65,23 @@ export const Formations: SkillType[] = [
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
     jobLinkTargetBlack: true,
   },
-
+  {
+    companyName: "CloudAMQP",
+    jobTitle: "Certifié RabbitMQ",
+    jobPeriod: "Mai 2023 - Août 2023",
+    jobLocation: "Online",
+    jobDescription:
+      "Concepts maîtrisés: Microservices, Connections, Channels, Queues, Exchanges,  Binding, Publisher confirm, Custommer acknowledgment, Prefetch, Alternate Exchange, Plugins, AMQP",
+    jobLinkText: "Consulter",
+    jobLink:
+      "https://training.cloudamqp.com/certificate/e1536a65-7c8e-4682-a080-8337ad7f2878",
+    jobLinkTargetBlack: true,
+  },
   {
     companyName: "Freecodecamp",
     jobTitle: "Certifications web",
     jobPeriod: "Janvier 2019 - Aout 2019",
-    jobLocation: "Remote",
+    jobLocation: "Online",
     jobDescription:
       "J'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc.",
     jobLinkText: "Consulter",

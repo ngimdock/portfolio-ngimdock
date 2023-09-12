@@ -23,6 +23,8 @@ import logos_expo from "../../public/assets/svg/logos_expo.svg";
 import logos_jest from "../../public/assets/svg/logos_jest.svg";
 import logos_nodejs from "../../public/assets/svg/logos_nodejs-icon.svg";
 import logos_expressjs from "../../public/assets/svg/logo_express.svg";
+import logos_rabbitmq from "../../public/assets/svg/devicon_rabbitmq.svg";
+import logos_elasticsearch from "../../public/assets/svg/logos_elasticsearch.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -64,7 +66,9 @@ export type TechStackNames =
   | "cleanArchi"
   | "cqrs"
   | "cypher"
-  | "expo";
+  | "expo"
+  | "rabbitMq"
+  | "elasticSearch";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -307,7 +311,7 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     src: logo_graphql,
     sizeIcon: 30,
     link: "https://graphql.org/",
-    setOpacity: false,
+    setOpacity: true,
     selected: false,
   },
   typeorm: {
@@ -363,6 +367,23 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     selected: false,
     sizeIcon: 32,
   },
+  rabbitMq: {
+    tecnoName: "RabbitMQ",
+    alt: "RabbitMQ",
+    src: logos_rabbitmq,
+    link: "https://www.rabbitmq.com/",
+    selected: false,
+    sizeIcon: 28,
+    setOpacity: true,
+  },
+  elasticSearch: {
+    tecnoName: "ElasticSearch",
+    alt: "ElasticSearch",
+    src: logos_elasticsearch,
+    link: "https://www.elastic.co/",
+    selected: false,
+    sizeIcon: 26,
+  },
 } as const;
 
 const {
@@ -385,25 +406,27 @@ const {
   nodejs,
   jest,
   expressjs,
+  rabbitMq,
+  elasticSearch,
 } = TECH_STACK;
 
 export const TECHNOS: TechStackType[] = [
   typescript,
-  firebase,
-  tailwind,
   postgres,
-  prisma,
-  nestjs,
-  nextjs,
-  reactjs,
-  socketio,
-  mongoDb,
-  aws,
-  // neo4j,
-  // java,
-  graphql,
-  render,
+  tailwind,
   redis,
+  mongoDb,
+  nestjs,
+  reactjs,
+  nextjs,
+  aws,
+  prisma,
+  graphql,
+  rabbitMq,
+  render,
+  firebase,
+  socketio,
+  // elasticSearch,
 ];
 
 export const TECHNOS_FROTEND: TechStackType[] = [
@@ -424,9 +447,11 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   mongoDb,
   aws,
   nodejs,
-  expressjs,
+  rabbitMq,
   redis,
   jest,
+  // elasticSearch,
+  // expressjs,
 ].map((tech) => ({
   ...tech,
   selected: false,
@@ -439,9 +464,17 @@ export const HEROTOP_STACK: TechStackType[] = [
   nestjs,
   postgres,
   graphql,
-  aws,
+  rabbitMq,
+  // aws,
   reactjs,
   // tailwind,
 ];
 
-export const GOOD_PRACTICES = ["CLEAN ARCHI", "DDD", "CQRS", "SOLID"];
+export const GOOD_PRACTICES = [
+  "Clean Archi",
+  "DDD",
+  "CQRS",
+  "Tests unitaires",
+  "Microservices",
+  // "SOLID",
+];
