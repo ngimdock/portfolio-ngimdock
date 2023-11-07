@@ -19,9 +19,20 @@ export type Skill = {
 
 const experiences: SkillType[] = [
   {
+    companyName: "PILINK",
+    jobTitle: "Développeur Fullstack",
+    jobPeriod: "Octobre 2023 - Présent",
+    jobLocation: "Remote - France",
+    jobDescription:
+      "Développement from scratch et en complète autonomie de la nouvelle plateforme de collaboration entre les étudiants, les établissements d'enseignement et PILINK. Amélioration et intégration des nouvelles fonctionnalités dans le système existant.",
+    jobLinkText: "consulter",
+    jobLink: "https://www.linkedin.com/company/pilink/",
+    jobLinkTargetBlack: true,
+  },
+  {
     companyName: "ACESY Ltd",
     jobTitle: "Software Engineer",
-    jobPeriod: "Novembre 2023 - Présent",
+    jobPeriod: "Juillet 2023 - Novembre 2023(5 Mois)",
     jobLocation: "Yaoundé - Cameroun",
     jobDescription:
       "Ma mission chez ACESY consiste à travailler sur la conception, la modélisation le choix des technologies et le développement du projet Backend. Au besoin, j'interviens également dans l'équipe Frontend.",

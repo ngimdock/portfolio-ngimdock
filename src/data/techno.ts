@@ -25,6 +25,7 @@ import logos_nodejs from "../../public/assets/svg/logos_nodejs-icon.svg";
 import logos_expressjs from "../../public/assets/svg/logo_express.svg";
 import logos_rabbitmq from "../../public/assets/svg/devicon_rabbitmq.svg";
 import logos_elasticsearch from "../../public/assets/svg/logos_elasticsearch.svg";
+import logos_kubernetes from "../../public/assets/svg/logos_kubernetes.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -59,6 +60,7 @@ export type TechStackNames =
   | "vercel"
   | "stripe"
   | "jest"
+  | "kubernetes"
   | "superTest"
   | "graphql"
   | "typeorm"
@@ -295,6 +297,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     selected: false,
   },
 
+  kubernetes: {
+    tecnoName: "kubernetes",
+    alt: "kubernetes",
+    src: logos_kubernetes,
+    sizeIcon: 29,
+    link: "https://kubernetes.io/",
+    setOpacity: false,
+    selected: false,
+  },
+
   superTest: {
     tecnoName: "supertest",
     alt: "supertest",
@@ -405,6 +417,7 @@ const {
   redis,
   nodejs,
   jest,
+  kubernetes,
   rabbitMq,
   elasticSearch,
 } = TECH_STACK;
@@ -416,15 +429,15 @@ export const TECHNOS: TechStackType[] = [
   redis,
   mongoDb,
   nestjs,
-  reactjs,
   nextjs,
   aws,
   prisma,
   graphql,
   rabbitMq,
-  render,
+  reactjs,
+  kubernetes,
   firebase,
-  socketio,
+  // socketio,
   // elasticSearch,
 ];
 
@@ -448,8 +461,8 @@ export const TECHNOS_BACKEND: TechStackType[] = [
   nodejs,
   rabbitMq,
   redis,
+  kubernetes,
   firebase,
-  jest,
   // elasticSearch,
   // expressjs,
 ].map((tech) => ({
