@@ -82,7 +82,7 @@ export const Formations: SkillType[] = [
     jobPeriod: "Mai 2023 - Août 2023",
     jobLocation: "Online",
     jobDescription:
-      "Concepts maîtrisés: Microservices, Connections, Channels, Queues, Exchanges,  Binding, Publisher confirm, Custommer acknowledgment, Prefetch, Alternate Exchange, Plugins, AMQP",
+      "Concepts maîtrisés: Microservices, Connections, Channels, Queues, Exchanges,  Binding, Publisher confirm, Custommer acknowledgment, Prefetch, Alternate Exchange, Plugins, AMQP.",
     jobLinkText: "Consulter",
     jobLink:
       "https://training.cloudamqp.com/certificate/e1536a65-7c8e-4682-a080-8337ad7f2878",
