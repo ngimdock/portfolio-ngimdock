@@ -10,7 +10,7 @@ export const Footer = () => {
 
   const { linkedin, twitter, github, freecodecamp } = SOCIALS_MEDIAS;
 
-  const socialMediasFooter = [linkedin, twitter, github, freecodecamp];
+  const socialMediasFooter = [linkedin, twitter, github];
 
   return (
     <footer className="pb-10 text-light pt-14 sm:pt-20 mt-28 bg-dark-3">
@@ -22,7 +22,6 @@ export const Footer = () => {
           >
             <GiBearFace size={44} className="hidden sm:block" />
             <GiBearFace size={40} className="sm:hidden" />
-            <span className="hidden font-bold sm:block">Bear</span>
           </Link>
 
           <div className="mt-8 sm:mt-1">

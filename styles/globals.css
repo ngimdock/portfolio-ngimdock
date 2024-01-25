@@ -110,7 +110,7 @@ a {
 }
 
 .tag-cloud__item {
-  color: rgb(192, 50, 71);
+  color: rgb(0, 152, 204);
   font-size: 0.63rem;
   text-transform: lowercase !important;
   font-family: "Inter";
