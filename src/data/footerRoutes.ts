@@ -48,10 +48,6 @@ export const FOOTER_ROUTES: FooterRoute[] = [
   },
 
   {
-    text: ABOUT,
-    link: ROUTE_ABOUT,
-  },
-  {
     text: CONTACT,
     link: ROUTE_CONTACT,
   },

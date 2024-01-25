@@ -40,10 +40,7 @@ export const About = () => {
             color="primary"
             classe="inline"
           >
-            mon cv
-          </ButtonLink>
-          <ButtonLink href={ROUTE_ABOUT} color="dark-2" classe="inline">
-            En savoir plus
+            Télécharger mon CV
           </ButtonLink>
         </div>
       </div>

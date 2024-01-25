@@ -6,7 +6,7 @@ import { SOCIALS_MEDIAS } from "../enums";
 import { ROUTE_HOME } from "../lib";
 
 export const Footer = () => {
-  const [, , , , ...secondColumn] = FOOTER_ROUTES;
+  const [, , , ...secondColumn] = FOOTER_ROUTES;
 
   const { linkedin, twitter, github, freecodecamp } = SOCIALS_MEDIAS;
 

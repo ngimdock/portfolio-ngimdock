@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { useContext, useEffect, useState } from "react";
-import useIsInViewport from "use-is-in-viewport";
 import { H2 } from "../../../components";
 import { Project } from "../../../data";
 import { Tags } from "../../../data/tags";
@@ -11,8 +10,6 @@ const TOUS = "Tous";
 
 export const AllProjects = () => {
   const { projects: all_projects } = useContext(projectContext);
-
-  const [isInViewport, targetRef] = useIsInViewport();
 
   const tagsArray = Object.entries(Tags).map(([, tagName]) => ({
     name: tagName,
@@ -64,13 +61,7 @@ export const AllProjects = () => {
   }
 
   return (
-    <section
-      ref={targetRef}
-      className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container separed-sections"
-      )}
-    >
+    <section className={clsx("container separed-sections")}>
       <H2 classe="text-center sm:text-start">Filtres</H2>
 
       <div className="flex flex-wrap items-center justify-center max-w-2xl mt-2 space-x-3 space-y-2 sm:justify-start">

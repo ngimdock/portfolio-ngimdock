@@ -28,7 +28,7 @@ import { FiFileText } from "react-icons/fi";
 import { BsFileEarmarkTextFill, BsFileEarmarkText } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
 import { RiLinkedinBoxLine } from "react-icons/ri";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 type NavRouteType = {
   id: number;
@@ -106,7 +106,7 @@ export const Navbar = () => {
             target="_blank"
             className=" hover:text-primary animate"
           >
-            <AiOutlineLinkedin size={20} />
+            <SlSocialLinkedin size={16} />
           </Link>
 
           <Link

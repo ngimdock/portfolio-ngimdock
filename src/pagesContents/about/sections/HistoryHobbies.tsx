@@ -1,17 +1,12 @@
 import { H2 } from "../../../components";
 
-import useIsInViewport from "use-is-in-viewport";
 import clsx from "clsx";
 import { UnderlineLink } from "../../../components/link/UnderlineLink";
 
 export const HistoryHobbies = () => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   return (
     <section
-      ref={targetRef}
       className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         "container mt-24 sm:mt-8 m grid-cols-2 flex   flex-col-reverse space-y-6 text-center sm:space-y-0 sm:grid gap-x-6 lg:gap-x-16 sm:text-left"
       )}
     >

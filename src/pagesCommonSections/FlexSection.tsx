@@ -59,16 +59,12 @@ export const FlexSectionRight = ({
   scrollEffect,
   paddingY,
 }: FlexSectionProps) => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   const { children, h2, text, h3, image } = data;
 
   return (
     <section
-      ref={scrollEffect ? targetRef : null}
       className={clsx(
         !scrollEffect && "visibleDiv noTranslateDiv",
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         `${defaultClassName} flex flex-col-reverse`
       )}
     >

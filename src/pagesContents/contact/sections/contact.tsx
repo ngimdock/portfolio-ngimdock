@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import { RiLinksLine } from "react-icons/ri";
 import { toast } from "react-toastify";
-import useIsInViewport from "use-is-in-viewport";
 import { Button } from "../../../components";
 import { InputText } from "../../../components/inputs/inputText";
 import { TextArea } from "../../../components/inputs/TextArea";
@@ -29,8 +28,6 @@ const initValues: FormValues = {
 const initFormData = { isLoading: false, error: "", values: initValues };
 
 export const Contact = () => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   const form = useRef<HTMLFormElement>(null);
 
   const [formData, setFormData] = useState(initFormData);
@@ -84,9 +81,7 @@ export const Contact = () => {
 
   return (
     <section
-      ref={targetRef}
       className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         "container flex flex-col-reverse gap-x-8  gap-y-20 md:space-y-0  md:grid grid-cols-10 separed-sections"
       )}
     >

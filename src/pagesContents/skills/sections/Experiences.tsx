@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { RiLinksLine } from "react-icons/ri";
-import useIsInViewport from "use-is-in-viewport";
 import { H2, Para } from "../../../components";
 import { Skill, Skills, SkillType } from "../../../data";
 
@@ -24,16 +23,8 @@ type SkillSectionProps = {
 };
 
 const SkillSection = ({ skill }: SkillSectionProps) => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   return (
-    <section
-      ref={targetRef}
-      className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container mt-24 lg:mt-14"
-      )}
-    >
+    <section className={clsx("container mt-24 lg:mt-14")}>
       <H2>{skill.name}</H2>
 
       <div className="flex flex-col space-y-5">

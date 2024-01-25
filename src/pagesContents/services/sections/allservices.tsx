@@ -1,20 +1,11 @@
 import clsx from "clsx";
-import useIsInViewport from "use-is-in-viewport";
 import { H2, Para } from "../../../components";
 import { OneServiceType, SERVICES } from "../../../data";
 import Link from "next/link";
 
 export const AllServices = () => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   return (
-    <section
-      ref={targetRef}
-      className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container separed-sections"
-      )}
-    >
+    <section className={clsx("container separed-sections")}>
       <div className="grid  sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {SERVICES.map((service, index) => (
           <ServiceCard key={index} serviceData={service} />
