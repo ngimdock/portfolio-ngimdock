@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Image from "next/image";
-import useIsInViewport from "use-is-in-viewport";
 import { Button, H2, H3, Para } from "../../../components";
 import { Project, TECHNOS, TechStackType, TECH_STACK } from "../../../data";
 import { ProjectCard } from "../../../pagesCommonSections";
@@ -14,8 +13,6 @@ import { projectContext } from "../../../dataManager/context/projectContext";
 
 export const Projects = () => {
   const { projects: all_projects } = useContext(projectContext);
-
-  const [isInViewport, targetRef] = useIsInViewport();
 
   const [technos, setTechnos] = useState(TECHNOS);
   const [projects, setProjects] = useState(
@@ -53,9 +50,7 @@ export const Projects = () => {
 
   return (
     <section
-      ref={targetRef}
       className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         "md:container-lg flex flex-col items-center text-center separed-sections px-4 md:px-0"
       )}
     >

@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import useIsInViewport from "use-is-in-viewport";
 import { Button, H2, H4 } from "../components";
 import { ButtonLink } from "../components/botton/ButtonLink";
 import { ROUTE_CONTACT } from "../lib";
@@ -32,19 +31,10 @@ const DEFAULT_CALL_TO_ACTION_DATA = {
 };
 
 export const CallToAction = ({ actionData, classe }: CallToActionProps) => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   const { button, image, title } = actionData;
 
   return (
-    <section
-      ref={targetRef}
-      className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
-        "container max-w-[800px]",
-        classe
-      )}
-    >
+    <section className={clsx("container max-w-[800px]", classe)}>
       <div className="items-center grid-cols-8 p-6 shadow bg-dark shadow-light/20 text-light/5 sm:grid gap-x-2 sm:gap-x-4 sm:p-10 rounded-xl ">
         <div
           style={{

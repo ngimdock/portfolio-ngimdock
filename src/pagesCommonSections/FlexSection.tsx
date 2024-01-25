@@ -1,4 +1,3 @@
-import useIsInViewport from "use-is-in-viewport";
 import { H2, H3, Para } from "../components";
 import clsx from "clsx";
 import React from "react";
@@ -25,16 +24,12 @@ export const FlexSectionLeft = ({
   scrollEffect,
   paddingY,
 }: FlexSectionProps) => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   const { children, h2, text, h3, image } = data;
 
   return (
     <section
-      ref={scrollEffect ? targetRef : null}
       className={clsx(
         !scrollEffect && "visibleDiv noTranslateDiv",
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         `${defaultClassName}`
       )}
     >

@@ -1,15 +1,12 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import useIsInViewport from "use-is-in-viewport";
 import { H2, H3, H4, Para } from "../../../components";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { OneServiceType, SERVICES } from "../../../data";
 import { ROUTE_SERVICES } from "../../../lib";
 
 export const Services = () => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   const myServices = SERVICES.map(
     ({ icon, numberProject, title, desciption }: OneServiceType, index) => (
       <Service
@@ -24,9 +21,7 @@ export const Services = () => {
 
   return (
     <section
-      ref={targetRef}
       className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         "container separed-sections animate md:grid grid-cols-7 xl:gap-x-20 sm:gap-x-6 md:gap-x-8 "
       )}
     >

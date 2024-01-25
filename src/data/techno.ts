@@ -459,9 +459,9 @@ export const TECHNOS: TechStackType[] = [
 
 export const TECHNOS_FROTEND: TechStackType[] = [
   typescript,
+  nextjs,
   reactjs,
   tailwind,
-  nextjs,
   reactQuery,
 ].map((tech) => ({
   ...tech,

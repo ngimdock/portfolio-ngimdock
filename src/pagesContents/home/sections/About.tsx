@@ -1,5 +1,4 @@
 import { H2, H3, Para } from "../../../components";
-import useIsInViewport from "use-is-in-viewport";
 import clsx from "clsx";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
 import { ROUTE_ABOUT } from "../../../lib";
@@ -7,13 +6,9 @@ import { TextSphere } from "../../../components/textSphere/textSphere";
 import { UnderlineLink } from "../../../components/link/UnderlineLink";
 
 export const About = () => {
-  const [isInViewport, targetRef] = useIsInViewport();
-
   return (
     <section
-      ref={targetRef}
       className={clsx(
-        isInViewport ? "visibleDiv noTranslateDiv" : "hiddenDiv translateDiv",
         "container mt-20 lg:mt-8 flex flex-col lg:flex-row items-center"
       )}
     >
@@ -45,7 +40,7 @@ export const About = () => {
             color="primary"
             classe="inline"
           >
-            📜 mon cv
+            mon cv
           </ButtonLink>
           <ButtonLink href={ROUTE_ABOUT} color="dark-2" classe="inline">
             En savoir plus
