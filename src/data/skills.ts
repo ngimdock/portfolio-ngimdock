@@ -19,12 +19,23 @@ export type Skill = {
 
 const experiences: SkillType[] = [
   {
+    companyName: "Bubo",
+    jobTitle: "Développeur Frontend",
+    jobPeriod: "Janvier 2024 - Aujourd'hui",
+    jobLocation: "Yaoundé - Cameroun",
+    jobDescription:
+      "Création de nouvelles fonctionnalités pour l'interface utilisateur de l'application.",
+    jobLinkText: "consulter",
+    jobLink: "https://www.linkedin.com/company/bubo-bubo/",
+    jobLinkTargetBlack: true,
+  },
+  {
     companyName: "PILINK",
     jobTitle: "Développeur Fullstack",
-    jobPeriod: "Octobre 2023 - Présent",
+    jobPeriod: "Octobre 2023 - Aujourd'hui",
     jobLocation: "Remote - France",
     jobDescription:
-      "Développement from scratch et en complète autonomie de la nouvelle plateforme de collaboration entre les étudiants, les établissements d'enseignement et PILINK. Amélioration et intégration des nouvelles fonctionnalités dans le système existant.",
+      "Développement from scratch et en complète autonomie de la nouvelle plateforme de collaboration entre les étudiants, les établissements d'enseignement et PILINK.",
     jobLinkText: "consulter",
     jobLink: "https://www.linkedin.com/company/pilink/",
     jobLinkTargetBlack: true,
@@ -35,21 +46,21 @@ const experiences: SkillType[] = [
     jobPeriod: "Juillet 2023 - Novembre 2023(5 Mois)",
     jobLocation: "Yaoundé - Cameroun",
     jobDescription:
-      "Ma mission chez ACESY consiste à travailler sur la conception, la modélisation le choix des technologies et le développement du projet Backend. Au besoin, j'interviens également dans l'équipe Frontend.",
+      "Travailler sur la conception, la modélisation le choix des technologies et le développement du projet Backend. Au besoin, j'interviens également dans l'équipe Frontend.",
     jobLinkText: "consulter",
     jobLink: "https://www.linkedin.com/company/acesy/",
     jobLinkTargetBlack: true,
   },
-  {
-    companyName: "Freelance",
-    jobTitle: "Backend & Frontend",
-    jobPeriod: "Septembre 2021 - Présent",
-    jobLocation: REMOTE,
-    jobDescription:
-      "Au cours de plusieurs missions en freelance, j'ai travaillé principalement pour des start-up. Mon rôle était de développer les fonctionnalités des applications pour faire progresser le produit tout en étant d'une grande force de proposition.",
-    jobLinkText: "consulter",
-    jobLink: ROUTE_PROJECTS,
-  },
+  // {
+  //   companyName: "Freelance",
+  //   jobTitle: "Backend & Frontend",
+  //   jobPeriod: "Septembre 2021 - Présent",
+  //   jobLocation: REMOTE,
+  //   jobDescription:
+  //     "Au cours de plusieurs missions en freelance, j'ai travaillé principalement pour des start-up. Mon rôle était de développer les fonctionnalités des applications pour faire progresser le produit tout en étant d'une grande force de proposition.",
+  //   jobLinkText: "consulter",
+  //   jobLink: ROUTE_PROJECTS,
+  // },
 
   // {
   //   companyName: "GDSC Yaounde 1",
@@ -76,29 +87,29 @@ export const Formations: SkillType[] = [
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
     jobLinkTargetBlack: true,
   },
-  {
-    companyName: "CloudAMQP",
-    jobTitle: "Certifié RabbitMQ",
-    jobPeriod: "Mai 2023 - Août 2023",
-    jobLocation: "Online",
-    jobDescription:
-      "Concepts maîtrisés: Microservices, Connections, Channels, Queues, Exchanges,  Binding, Publisher confirm, Custommer acknowledgment, Prefetch, Alternate Exchange, Plugins, AMQP.",
-    jobLinkText: "Consulter",
-    jobLink:
-      "https://training.cloudamqp.com/certificate/e1536a65-7c8e-4682-a080-8337ad7f2878",
-    jobLinkTargetBlack: true,
-  },
-  {
-    companyName: "Freecodecamp",
-    jobTitle: "Certifications web",
-    jobPeriod: "Janvier 2019 - Aout 2019",
-    jobLocation: "Online",
-    jobDescription:
-      "J'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc.",
-    jobLinkText: "Consulter",
-    jobLink: "https://www.freecodecamp.org/dan73",
-    jobLinkTargetBlack: true,
-  },
+  // {
+  //   companyName: "CloudAMQP",
+  //   jobTitle: "Certifié RabbitMQ",
+  //   jobPeriod: "Mai 2023 - Août 2023",
+  //   jobLocation: "Online",
+  //   jobDescription:
+  //     "Concepts maîtrisés: Microservices, Connections, Channels, Queues, Exchanges,  Binding, Publisher confirm, Custommer acknowledgment, Prefetch, Alternate Exchange, Plugins, AMQP.",
+  //   jobLinkText: "Consulter",
+  //   jobLink:
+  //     "https://training.cloudamqp.com/certificate/e1536a65-7c8e-4682-a080-8337ad7f2878",
+  //   jobLinkTargetBlack: true,
+  // },
+  // {
+  //   companyName: "Freecodecamp",
+  //   jobTitle: "Certifications web",
+  //   jobPeriod: "Janvier 2019 - Aout 2019",
+  //   jobLocation: "Online",
+  //   jobDescription:
+  //     "J'accorde une grande importance à la formation continue. J'apprends régulièrement sur des plateformes en ligne, telles que  Freecodecomp, Udemy etc.",
+  //   jobLinkText: "Consulter",
+  //   jobLink: "https://www.freecodecamp.org/dan73",
+  //   jobLinkTargetBlack: true,
+  // },
 ];
 
 export const Skills: Record<SkillNames, Skill> = {

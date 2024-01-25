@@ -25,7 +25,7 @@ export const HeroTop = () => {
       {/* <Navbar /> */}
 
       <div className="relative mt-24 sm:mt-32 md:mt-36">
-        <div className="lg:flex lg:space-x-44 items-center">
+        <div className="lg:flex lg:space-x-52 items-center">
           <section className="relative z-10 text-center sm:text-left">
             <h1 className="text-light header-h1 font-Inter">
               <span className="block header-name">Ngimdock Zemfack</span>
@@ -57,8 +57,8 @@ export const HeroTop = () => {
           </section>
           <section className="opacity-0 lg:opacity-100 animate  rounded-full border border-light-dark">
             <Image
-              width={300}
-              height={300}
+              width={270}
+              height={270}
               alt={
                 process.env.NEXT_PUBLIC_MY_NAME
                   ? process.env.NEXT_PUBLIC_MY_NAME

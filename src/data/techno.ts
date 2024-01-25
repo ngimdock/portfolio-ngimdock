@@ -26,6 +26,8 @@ import logos_expressjs from "../../public/assets/svg/logo_express.svg";
 import logos_rabbitmq from "../../public/assets/svg/devicon_rabbitmq.svg";
 import logos_elasticsearch from "../../public/assets/svg/logos_elasticsearch.svg";
 import logos_kubernetes from "../../public/assets/svg/logos_kubernetes.svg";
+import logos_nextjs14 from "../../public/assets/svg/devicon_nextjs.svg";
+import logos_react_query from "../../public/assets/svg/logos_react-query-icon.svg";
 
 export type TechStackType = {
   tecnoName: string;
@@ -48,6 +50,7 @@ export type TechStackNames =
   | "expressjs"
   | "reactjs"
   | "reactNative"
+  | "reactQuery"
   | "tailwind"
   | "firebase"
   | "aws"
@@ -70,7 +73,8 @@ export type TechStackNames =
   | "cypher"
   | "expo"
   | "rabbitMq"
-  | "elasticSearch";
+  | "elasticSearch"
+  | "reactQuery";
 
 export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   typescript: {
@@ -176,6 +180,16 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
     selected: false,
   },
 
+  reactQuery: {
+    tecnoName: "React Query",
+    alt: "react-query",
+    src: logos_react_query,
+    sizeIcon: 41,
+    setOpacity: true,
+    link: "https://tanstack.com/",
+    selected: false,
+  },
+
   tailwind: {
     tecnoName: "Tailwind",
     alt: "Tailwind",
@@ -211,9 +225,9 @@ export const TECH_STACK: Record<TechStackNames, TechStackType> = {
   nextjs: {
     tecnoName: "Nextjs",
     alt: "Nextjs",
-    src: logo_nextjs,
+    src: logos_nextjs14,
     link: "https://beta.nextjs.org/docs",
-    sizeIcon: 63,
+    sizeIcon: 38,
     selected: false,
   },
 
@@ -407,6 +421,7 @@ const {
   nestjs,
   prisma,
   reactjs,
+  reactQuery,
   tailwind,
   neo4j,
   java,
@@ -437,6 +452,7 @@ export const TECHNOS: TechStackType[] = [
   reactjs,
   kubernetes,
   firebase,
+
   // socketio,
   // elasticSearch,
 ];
@@ -446,6 +462,7 @@ export const TECHNOS_FROTEND: TechStackType[] = [
   reactjs,
   tailwind,
   nextjs,
+  reactQuery,
 ].map((tech) => ({
   ...tech,
   selected: false,
@@ -474,12 +491,12 @@ export const TECHNOS_BACKEND: TechStackType[] = [
 export const TECHNOS_OTHERS: TechStackType[] = [aws, neo4j, java, render];
 
 export const HEROTOP_STACK: TechStackType[] = [
+  nextjs,
+  reactjs,
   nestjs,
   postgres,
   graphql,
-  rabbitMq,
   // aws,
-  reactjs,
   // tailwind,
 ];
 

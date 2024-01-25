@@ -25,15 +25,31 @@ export const Skill = () => {
     >
       <div className="flex flex-col space-y-10">
         <div>
+          <H2 classe=" leading-0" size="sm">
+            _Frontend
+          </H2>
+          <div className="flex items-center mt-2 space-x-6 xl:space-x-12">
+            {TECHNOS_FROTEND.map((techno: TechStackType, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center space-y-3"
+              >
+                <Techno tecnoData={techno} onSelectTechno={() => {}} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
           <div className="flex items-end space-x-1 leading-0">
             <H2 classe=" leading-0" size="sm">
-              Backend
+              _Backend
             </H2>
 
-            <p className="text-primary text-[11px] -translate-y-1.5 flex items-center space-x-1">
+            {/* <p className="text-primary text-[11px] -translate-y-1.5 flex items-center space-x-1">
               (<RiStarSmileFill className="text-base" />
               <span>spécialité</span>)
-            </p>
+            </p> */}
           </div>
           <div className="flex flex-wrap items-center mt-2 space-y-5 space-x-8 xl:space-x-12">
             {TECHNOS_BACKEND.map((techno: TechStackType, index) => (
@@ -49,23 +65,7 @@ export const Skill = () => {
 
         <div>
           <H2 classe=" leading-0" size="sm">
-            Frontend
-          </H2>
-          <div className="flex items-center mt-2 space-x-6 xl:space-x-12">
-            {TECHNOS_FROTEND.map((techno: TechStackType, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center space-y-3"
-              >
-                <Techno tecnoData={techno} onSelectTechno={() => {}} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <H2 classe=" leading-0" size="sm">
-            Bonnes pratiques
+            _Bonnes pratiques
           </H2>
           <div className="flex flex-wrap items-center space-y-1.5 mt-2 space-x-6 xl:space-x-6 pt-1.5 ">
             {/* {TECHNOS_OTHERS.map((techno: TechStackType, index) => (
