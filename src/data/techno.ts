@@ -491,8 +491,8 @@ export const TECHNOS_BACKEND: TechStackType[] = [
 export const TECHNOS_OTHERS: TechStackType[] = [aws, neo4j, java, render];
 
 export const HEROTOP_STACK: TechStackType[] = [
-  nextjs,
   reactjs,
+  nextjs,
   nestjs,
   postgres,
   graphql,

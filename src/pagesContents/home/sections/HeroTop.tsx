@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
 import Image from "next/image";
-import { Navbar } from "../../../pagesCommonSections/Navbar";
 import ngimdock_photo from "../../../../public/assets/images/profile-dan.png";
 import Link from "next/link";
 import { ScrollDown } from "../../../components";
@@ -25,7 +24,7 @@ export const HeroTop = () => {
       {/* <Navbar /> */}
 
       <div className="relative mt-24 sm:mt-32 md:mt-36">
-        <div className="lg:flex lg:space-x-52 items-center">
+        <div className="items-center lg:flex lg:space-x-64">
           <section className="relative z-10 text-center sm:text-left">
             <h1 className="text-light header-h1 font-Inter">
               <span className="block header-name">Ngimdock Zemfack</span>
@@ -36,7 +35,7 @@ export const HeroTop = () => {
               ça.
             </p>
 
-            <div className="flex items-center justify-center mt-4 space-x-5 sm:justify-start">
+            <div className="flex items-center justify-center mt-4 space-x-2.5 sm:justify-start">
               {HEROTOP_STACK.map((techno: TechStackType, index) => (
                 <Tecno Techno={techno} key={index} />
               ))}
@@ -55,7 +54,7 @@ export const HeroTop = () => {
               </ButtonLink>
             </div>
           </section>
-          <section className="opacity-0 lg:opacity-100 animate  rounded-full border border-light-dark">
+          <section className="hidden border rounded-full lg:opacity-100 lg:block animate border-light-dark">
             <Image
               width={270}
               height={270}
@@ -69,7 +68,7 @@ export const HeroTop = () => {
           </section>
         </div>
 
-        <div className="flex justify-center mt-20 sm:justify-end lg:justify-center sm:pr-32 lg:pr-0 lg:mt-28">
+        <div className="flex justify-center mt-20 md:mt-16 sm:justify-end lg:justify-center sm:pr-32 lg:pr-0 lg:mt-28">
           <ScrollDown />
         </div>
       </div>
