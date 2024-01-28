@@ -1,9 +1,8 @@
 import { H2, H3, Para } from "../../../components";
 import clsx from "clsx";
 import { ButtonLink } from "../../../components/botton/ButtonLink";
-import { ROUTE_ABOUT } from "../../../lib";
 import { TextSphere } from "../../../components/textSphere/textSphere";
-import { UnderlineLink } from "../../../components/link/UnderlineLink";
+import { ROUTE_CONTACT } from "../../../lib";
 
 export const About = () => {
   return (
@@ -20,24 +19,19 @@ export const About = () => {
           <H2 classe="mt-3">Software Engineer.</H2>
         </div>
         <p className="mt-3 sm:text-md text-light-dark">
-          Je suis disponible pour tout type d&apos;opportunités en CDI ou
-          freelance. Mes compétences en{" "}
-          <UnderlineLink
-            link="https://www.agilepartner.net/en/le-software-craftsman-super-developpeur/"
-            text="software craftsmanship"
-            targerBlack={true}
-          />{" "}
-          me permettent de m&apos;adapter rapidement à d&apos;autres librairies
-          ou frameworks. J&apos;apprécie discuter avec d&apos;autres
-          développeurs sur des sujets qui me permettent de découvrir de nouveaux
-          concepts à apprendre. Transférer mes compétences aux profils plus
-          juniors est aussi un grand plaisir.
+          Je crée des projets web, qu&apos;ils soient de petite ou grande
+          envergure, allant des sites vitrines aux applications, ainsi que la
+          mise en place des SaaS. Si vous recherchez un développeur Frontend,
+          Backend, ou Fullstack, n&apos;hésitez pas à me contacter.
         </p>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
+          <ButtonLink href={ROUTE_CONTACT} color="primary">
+            me contacter
+          </ButtonLink>
           <ButtonLink
             href={process.env.NEXT_PUBLIC_MY_CV as string}
             targetBlack={true}
-            color="primary"
+            color="dark"
             classe="inline"
           >
             Télécharger mon CV
