@@ -93,16 +93,20 @@ export const Navbar = () => {
         <GiBearFace size={40} className="sm:hidden" />
       </Link>
       <ul className="items-center hidden space-x-8 text-xs font-medium md:flex lg:space-x-6 text-light">
-        {NAV_DATAS.map(({ id, link, route }: NavRouteType) => (
-          <Link key={id} href={link} className={navLinkClassname}>
-            {route}
-          </Link>
-        ))}
+        {NAV_DATAS.map(({ id, link, route }: NavRouteType) => {
+          console.log({ link, route });
+
+          return (
+            <Link key={id} href={link} className={navLinkClassname}>
+              {route}
+            </Link>
+          );
+        })}
 
         <div className="flex items-center space-x-3 text-light">
           <Link
             title="LinkedIn"
-            href={process.env.NEXT_PUBLIC_LINK_LINKEDIN as string}
+            href={process.env.NEXT_PUBLIC_LINK_LINKEDIN ?? ""}
             target="_blank"
             className=" hover:text-primary animate"
           >
@@ -111,7 +115,7 @@ export const Navbar = () => {
 
           <Link
             title="CV"
-            href={process.env.NEXT_PUBLIC_MY_CV as string}
+            href={process.env.NEXT_PUBLIC_MY_CV ?? ""}
             target="_blank"
             className=" hover:text-primary animate"
           >

@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
 
           {positionY > POSITION_Y && (
-            <div className="fixed top-0 z-30 w-full py-2 h-16 mx-auto shadow-sm  bg-dark-3/95"></div>
+            <div className="fixed top-0 z-30 w-full h-16 py-2 mx-auto shadow-sm bg-dark-3/95"></div>
           )}
         </div>
         <Component {...pageProps} />
