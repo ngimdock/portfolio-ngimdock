@@ -1,7 +1,6 @@
 import clsx from "clsx";
-import { Button, H2, H4 } from "../components";
+import { Button, H2 } from "../components";
 import { ButtonLink } from "../components/botton/ButtonLink";
-import { ROUTE_CONTACT } from "../lib";
 
 export type CallToACtionType = {
   title: string;
@@ -20,18 +19,8 @@ type CallToActionProps = {
   classe?: string;
 };
 
-const DEFAULT_CALL_TO_ACTION_DATA = {
-  image: "contact-call-to-action.jpg",
-  // image: "keyboard.jpg",
-  title: "Fait passer ton projet web au niveau supérieur.",
-  button: {
-    link: ROUTE_CONTACT,
-    text: "Me contacter",
-  },
-};
-
 export const CallToAction = ({ actionData, classe }: CallToActionProps) => {
-  const { button, image, title } = actionData;
+  const { button, image } = actionData;
 
   return (
     <section className={clsx("container max-w-[800px]", classe)}>

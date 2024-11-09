@@ -60,8 +60,8 @@ export const Projects = () => {
       <H3 classe="sm:hidden">Portfolio</H3>
       <H2 classe="mt-3">Explore my latest projects.</H2>
       <Para>
-        A selection of projects I’ve developed or contributed to as part of the
-        development team.
+        A selection of projects I&apos;ve developed or contributed to as part of
+        the development team.
       </Para>
 
       <div className="w-full grid-cols-8 grid-rows-2 mt-10 md:grid gap-x-2 lg:gap-x-4">

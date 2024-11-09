@@ -14,19 +14,18 @@ export const About = () => {
       <div className="max-w-2xl text-center lg:text-left">
         <div>
           <div className="flex justify-center lg:justify-start">
-            <H3>À propos</H3>
+            <H3>About</H3>
           </div>
           <H2 classe="mt-3">Software Engineer.</H2>
         </div>
         <p className="mt-3 sm:text-md text-light-dark">
-          Je crée des projets web, qu&apos;ils soient de petite ou grande
-          envergure, allant des sites vitrines aux applications, ainsi que la
-          mise en place des SaaS. Si vous recherchez un développeur Frontend,
-          Backend, ou Fullstack, n&apos;hésitez pas à me contacter.
+          I build web projects of all sizes, from simple websites to complex
+          applications, including SaaS solutions. If you&apos;re looking for a
+          Frontend or Fullstack developer, don&apos;t hesitate to get in touch.
         </p>
         <div className="items-center hidden mt-6 space-x-3 lg:flex">
           <ButtonLink href={ROUTE_CONTACT} color="primary">
-            me contacter
+            Get in touch
           </ButtonLink>
           <ButtonLink
             href={process.env.NEXT_PUBLIC_MY_CV as string}
@@ -34,7 +33,7 @@ export const About = () => {
             color="dark"
             classe="inline"
           >
-            Télécharger mon CV
+            Download resume
           </ButtonLink>
         </div>
       </div>
