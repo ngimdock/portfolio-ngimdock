@@ -6,7 +6,7 @@ import { Tags } from "../../../data/tags";
 import { ProjectCard } from "../../../pagesCommonSections";
 import { projectContext } from "../../../dataManager/context/projectContext";
 
-const TOUS = "Tous";
+const TOUS = "All";
 
 export const AllProjects = () => {
   const { projects: all_projects } = useContext(projectContext);
@@ -62,7 +62,7 @@ export const AllProjects = () => {
 
   return (
     <section className={clsx("container separed-sections")}>
-      <H2 classe="text-center sm:text-start">Filtres</H2>
+      <H2 classe="text-center sm:text-start">Filters</H2>
 
       <div className="flex flex-wrap items-center justify-center max-w-2xl mt-2 space-x-3 space-y-2 sm:justify-start">
         {tags.map((tag, index) => (

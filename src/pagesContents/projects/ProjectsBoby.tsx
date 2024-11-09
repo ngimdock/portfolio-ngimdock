@@ -27,11 +27,12 @@ export const ProjectsBody = () => {
   return (
     <>
       <Header
-        title="Consulter tous mes projets."
-        description="Une liste non exhaustive des projets donc j'ai développé ou fait partir de l'équipe de développement."
+        title="View all my projects."
+        description=" A selection of projects I've developed or contributed to as part of
+        the development team."
         buttonCTA={
           <ButtonLink href={ROUTE_CONTACT} color="primary">
-            Me contacter
+            Get in touch
           </ButtonLink>
         }
         routesPath={ROUTES_PATH}
