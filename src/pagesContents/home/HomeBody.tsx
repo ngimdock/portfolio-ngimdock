@@ -7,7 +7,7 @@ import { CallToAction } from "../../pagesCommonSections";
 import { ROUTE_CONTACT } from "../../lib";
 import { Coaching } from "./sections/Coaching";
 
-const DEFAULT_CALL_TO_ACTION_DATA = {
+export const DEFAULT_CALL_TO_ACTION_DATA = {
   image: "keyboard.jpg",
   // image: "keyboard.jpg",
   title: "Take your web project to the next level.",
