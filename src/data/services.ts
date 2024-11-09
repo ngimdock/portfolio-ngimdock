@@ -12,33 +12,21 @@ export type OneServiceType = {
 export const SERVICES: OneServiceType[] = [
   {
     icon: RiGroupFill,
-    title: " soutien  d'équipes",
-    numberProject: "03+ projets",
-    desciption: `Je mets mes compétences au service de votre équipe en tant que développeur 
-    back et/ou frontend. Tout en collaborant avec les autres membres de l'équipe, je développe 
-    et teste les fonctionnalités du projet de manière itérative. Nous travaillons en méthode 
-    agile et je n'hésite pas d'être d'une grande force de proposition en vue de mes expériences 
-    précédentes.`,
+    title: "Web development",
+    numberProject: "04+ projets",
+    desciption: `I contribute my expertise as a frontend/fullstack developer, working collaboratively with the team to iteratively develop and test features. With an agile approach, I leverage my past experiences to provide valuable insights and proactive suggestions.`,
   },
   {
     icon: RiDatabase2Fill,
-    title: "développement  backend",
+    title: "SaaS development",
     numberProject: "04+ projets",
-    desciption: `Confiez-moi le développement complet de la partie backend de votre application. 
-    Je suis en charge de la conception, du développement et des tests de l'API, en utilisant 
-    une architecture scalable et en respectant les meilleures méthodologies de développement 
-    logiciel. Ensuite, je collabore avec les développeurs frontend pour qu'ils puissent exploiter 
-    pleinement ses fonctionnalités.`,
+    desciption: `Crafting scalable, secure, and user-focused software solutions tailored to your business needs. From design to deployment, I help you launch your application in under 3 months.`,
   },
   {
     icon: RiVideoFill,
-    title: "formation & coaching",
+    title: "Traning & coaching",
     numberProject: "01+ formation",
-    desciption: `Trouver un bon formateur en développement web est compliqué, 
-    certains développeurs sont très compétents mais n'ont pas une approche adaptée pour la 
-    formation des débutants et cela peut impacter leur montée en compétence. 
-    Je vous propose un programme d'accompagnement sur-mesure en fonction des profils des apprenants.
-    ils se verront apprendre rapidement après chaque module de formation.`,
+    desciption: `Finding the right web development trainer can be difficult. While some developers are highly experienced, they may not always have the teaching methods that resonate with beginners, slowing their progress. I provide a personalized training program designed for each learner, ensuring they gain skills quickly after every module.`,
     link: ROUTE_FORMATIONS,
   },
 ];

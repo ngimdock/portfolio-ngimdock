@@ -22,17 +22,16 @@ export const Services = () => {
   return (
     <section
       className={clsx(
-        "container separed-sections animate md:grid grid-cols-7 xl:gap-x-20 sm:gap-x-6 md:gap-x-8 "
+        "container separed-sections animate md:grid grid-cols-7 xl:gap-x-40 sm:gap-x-8 md:gap-x-10 "
       )}
     >
       <div className="flex flex-col items-center col-span-4 md:items-start">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <H3>services</H3>
-          <H2 classe="mt-2">Développement web sur-mesure.</H2>
+          <H2 classe="mt-2">Custom Web Development.</H2>
           <Para classe="mt-3">
-            Je pourrais intégrer votre équipe afin d&apos;augmenter la
-            productivité, Développer une solution complète de votre produit ou
-            encore former les futurs développeurs de votre entreprise.
+            I can join your team to boost productivity, build a full solution
+            for your product, or train your future developers.
           </Para>
         </div>
 
@@ -43,7 +42,7 @@ export const Services = () => {
             color="primary"
             classe="md:mt-8 mt-14 hidden sm:block md:hidden "
           >
-            plus de détails
+            More details
           </ButtonLink>
         </div>
         <ButtonLink
@@ -51,7 +50,7 @@ export const Services = () => {
           color="primary"
           classe="md:mt-8 mt-14 sm:hidden md:block "
         >
-          plus de détails
+          More details
         </ButtonLink>
       </div>
       <div className="flex-col hidden col-span-3 space-y-3 md:flex">

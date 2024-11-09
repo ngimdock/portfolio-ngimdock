@@ -31,8 +31,7 @@ export const HeroTop = () => {
               <span className="header-job">Software Engineer.</span>
             </h1>
             <p className="mt-3 sm:text-lg text-light header-p">
-              Je développe des applications web sur-mesure et j&apos;adore faire
-              ça.
+              I build custom web applications and love what I do.
             </p>
 
             <div className="flex items-center justify-center mt-4 space-x-2.5 sm:justify-start">
@@ -43,14 +42,14 @@ export const HeroTop = () => {
 
             <div className="flex items-center justify-center mt-8 space-x-1 sm:space-x-5 sm:justify-start">
               <ButtonLink href={ROUTE_CONTACT} color="primary">
-                me contacter
+                Get in touch
               </ButtonLink>
               <ButtonLink
                 href={ROUTE_PROJECTS}
                 color="dark-2"
                 classe="hidden sm:block"
               >
-                mes réalisations
+                All my projects
               </ButtonLink>
             </div>
           </section>

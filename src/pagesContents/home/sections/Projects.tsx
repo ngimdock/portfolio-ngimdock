@@ -58,10 +58,10 @@ export const Projects = () => {
         <H3>Portfolio</H3>
       </div>
       <H3 classe="sm:hidden">Portfolio</H3>
-      <H2 classe="mt-3">Découvrez mes dernières réalisations.</H2>
+      <H2 classe="mt-3">Explore my latest projects.</H2>
       <Para>
-        Une liste non exhaustive des projets que j&apos;ai développé ou fait
-        partir de l&apos;équipe de développement.
+        A selection of projects I’ve developed or contributed to as part of the
+        development team.
       </Para>
 
       <div className="w-full grid-cols-8 grid-rows-2 mt-10 md:grid gap-x-2 lg:gap-x-4">
@@ -87,7 +87,7 @@ export const Projects = () => {
             color="primary"
             classe="hidden md:block lg:mt-1"
           >
-            consulter tous les projects
+            View all projects
           </ButtonLink>
         </div>
         <div className="w-full h-full col-span-5 row-span-2 mt-2 md:mt-0">
