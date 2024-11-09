@@ -10,7 +10,7 @@ export const ServicesBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
     {
       id: 1,
-      text: "accueil",
+      text: "Home",
       link: ROUTE_HOME,
       icon: <RiHomeHeartLine />,
     },
@@ -26,11 +26,11 @@ export const ServicesBody = () => {
   return (
     <>
       <Header
-        title="Prestation des services"
-        description="Du développement web sur-mesure pour faire décoller ton produit sur le web."
+        title="Services I offer."
+        description="Tailored web development to accelerate your product's growth online"
         buttonCTA={
           <ButtonLink href={ROUTE_CONTACT} color="primary">
-            me contacter
+            Get in touch
           </ButtonLink>
         }
         routesPath={ROUTES_PATH}
