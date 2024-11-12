@@ -33,7 +33,7 @@ export const About = () => {
             color="dark"
             classe="inline"
           >
-            Download resume
+            Download my resume
           </ButtonLink>
         </div>
       </div>
