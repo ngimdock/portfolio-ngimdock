@@ -100,7 +100,7 @@ export const Projects = () => {
       </div>
 
       <Button color="primary" classe="md:hidden mt-10">
-        tous les projects
+        All projects
       </Button>
     </section>
   );

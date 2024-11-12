@@ -12,7 +12,7 @@ export const ContactBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
     {
       id: 1,
-      text: "accueil",
+      text: "Home",
       link: ROUTE_HOME,
       icon: <RiHomeHeartLine />,
     },
@@ -28,8 +28,8 @@ export const ContactBody = () => {
   return (
     <>
       <Header
-        title="Me contacter."
-        description="Envoyez-moi un message ou écrivez-moi sur mes réseaux, je vous réponds dans la journée."
+        title="Contact me."
+        description="Drop me a message or reach out on my social media, and I'll reply within the day."
         buttonCTA={<ScrollDown />}
         routesPath={ROUTES_PATH}
       />

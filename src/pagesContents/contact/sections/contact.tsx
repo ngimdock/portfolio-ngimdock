@@ -120,7 +120,7 @@ export const Contact = () => {
             fullWidth
             classe="sm:hidden mt-5"
           >
-            Envoyer
+            Send
           </Button>
         </div>
         <div className="space-y-5">
@@ -128,7 +128,7 @@ export const Contact = () => {
             isRequired={true}
             disabled={formData.isLoading}
             registerName="objet"
-            placeholder="Objet"
+            placeholder="Subject"
             value={formData.values.subject}
             name="subject"
             onChange={(e) => handleChange(e, "subject")}
@@ -137,7 +137,7 @@ export const Contact = () => {
             isRequired={true}
             disabled={formData.isLoading}
             registerName="name"
-            placeholder="Votre nom"
+            placeholder="Name"
             name="userName"
             value={formData.values.name}
             onChange={(e) => handleChange(e, "name")}
@@ -156,7 +156,7 @@ export const Contact = () => {
             isRequired={false}
             disabled={formData.isLoading}
             registerName="phone"
-            placeholder="Téléphone"
+            placeholder="Phone"
             name="userPhone"
             value={formData.values.phone}
             onChange={(e) => handleChange(e, "phone")}
@@ -168,7 +168,7 @@ export const Contact = () => {
             classe="hidden sm:block"
             isLoading={formData.isLoading}
           >
-            Envoyer
+            Send
           </Button>
         </div>
       </form>
