@@ -37,7 +37,7 @@ export const NavbarMobile = () => {
   const MOBILE_NAV_DATAS: NavRouteType[] = [
     {
       id: 1,
-      route: "accueil",
+      route: "home",
       link: ROUTE_HOME,
     },
     {
@@ -47,27 +47,27 @@ export const NavbarMobile = () => {
     },
     {
       id: 3,
-      route: "projets",
+      route: "projects",
       link: ROUTE_PROJECTS,
     },
     {
       id: 4,
-      route: "compétences",
+      route: "skills",
       link: ROUTE_SKILLS,
     },
     {
       id: 5,
-      route: " à propos",
+      route: "about",
       link: ROUTE_ABOUT,
     },
     {
       id: 6,
-      route: "remumé | cv",
+      route: "remume | cv",
       link: ROUTE_HOME,
     },
     {
       id: 7,
-      route: " contact",
+      route: "contact",
       link: ROUTE_CONTACT,
     },
   ];

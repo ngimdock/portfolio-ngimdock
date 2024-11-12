@@ -6,7 +6,7 @@ import Link from "next/link";
 export const AllServices = () => {
   return (
     <section className={clsx("container separed-sections")}>
-      <div className="grid  sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((service, index) => (
           <ServiceCard key={index} serviceData={service} />
         ))}
@@ -22,7 +22,7 @@ type ServiceCardProps = {
 export const ServiceCard = ({ serviceData }: ServiceCardProps) => {
   const { desciption, title } = serviceData;
   return (
-    <article className=" bg-dark-3 p-8 pt-20 hover:-translate-y-4 animate">
+    <article className="p-8 pt-20 bg-dark-3 hover:-translate-y-4 animate">
       <div>
         <span className="inline-block h-0.5 bg-light w-[70%]"></span>
         <H2 size="sm" classe="mt-5">
@@ -38,9 +38,9 @@ export const ServiceCard = ({ serviceData }: ServiceCardProps) => {
         <div className="flex justify-center mt-3 ">
           <Link
             href={serviceData.link ?? ""}
-            className="text-xs font-Inter text-primary hover:opacity-50 animate underline"
+            className="text-xs underline font-Inter text-primary hover:opacity-50 animate"
           >
-            En savoir plus
+            Learn more
           </Link>
         </div>
       )}

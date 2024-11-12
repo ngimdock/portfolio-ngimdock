@@ -6,7 +6,7 @@ export default function Formations() {
   return (
     <>
       <Metadata
-        title={`Formations / ${process.env.NEXT_PUBLIC_MY_NAME}`}
+        title={`Trainings / ${process.env.NEXT_PUBLIC_MY_NAME}`}
         description={`${process.env.NEXT_PUBLIC_MY_NAME?.toLocaleLowerCase()} forme les futur développeurs web de ton entreprise.`}
       />
 

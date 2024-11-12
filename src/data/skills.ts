@@ -83,7 +83,7 @@ export const Formations: SkillType[] = [
     jobLocation: "Yaoundé, Cameroun",
     jobDescription:
       "Je suis titulaire d'un BAC + 4 en génie logiciel et d'un BAC + 1 en mathématiques fondamentales dans l'une des meilleures universités d'Afrique centrale.",
-    jobLinkText: "En savoir plus",
+    jobLinkText: "Learn more",
     jobLink: "https://www.linkedin.com/in/ngimdock-zemfack/",
     jobLinkTargetBlack: true,
   },

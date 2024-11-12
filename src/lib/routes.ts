@@ -4,5 +4,5 @@ export const ROUTE_SERVICES = "services";
 export const ROUTE_SKILLS = "skills";
 export const ROUTE_CONTACT = "contact";
 export const ROUTE_COACHING = "coaching";
-export const ROUTE_FORMATIONS = "traning";
+export const ROUTE_FORMATIONS = "tranings";
 export const ROUTE_HOME = "/";

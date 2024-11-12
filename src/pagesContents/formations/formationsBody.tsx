@@ -9,7 +9,7 @@ export const FormationsBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
     {
       id: 1,
-      text: "accueil",
+      text: "Home",
       link: ROUTE_HOME,
       icon: <RiHomeHeartLine />,
     },
