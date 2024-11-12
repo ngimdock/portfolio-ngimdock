@@ -31,7 +31,7 @@ export const SkillsBody = () => {
   const cvCallToActionData: CallToACtionType = {
     title: "Learn More About My Skills ?",
     button: {
-      text: "Télécharger mon cv",
+      text: "Download my resume",
       link: process.env.NEXT_PUBLIC_MY_CV as string,
       targetBlack: true,
     },
