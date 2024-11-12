@@ -11,7 +11,7 @@ export type SkillType = {
   jobLinkTargetBlack?: boolean;
 };
 export const REMOTE = "Remote";
-type SkillNames = "Experiences" | "Formations";
+type SkillNames = "Experiences";
 export type Skill = {
   name: string;
   data: SkillType[];
@@ -20,34 +20,34 @@ export type Skill = {
 const experiences: SkillType[] = [
   {
     companyName: "Bubo",
-    jobTitle: "Développeur Frontend",
-    jobPeriod: "Janvier 2024 - Aujourd'hui",
-    jobLocation: "Yaoundé - Cameroun",
+    jobTitle: "Frontend Developer",
+    jobPeriod: "January 2024 - Present",
+    jobLocation: "Remote - France",
     jobDescription:
-      "Création de nouvelles fonctionnalités pour l'interface utilisateur de l'application.",
-    jobLinkText: "consulter",
+      "Developing new frontend features for the application, writing unit and integration tests, conducting code reviews, and suggesting improvements.",
+    jobLinkText: "Visit the company",
     jobLink: "https://www.linkedin.com/company/bubo-bubo/",
     jobLinkTargetBlack: true,
   },
   {
     companyName: "PILINK",
-    jobTitle: "Développeur Fullstack",
-    jobPeriod: "Octobre 2023 - Aujourd'hui",
+    jobTitle: "Fullstack Developer",
+    jobPeriod: "October 2023 - Febuary 2024",
     jobLocation: "Remote - France",
     jobDescription:
-      "Développement from scratch et en complète autonomie de la nouvelle plateforme de collaboration entre les étudiants, les établissements d'enseignement et PILINK.",
-    jobLinkText: "consulter",
+      "Designed and developed from scratch, with full autonomy, a new collaboration platform that enhances interaction between students, educational institutions, and PILINK",
+    jobLinkText: "Visit the company",
     jobLink: "https://www.linkedin.com/company/pilink/",
     jobLinkTargetBlack: true,
   },
   {
     companyName: "ACESY Ltd",
     jobTitle: "Software Engineer",
-    jobPeriod: "Juillet 2023 - Novembre 2023(5 Mois)",
-    jobLocation: "Yaoundé - Cameroun",
+    jobPeriod: "Jully 2023 - November 2023",
+    jobLocation: "Yaounde - Cameroun",
     jobDescription:
-      "Travailler sur la conception, la modélisation le choix des technologies et le développement du projet Backend. Au besoin, j'interviens également dans l'équipe Frontend.",
-    jobLinkText: "consulter",
+      "Worked on the design, modeling, and development of both the Frontend and Backend of the application.",
+    jobLinkText: "Visit the company",
     jobLink: "https://www.linkedin.com/company/acesy/",
     jobLinkTargetBlack: true,
   },
@@ -114,12 +114,12 @@ export const Formations: SkillType[] = [
 
 export const Skills: Record<SkillNames, Skill> = {
   Experiences: {
-    name: "Expériences",
+    name: "Experiences",
     data: experiences,
   },
 
-  Formations: {
-    name: "Formations",
-    data: Formations,
-  },
+  // Formations: {
+  //   name: "Education",
+  //   data: Formations,
+  // },
 };
