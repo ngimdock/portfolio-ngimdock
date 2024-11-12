@@ -15,7 +15,7 @@ export const SkillsBody = () => {
   const ROUTES_PATH: RoutePathType[] = [
     {
       id: 1,
-      text: "accueil",
+      text: "Home",
       link: ROUTE_HOME,
       icon: <RiHomeHeartLine />,
     },
@@ -29,7 +29,7 @@ export const SkillsBody = () => {
   ];
 
   const cvCallToActionData: CallToACtionType = {
-    title: "En savoir plus sur les compétences ?",
+    title: "Learn More About My Skills ?",
     button: {
       text: "Télécharger mon cv",
       link: process.env.NEXT_PUBLIC_MY_CV as string,
@@ -42,15 +42,15 @@ export const SkillsBody = () => {
     <>
       <Header
         routesPath={ROUTES_PATH}
-        title="Mes compétences techniques."
-        description="Ingénieur logiciel, javascript & typescript."
+        title="My Technical Skills."
+        description="Software Engineer, JavaScript & TypeScript Specialist."
         buttonCTA={
           <ButtonLink
             href={process.env.NEXT_PUBLIC_MY_CV as string}
             targetBlack={true}
             color="primary"
           >
-            Télécharger mon CV
+            Download My Resume
           </ButtonLink>
         }
       />

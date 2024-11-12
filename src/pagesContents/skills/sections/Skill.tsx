@@ -26,7 +26,7 @@ export const Skill = () => {
       <div className="flex flex-col space-y-10">
         <div>
           <H2 classe=" leading-0" size="sm">
-            _Frontend
+            Frontend
           </H2>
           <div className="flex items-center mt-2 space-x-6 xl:space-x-12">
             {TECHNOS_FROTEND.map((techno: TechStackType, index) => (
@@ -43,7 +43,7 @@ export const Skill = () => {
         <div>
           <div className="flex items-end space-x-1 leading-0">
             <H2 classe=" leading-0" size="sm">
-              _Backend
+              Backend
             </H2>
 
             {/* <p className="text-primary text-[11px] -translate-y-1.5 flex items-center space-x-1">
@@ -51,7 +51,7 @@ export const Skill = () => {
               <span>spécialité</span>)
             </p> */}
           </div>
-          <div className="flex flex-wrap items-center mt-2 space-y-5 space-x-8 xl:space-x-12">
+          <div className="flex flex-wrap items-center mt-2 space-x-8 space-y-5 xl:space-x-12">
             {TECHNOS_BACKEND.map((techno: TechStackType, index) => (
               <div
                 key={index}
@@ -65,7 +65,7 @@ export const Skill = () => {
 
         <div>
           <H2 classe=" leading-0" size="sm">
-            _Bonnes pratiques
+            Best Practices
           </H2>
           <div className="flex flex-wrap items-center space-y-1.5 mt-2 space-x-6 xl:space-x-6 pt-1.5 ">
             {/* {TECHNOS_OTHERS.map((techno: TechStackType, index) => (

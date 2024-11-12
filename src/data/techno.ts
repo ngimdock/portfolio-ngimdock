@@ -502,9 +502,8 @@ export const HEROTOP_STACK: TechStackType[] = [
 
 export const GOOD_PRACTICES = [
   "Clean Archi",
-  "DDD",
-  "CQRS",
-  "Tests unitaires",
-  "Microservices",
-  // "SOLID",
+  "Unit & e2e test",
+  "SEO & Optimisation",
+  "Loading speed",
+  "Refactoring",
 ];
